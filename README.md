@@ -5,6 +5,7 @@ This plugin extend the backend to some new features and widgets.
 ###New features
 * Hide or show descriptions in slidebar.
 * Focus search field automatically.
+
 (They only work on Settings pages.)
 
 ###New Widgets
