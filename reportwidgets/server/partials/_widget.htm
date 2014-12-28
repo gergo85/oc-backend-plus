@@ -1,0 +1,22 @@
+<div class="report-widget">
+    <h3 style="margin-bottom:5px;"><?= e(trans($this->property('title'))) ?></h3>
+    <?php if ($this->property('host')): ?>
+    <div class="scoreboard-item title-value pull-left" style="margin:20px 20px 0 0;">
+        <h4><?= e(trans('indikator.backend::lang.widgets.server.host')) ?></h4>
+        <p class="text-center"><?= $host ?></p>
+    </div>
+    <?php endif ?>
+    <?php if ($this->property('ip')): ?>
+    <div class="scoreboard-item title-value pull-left" style="margin:20px 20px 0 0;">
+        <h4><?= e(trans('indikator.backend::lang.widgets.server.ip')) ?></h4>
+        <p class="text-center"><?= $ip ?></p>
+    </div>
+    <?php endif ?>
+    <?php if ($this->property('os')): ?>
+    <div class="scoreboard-item title-value pull-left" style="margin:20px 0 0 0;">
+        <h4><?= e(trans('indikator.backend::lang.widgets.server.os')) ?></h4>
+        <p class="text-center"><?= $os ?></p>
+    </div>
+    <?php endif ?>
+    <div style="clear:both;"></div>
+</div>

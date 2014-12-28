@@ -1,0 +1,35 @@
+<?php
+    $context = System\Classes\SettingsManager::instance()->getContext();
+
+    $collapsedGroups = explode('|',
+        isset($_COOKIE['sidenav_treegroupStatus']) ? $_COOKIE['sidenav_treegroupStatus'] : null
+    );
+
+    use Backend\Models\UserPreferences;
+    $preferences = UserPreferences::forUser()->get('backend::backend.preferences');
+?>
+<ul class="top-level">
+    <?php foreach ($items as $category => $items):
+        $collapsed = in_array($category, $collapsedGroups);
+    ?>
+        <li data-group-code="<?= e($category) ?>" <?= $collapsed ? 'data-status="collapsed"' : null ?>>
+            <div class="group">
+                <h3><?= e(trans($category)) ?></h3>
+            </div>
+
+            <ul>
+                <?php foreach ($items as $item): ?>
+                    <li class="<?= strtolower($item->owner) == $context->owner && strtolower($item->code) == $context->itemCode ? 'active' : false ?>" data-keywords="<?= e(trans($item->keywords)) ?>">
+                        <a href="<?= $item->url ?>">
+                            <i class="<?= $item->icon ?>"></i>
+                            <span class="header"><?= e(trans($item->label)) ?></span>
+                            <?php if (!isset($preferences['sidebar_description']) || !$preferences['sidebar_description']): ?>
+                            <span class="description"><?= e(trans($item->description)) ?></span>
+                            <?php endif ?>
+                        </a>
+                    </li>
+                <?php endforeach ?>
+            </ul>
+        </li>
+    <?php endforeach ?>
+</ul>

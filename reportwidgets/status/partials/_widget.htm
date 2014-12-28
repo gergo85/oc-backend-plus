@@ -1,0 +1,38 @@
+<div class="report-widget">
+    <h3 style="margin-bottom:5px;"><?= e(trans($this->property('title'))) ?></h3>
+    <?php if (!isset($error)): ?>
+        <?php if ($this->property('webpage')): ?>
+        <div class="scoreboard-item title-value pull-left" style="margin:20px 20px 0 0;">
+            <h4><?= e(trans('indikator.backend::lang.widgets.system.webpage')) ?></h4>
+            <a href="<?= Backend::url('system/settings/update/october/cms/maintenance_settings') ?>" style="text-decoration:none;">
+            <?php if ($inMaintenance): ?>
+            <p class="system-offline"><?= e(trans('backend::lang.dashboard.status.maintenance')) ?></p>
+            <?php else: ?>
+            <p class="system-online"><?= e(trans('backend::lang.dashboard.status.online')) ?></p>
+            <?php endif ?>
+            </a>
+        </div>
+        <?php endif ?>
+        <?php if ($this->property('updates')): ?>
+        <div class="scoreboard-item title-value pull-left" style="margin:20px 20px 0 0;">
+            <h4><?= e(trans('indikator.backend::lang.widgets.system.updates')) ?></h4>
+            <p class="text-center"><a href="<?= Backend::url('system/updates') ?>" style="text-decoration:none;"><?= $updates ?></a></p>
+        </div>
+        <?php endif ?>
+        <?php if ($this->property('plugins')): ?>
+        <div class="scoreboard-item title-value pull-left" style="margin:20px 20px 0 0;">
+            <h4><?= e(trans('indikator.backend::lang.widgets.system.plugins')) ?></h4>
+            <p class="text-center"><a href="<?= Backend::url('system/updates') ?>" style="text-decoration:none;"><?= $plugins ?></a></p>
+        </div>
+        <?php endif ?>
+        <?php if ($this->property('themes')): ?>
+        <div class="scoreboard-item title-value pull-left" style="margin:20px 0 0 0;">
+            <h4><?= e(trans('indikator.backend::lang.widgets.system.themes')) ?></h4>
+            <p class="text-center"><a href="<?= Backend::url('cms/themes') ?>" style="text-decoration:none;"><?= $themes ?></a></p>
+        </div>
+        <?php endif ?>
+        <div style="clear:both;"></div>
+    <?php else: ?>
+     <p class="flash-message static warning"><?= e($error) ?></p>
+    <?php endif ?>
+</div>

@@ -1,0 +1,35 @@
+<?php
+    use Backend\Models\UserPreferences;
+    $preferences = UserPreferences::forUser()->get('backend::backend.preferences');
+?>
+   <div class="layout-cell sidenav-tree" data-control="sidenav-tree" data-search-input="#settings-search-input">
+    <a class="back-link" href="<?= Backend::url('system/settings') ?>"><i class="icon-angle-left"></i><?= e(trans('system::lang.settings.menu_label')) ?></a>
+    <div class="layout">
+        <div class="layout-row min-size">
+            <?= $this->makePartial('@/modules/system/partials/_settings_menu_toolbar.htm') ?>
+        </div>
+
+        <div class="layout-row">
+            <div class="layout-cell">
+                <div class="layout-relative">
+
+                    <div class="layout-absolute">
+                        <div class="control-scrollbar" data-control="scrollbar">
+                            <?= $this->makePartial('@/plugins/indikator/backend/partials/_settings_menu.htm') ?>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<?php if (isset($preferences['focus_searchfield']) && $preferences['focus_searchfield']): ?>
+<script type="text/javascript">
+$(document).ready(function() {
+    var searchfield = $('input[name="listToolbarSearch[term]"]');
+    if (searchfield.length == 1) {searchfield.focus()}
+});
+</script>
+<?php endif ?>

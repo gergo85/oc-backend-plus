@@ -1,0 +1,22 @@
+<div class="report-widget">
+    <h3 style="margin-bottom:5px;"><?= e(trans($this->property('title'))) ?></h3>
+    <?php if ($this->property('users')): ?>
+    <div class="scoreboard-item title-value pull-left" style="margin:20px 20px 0 0;">
+        <h4><?= e(trans('indikator.backend::lang.widgets.admins.users')) ?></h4>
+        <p class="text-center"><a href="<?= Backend::url('backend/users') ?>" style="text-decoration:none;"><?= $users ?></a></p>
+    </div>
+    <?php endif ?>
+    <?php if ($this->property('groups')): ?>
+    <div class="scoreboard-item title-value pull-left" style="margin:20px 20px 0 0;">
+        <h4><?= e(trans('indikator.backend::lang.widgets.admins.groups')) ?></h4>
+        <p class="text-center"><a href="<?= Backend::url('backend/usergroups') ?>" style="text-decoration:none;"><?= $groups ?></a></p>
+    </div>
+    <?php endif ?>
+    <?php if ($this->property('login')): ?>
+    <div class="scoreboard-item title-value pull-left" style="margin:20px 0 0 0;">
+        <h4><?= e(trans('indikator.backend::lang.widgets.admins.login')) ?></h4>
+        <p class="text-center"><a href="<?= Backend::url('backend/users/update/'.$userid) ?>" style="text-decoration:none;"><?= $login ?></a></p>
+    </div>
+    <?php endif ?>
+    <div style="clear:both;"></div>
+</div>

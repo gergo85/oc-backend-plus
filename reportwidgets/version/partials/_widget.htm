@@ -1,0 +1,22 @@
+<div class="report-widget">
+    <h3 style="margin-bottom:5px;"><?= e(trans($this->property('title'))) ?></h3>
+    <?php if ($this->property('cms')): ?>
+    <div class="scoreboard-item title-value pull-left" style="margin:20px 20px 0 0;">
+        <h4><?= e(trans('indikator.backend::lang.widgets.version.cms')) ?></h4>
+        <p class="text-center"><a href="<?= Backend::url('system/updates') ?>" style="text-decoration:none;"><?= $cms ?></a></p>
+    </div>
+    <?php endif ?>
+    <?php if ($this->property('php')): ?>
+    <div class="scoreboard-item title-value pull-left" style="margin:20px 20px 0 0;">
+        <h4><?= e(trans('indikator.backend::lang.widgets.version.php')) ?></h4>
+        <p class="text-center"><?= $php ?></p>
+    </div>
+    <?php endif ?>
+    <?php if ($this->property('gd')): ?>
+    <div class="scoreboard-item title-value pull-left" style="margin:20px 0 0 0;">
+        <h4><?= e(trans('indikator.backend::lang.widgets.version.gd')) ?></h4>
+        <p class="text-center"><?= $gd ?></p>
+    </div>
+    <?php endif ?>
+    <div style="clear:both;"></div>
+</div>

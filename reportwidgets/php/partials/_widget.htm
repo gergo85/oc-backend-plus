@@ -1,0 +1,22 @@
+<div class="report-widget">
+    <h3 style="margin-bottom:5px;"><?= e(trans($this->property('title'))) ?></h3>
+    <?php if ($this->property('upload_limit')): ?>
+    <div class="scoreboard-item title-value pull-left" style="margin:20px 20px 0 0;">
+        <h4><?= e(trans('indikator.backend::lang.widgets.php.upload_limit')) ?></h4>
+        <p class="text-center"><?= $upload_limit ?></p>
+    </div>
+    <?php endif ?>
+    <?php if ($this->property('memory_limit')): ?>
+    <div class="scoreboard-item title-value pull-left" style="margin:20px 20px 0 0;">
+        <h4><?= e(trans('indikator.backend::lang.widgets.php.memory_limit')) ?></h4>
+        <p class="text-center"><?= $memory_limit ?></p>
+    </div>
+    <?php endif ?>
+    <?php if ($this->property('timezone')): ?>
+    <div class="scoreboard-item title-value pull-left" style="margin:20px 0 0 0;">
+        <h4><?= e(trans('indikator.backend::lang.widgets.php.timezone')) ?></h4>
+        <p class="text-center"><?= $timezone ?></p>
+    </div>
+    <?php endif ?>
+    <div style="clear:both;"></div>
+</div>
