@@ -1,9 +1,8 @@
 <?php namespace Indikator\Backend\ReportWidgets;
 
-use System\Models\Parameters;
+use Backend\Classes\ReportWidgetBase;
 use System\Classes\UpdateManager;
 use Cms\Models\MaintenanceSettings;
-use Backend\Classes\ReportWidgetBase;
 use Exception;
 use DB as Db;
 
@@ -57,10 +56,10 @@ class Status extends ReportWidgetBase
     protected function loadData()
     {
         $manager = UpdateManager::instance();
+        $result = $manager->requestUpdateList();
 
         $this->vars['inMaintenance'] = MaintenanceSettings::get('is_enabled');
-        $this->vars['showUpdates'] = $this->controller->user->hasAccess('system.manage_updates');
-        $this->vars['updates'] = $manager->check();
+        $this->vars['updates'] = $result['update'];
         $this->vars['plugins'] = Db::table('system_plugin_versions')->count();
 
         $themes = 0;
