@@ -1,10 +1,10 @@
 <?php namespace Indikator\Backend\ReportWidgets;
 
 use Backend\Classes\ReportWidgetBase;
+use Exception;
+use DB;
 use System\Classes\UpdateManager;
 use Cms\Models\MaintenanceSettings;
-use Exception;
-use DB as Db;
 
 class Status extends ReportWidgetBase
 {
@@ -60,7 +60,7 @@ class Status extends ReportWidgetBase
 
         $this->vars['inMaintenance'] = MaintenanceSettings::get('is_enabled');
         $this->vars['updates'] = $result['update'];
-        $this->vars['plugins'] = Db::table('system_plugin_versions')->count();
+        $this->vars['plugins'] = DB::table('system_plugin_versions')->count();
 
         $themes = 0;
         if ($handle = opendir('themes'))

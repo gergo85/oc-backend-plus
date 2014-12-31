@@ -37,6 +37,9 @@ return [
             'groups' => 'Groups',
             'login' => 'Last login'
         ],
+        'logins' => [
+            'label' => 'Last logins'
+        ],
         'server' => [
             'label' => 'Server info',
             'host' => 'Host',
@@ -64,6 +67,7 @@ return [
         'users' => 'Show users',
         'groups' => 'Show groups',
         'login' => 'Show last login',
+        'logins' => 'Show the number of logins',
         'url' => 'Shor URL address',
         'ip' => 'Show IP address',
         'os' => 'Show operation system',

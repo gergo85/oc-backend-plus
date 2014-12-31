@@ -36,6 +36,10 @@ class Plugin extends PluginBase
                 'label'   => 'indikator.backend::lang.widgets.admins.label',
                 'context' => 'dashboard'
             ],
+            'Indikator\Backend\ReportWidgets\Logins' => [
+                'label'   => 'indikator.backend::lang.widgets.logins.label',
+                'context' => 'dashboard'
+            ],
             'Indikator\Backend\ReportWidgets\Server' => [
                 'label'   => 'indikator.backend::lang.widgets.server.label',
                 'context' => 'dashboard'

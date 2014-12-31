@@ -2,7 +2,7 @@
 
 use Backend\Classes\ReportWidgetBase;
 use Exception;
-use DB as Db;
+use DB;
 
 class Admins extends ReportWidgetBase
 {
@@ -48,10 +48,10 @@ class Admins extends ReportWidgetBase
 
     protected function loadData()
     {
-        $this->vars['users'] = Db::table('backend_users')->count();
-        $this->vars['groups'] = Db::table('backend_user_groups')->count();
+        $this->vars['users'] = DB::table('backend_users')->count();
+        $this->vars['groups'] = DB::table('backend_user_groups')->count();
 
-        if (Db::table('backend_users')->where('last_login', '!=', 'NULL')->count() == 1) {
+        if (DB::table('backend_users')->where('last_login', '!=', 'NULL')->count() == 1) {
             $this->vars['login'] = DB::table('backend_users')->where('id', 1)->pluck('login');
             $this->vars['userid'] = DB::table('backend_users')->where('id', 1)->pluck('id');
         }

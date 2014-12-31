@@ -7,6 +7,7 @@ This plugin extend the backend to some new features and widgets.
 * Versions (cms, php and gd library)
 * Logs (event, access and request)
 * Administrators (users, groups and last login)
+* Last logins (date, user name and ip address)
 * Server info (host, ip address and operation system)
 * PHP settings (upload limit, memory limit and timezone)
 

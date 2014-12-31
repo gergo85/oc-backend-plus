@@ -4,7 +4,7 @@ use Backend\Classes\ReportWidgetBase;
 use Exception;
 use DB;
 
-class Logs extends ReportWidgetBase
+class Logins extends ReportWidgetBase
 {
     public function render()
     {
@@ -23,23 +23,19 @@ class Logs extends ReportWidgetBase
         return [
             'title' => [
                 'title'             => 'backend::lang.dashboard.widget_title_label',
-                'default'           => 'indikator.backend::lang.widgets.logs.label',
+                'default'           => 'indikator.backend::lang.widgets.logins.label',
                 'type'              => 'string',
                 'validationPattern' => '^.+$',
                 'validationMessage' => 'backend::lang.dashboard.widget_title_error',
             ],
-            'access' => [
-                'title'             => 'indikator.backend::lang.properties.access',
-                'default'           => true,
-                'type'              => 'checkbox'
+            'logins' => [
+                'title'             => 'indikator.backend::lang.properties.logins',
+                'default'           => 5,
+                'type'              => 'dropdown',
+                'options'           => [1 => 1, 2 => 2, 3 => 3, 4 => 4, 5 => 5, 6 => 6, 7 => 7, 8 => 8, 9 => 9, 10 => 10]
             ],
-            'event' => [
-                'title'             => 'indikator.backend::lang.properties.event',
-                'default'           => true,
-                'type'              => 'checkbox'
-            ],
-            'request' => [
-                'title'             => 'indikator.backend::lang.properties.request',
+            'ip' => [
+                'title'             => 'indikator.backend::lang.properties.ip',
                 'default'           => true,
                 'type'              => 'checkbox'
             ]
@@ -48,8 +44,6 @@ class Logs extends ReportWidgetBase
 
     protected function loadData()
     {
-        $this->vars['access'] = DB::table('backend_access_log')->count();
-        $this->vars['event'] = DB::table('system_event_logs')->count();
-        $this->vars['request'] = DB::table('system_request_logs')->count();
+        $this->vars['users'] = DB::table('backend_access_log')->select('user_id', 'ip_address', 'created_at')->orderBy('created_at', 'desc')->take(10)->get();
     }
 }

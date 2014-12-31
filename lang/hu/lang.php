@@ -37,6 +37,9 @@ return [
             'groups' => 'Csoportok',
             'login' => 'Utoljára belépve'
         ],
+        'logins' => [
+            'label' => 'Legutóbb beléptek'
+        ],
         'server' => [
             'label' => 'Szerver infók',
             'host' => 'Hoszt',
@@ -64,6 +67,7 @@ return [
         'users' => 'Felhasználók mutatása',
         'groups' => 'Csoportok mutatása',
         'login' => 'Utolsó belépő mutatása',
+        'logins' => 'Belépők számának mutatása',
         'url' => 'URL cím mutatása',
         'ip' => 'IP cím mutatása',
         'os' => 'Operációs rendszer mutatása',
