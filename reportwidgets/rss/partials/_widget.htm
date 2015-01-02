@@ -1,0 +1,36 @@
+<div class="report-widget">
+    <h3 style="margin-bottom:5px;"><?= e(trans($this->property('title'))) ?></h3>
+    <?php
+    $feed = array();
+    $rss = new DOMDocument();
+    $rss -> load($this->property('rss'));
+
+    foreach ($rss -> getElementsByTagName('item') as $content) {
+        $item = array(
+            'title' => $content -> getElementsByTagName('title') -> item(0) -> nodeValue,
+            'description' => $content -> getElementsByTagName('description') -> item(0) -> nodeValue,
+            'link' => $content -> getElementsByTagName('link') -> item(0) -> nodeValue,
+            'date' => $content -> getElementsByTagName('pubDate') -> item(0) -> nodeValue
+        );
+        array_push($feed, $item);
+    }
+
+    $count = count($feed);
+    if ($count < $this->property('news')) $count = $count;
+    else $count = $this->property('news');
+
+    for ($i = 0; $i < $count; $i++):
+    ?>
+    <div style="margin-top:20px;">
+        <p>
+            <a href="<?= $feed[$i]['link'] ?>" style="text-decoration:none;"><?= $feed[$i]['title'] ?></a>
+            <?php if ($this->property('date')): ?>
+            <br><em><?= $feed[$i]['date'] ?></em>
+            <?php endif ?>
+        </p>
+        <?php if ($this->property('description')): ?>
+        <p><?= $feed[$i]['description'] ?></p>
+        <?php endif ?>
+    </div>
+    <?php endfor ?>
+</div>

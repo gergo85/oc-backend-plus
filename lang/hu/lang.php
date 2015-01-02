@@ -51,6 +51,9 @@ return [
             'upload_limit' => 'Feltöltési limit',
             'memory_limit' => 'Memória limit',
             'timezone' => 'Időzóna'
+        ],
+        'rss' => [
+            'label' => 'RSS megjelenítő'
         ]
     ],
     'properties' => [
@@ -73,6 +76,11 @@ return [
         'os' => 'Operációs rendszer mutatása',
         'upload_limit' => 'Feltöltési limit mutatása',
         'memory_limit' => 'Memória limit mutatása',
-        'timezone' => 'Időzóna mutatása'
+        'timezone' => 'Időzóna mutatása',,
+        'rss_title' => 'RSS url címe',
+        'rss_url' => 'http://hvg.hu/rss',
+        'news' => 'Hírek száma',,
+        'date' => 'Dátum mutatása',
+        'description' => 'Leírás mutatása'
     ]
 ];

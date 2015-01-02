@@ -51,6 +51,9 @@ return [
             'upload_limit' => 'Upload limit',
             'memory_limit' => 'Memory limit',
             'timezone' => 'Timezone'
+        ],
+        'rss' => [
+            'label' => 'RSS view'
         ]
     ],
     'properties' => [
@@ -73,6 +76,11 @@ return [
         'os' => 'Show operation system',
         'upload_limit' => 'Show upload limit',
         'memory_limit' => 'Show memory limit',
-        'timezone' => 'Show timezone'
+        'timezone' => 'Show timezone',
+        'rss_title' => 'RSS url',
+        'rss_url' => 'http://feeds.bbci.co.uk/news/rss.xml',
+        'news' => 'Number of news',
+        'date' => 'Show date',
+        'description' => 'Show description'
     ]
 ];
