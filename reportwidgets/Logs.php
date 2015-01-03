@@ -42,6 +42,11 @@ class Logs extends ReportWidgetBase
                 'title'             => 'indikator.backend::lang.properties.request',
                 'default'           => true,
                 'type'              => 'checkbox'
+            ],
+            'total' => [
+                'title'             => 'indikator.backend::lang.properties.total',
+                'default'           => true,
+                'type'              => 'checkbox'
             ]
         ];
     }

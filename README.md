@@ -9,7 +9,7 @@ This plugin extend the backend to some new features and widgets.
 * Last logins (date, user name and ip address)
 * Server info (host, ip address and operation system)
 * PHP settings (upload limit, memory limit and timezone)
-* RSS view (title, date and description)
+* RSS viewer (title, date and description)
 
 ###New features
 * Hide or show descriptions in slidebar.

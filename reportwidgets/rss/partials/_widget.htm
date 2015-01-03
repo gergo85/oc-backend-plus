@@ -3,23 +3,24 @@
     <?php
     $feed = array();
     $rss = new DOMDocument();
-    $rss -> load($this->property('rss'));
 
-    foreach ($rss -> getElementsByTagName('item') as $content) {
-        $item = array(
-            'title' => $content -> getElementsByTagName('title') -> item(0) -> nodeValue,
-            'description' => $content -> getElementsByTagName('description') -> item(0) -> nodeValue,
-            'link' => $content -> getElementsByTagName('link') -> item(0) -> nodeValue,
-            'date' => $content -> getElementsByTagName('pubDate') -> item(0) -> nodeValue
-        );
-        array_push($feed, $item);
-    }
+    if (@$rss -> load($this->property('rss'))):
+        foreach ($rss -> getElementsByTagName('item') as $content)
+        {
+            $item = array(
+                'title' => $content -> getElementsByTagName('title') -> item(0) -> nodeValue,
+                'description' => $content -> getElementsByTagName('description') -> item(0) -> nodeValue,
+                'link' => $content -> getElementsByTagName('link') -> item(0) -> nodeValue,
+                'date' => $content -> getElementsByTagName('pubDate') -> item(0) -> nodeValue
+            );
+            array_push($feed, $item);
+        }
 
-    $count = count($feed);
-    if ($count < $this->property('news')) $count = $count;
-    else $count = $this->property('news');
+        $count = count($feed);
+        if ($count < $this->property('news')) $count = $count;
+        else $count = $this->property('news');
 
-    for ($i = 0; $i < $count; $i++):
+        for ($i = 0; $i < $count; $i++):
     ?>
     <div style="margin-top:20px;">
         <p>
@@ -32,5 +33,12 @@
         <p><?= $feed[$i]['description'] ?></p>
         <?php endif ?>
     </div>
-    <?php endfor ?>
+    <?php
+        endfor;
+    else:
+    ?>
+    <div style="margin-top:20px;">
+        <p><?= e(trans('indikator.backend::lang.widgets.rss.error')) ?> <a href="javascript:location.reload();" style="text-decoration:none;"><?= e(trans('indikator.backend::lang.widgets.rss.refresh')) ?></a>.</p>
+    </div>
+    <?php endif ?>
 </div>

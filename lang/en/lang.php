@@ -29,7 +29,8 @@ return [
             'label' => 'Logs',
             'access' => 'Access',
             'event' => 'Event',
-            'request' => 'Request'
+            'request' => 'Request',
+            'total' => 'Total'
         ],
         'admins' => [
             'label' => 'Administrators',
@@ -53,7 +54,9 @@ return [
             'timezone' => 'Timezone'
         ],
         'rss' => [
-            'label' => 'RSS view'
+            'label' => 'RSS viewer',
+            'error' => 'The URL address is incorrect or',
+            'refresh' => 'refresh page'
         ]
     ],
     'properties' => [
@@ -67,6 +70,7 @@ return [
         'access' => 'Show access',
         'event' => 'Show event',
         'request' => 'Show request',
+        'total' => 'Show total',
         'users' => 'Show users',
         'groups' => 'Show groups',
         'login' => 'Show last login',

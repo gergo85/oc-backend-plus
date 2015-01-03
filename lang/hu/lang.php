@@ -29,7 +29,8 @@ return [
             'label' => 'Naplók',
             'access' => 'Hozzáférés',
             'event' => 'Esemény',
-            'request' => 'Kérelem'
+            'request' => 'Kérelem',
+            'total' => 'Összes'
         ],
         'admins' => [
             'label' => 'Adminisztrátorok',
@@ -53,7 +54,9 @@ return [
             'timezone' => 'Időzóna'
         ],
         'rss' => [
-            'label' => 'RSS megjelenítő'
+            'label' => 'RSS megjelenítő',
+            'error' => 'Az URL cím nem megfelelő vagy',
+            'refresh' => 'frissítse az oldalt'
         ]
     ],
     'properties' => [
@@ -66,7 +69,8 @@ return [
         'gd' => 'GD verzió mutatása',
         'access' => 'Hozzáférés mutatása',
         'event' => 'Esemény mutatása',
-        'request' => 'Kérelem mutatása',
+        'request' => 'Kérelem mutatása',,
+        'total' => 'Összes mutatása',
         'users' => 'Felhasználók mutatása',
         'groups' => 'Csoportok mutatása',
         'login' => 'Utolsó belépő mutatása',
@@ -76,10 +80,10 @@ return [
         'os' => 'Operációs rendszer mutatása',
         'upload_limit' => 'Feltöltési limit mutatása',
         'memory_limit' => 'Memória limit mutatása',
-        'timezone' => 'Időzóna mutatása',,
+        'timezone' => 'Időzóna mutatása',
         'rss_title' => 'RSS url címe',
         'rss_url' => 'http://hvg.hu/rss',
-        'news' => 'Hírek száma',,
+        'news' => 'Hírek száma',
         'date' => 'Dátum mutatása',
         'description' => 'Leírás mutatása'
     ]
