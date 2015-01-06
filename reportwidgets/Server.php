@@ -25,7 +25,7 @@ class Server extends ReportWidgetBase
                 'default'           => 'indikator.backend::lang.widgets.server.label',
                 'type'              => 'string',
                 'validationPattern' => '^.+$',
-                'validationMessage' => 'backend::lang.dashboard.widget_title_error',
+                'validationMessage' => 'backend::lang.dashboard.widget_title_error'
             ],
             'host' => [
                 'title'             => 'indikator.backend::lang.properties.url',

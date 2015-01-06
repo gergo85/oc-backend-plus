@@ -26,7 +26,7 @@ class Version extends ReportWidgetBase
                 'default'           => 'indikator.backend::lang.widgets.version.label',
                 'type'              => 'string',
                 'validationPattern' => '^.+$',
-                'validationMessage' => 'backend::lang.dashboard.widget_title_error',
+                'validationMessage' => 'backend::lang.dashboard.widget_title_error'
             ],
             'cms' => [
                 'title'             => 'indikator.backend::lang.properties.cms',

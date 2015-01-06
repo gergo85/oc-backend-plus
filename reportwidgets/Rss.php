@@ -17,7 +17,7 @@ class Rss extends ReportWidgetBase
                 'default'           => 'indikator.backend::lang.widgets.rss.label',
                 'type'              => 'string',
                 'validationPattern' => '^.+$',
-                'validationMessage' => 'backend::lang.dashboard.widget_title_error',
+                'validationMessage' => 'backend::lang.dashboard.widget_title_error'
             ],
             'rss' => [
                 'title'             => 'indikator.backend::lang.properties.rss_title',

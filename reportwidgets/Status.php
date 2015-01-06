@@ -28,7 +28,7 @@ class Status extends ReportWidgetBase
                 'default'           => 'indikator.backend::lang.widgets.system.label',
                 'type'              => 'string',
                 'validationPattern' => '^.+$',
-                'validationMessage' => 'backend::lang.dashboard.widget_title_error',
+                'validationMessage' => 'backend::lang.dashboard.widget_title_error'
             ],
             'webpage' => [
                 'title'             => 'indikator.backend::lang.properties.webpage',

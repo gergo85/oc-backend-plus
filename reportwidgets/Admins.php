@@ -26,7 +26,7 @@ class Admins extends ReportWidgetBase
                 'default'           => 'indikator.backend::lang.widgets.admins.label',
                 'type'              => 'string',
                 'validationPattern' => '^.+$',
-                'validationMessage' => 'backend::lang.dashboard.widget_title_error',
+                'validationMessage' => 'backend::lang.dashboard.widget_title_error'
             ],
             'users' => [
                 'title'             => 'indikator.backend::lang.properties.users',

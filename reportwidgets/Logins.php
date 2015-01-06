@@ -26,7 +26,7 @@ class Logins extends ReportWidgetBase
                 'default'           => 'indikator.backend::lang.widgets.logins.label',
                 'type'              => 'string',
                 'validationPattern' => '^.+$',
-                'validationMessage' => 'backend::lang.dashboard.widget_title_error',
+                'validationMessage' => 'backend::lang.dashboard.widget_title_error'
             ],
             'logins' => [
                 'title'             => 'indikator.backend::lang.properties.logins',

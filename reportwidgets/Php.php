@@ -25,7 +25,7 @@ class Php extends ReportWidgetBase
                 'default'           => 'indikator.backend::lang.widgets.php.label',
                 'type'              => 'string',
                 'validationPattern' => '^.+$',
-                'validationMessage' => 'backend::lang.dashboard.widget_title_error',
+                'validationMessage' => 'backend::lang.dashboard.widget_title_error'
             ],
             'upload_limit' => [
                 'title'             => 'indikator.backend::lang.properties.upload_limit',

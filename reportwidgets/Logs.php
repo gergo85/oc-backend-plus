@@ -26,7 +26,7 @@ class Logs extends ReportWidgetBase
                 'default'           => 'indikator.backend::lang.widgets.logs.label',
                 'type'              => 'string',
                 'validationPattern' => '^.+$',
-                'validationMessage' => 'backend::lang.dashboard.widget_title_error',
+                'validationMessage' => 'backend::lang.dashboard.widget_title_error'
             ],
             'access' => [
                 'title'             => 'indikator.backend::lang.properties.access',
