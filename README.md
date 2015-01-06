@@ -10,6 +10,7 @@ This plugin extend the backend to some new features and widgets.
 * Server info (host, ip address and operation system)
 * PHP settings (upload limit, memory limit and timezone)
 * RSS viewer (title, date and description)
+* Random images (powered by lorempixel.com)
 
 ###New features
 * Hide or show descriptions in slidebar.
@@ -26,3 +27,8 @@ This plugin extend the backend to some new features and widgets.
 1. Go to the __Dashboard__ page in Backend.
 1. Click on the __Add widget__ button.
 1. Select the current widget from the list.
+
+###Roadmap
+* Switching between rounded and cube profile image.
+* Applying the new features to the whole backend.
+* Improving the Random images widget with slideshow.

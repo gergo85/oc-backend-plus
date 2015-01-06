@@ -51,6 +51,10 @@ class Plugin extends PluginBase
             'Indikator\Backend\ReportWidgets\Rss' => [
                 'label'   => 'indikator.backend::lang.widgets.rss.label',
                 'context' => 'dashboard'
+            ],
+            'Indikator\Backend\ReportWidgets\Images' => [
+                'label'   => 'indikator.backend::lang.widgets.images.label',
+                'context' => 'dashboard'
             ]
         ];
     }

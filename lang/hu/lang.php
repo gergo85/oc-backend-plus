@@ -57,6 +57,10 @@ return [
             'label' => 'RSS megjelenítő',
             'error' => 'Az URL cím nem megfelelő vagy',
             'refresh' => 'frissítse az oldalt'
+        ],
+        'images' => [
+            'label' => 'Véletlenszerű képek',
+            'error' => 'A mező csak számokat tartalmazhat.'
         ]
     ],
     'properties' => [
@@ -69,7 +73,7 @@ return [
         'gd' => 'GD verzió mutatása',
         'access' => 'Hozzáférés mutatása',
         'event' => 'Esemény mutatása',
-        'request' => 'Kérelem mutatása',,
+        'request' => 'Kérelem mutatása',
         'total' => 'Összes mutatása',
         'users' => 'Felhasználók mutatása',
         'groups' => 'Csoportok mutatása',
@@ -85,6 +89,25 @@ return [
         'rss_url' => 'http://hvg.hu/rss',
         'news' => 'Hírek száma',
         'date' => 'Dátum mutatása',
-        'description' => 'Leírás mutatása'
+        'description' => 'Leírás mutatása',
+        'category' => 'Kategória',
+        'width' => 'Szélesség',
+        'height' => 'Magasság'
+    ],
+    'category' => [
+        'all' => 'Mind',
+        'abstract' => 'Absztrakt',
+        'animals' => 'Állatok',
+        'business' => 'Üzlet',
+        'cats' => 'Macskák',
+        'city' => 'Város',
+        'food' => 'Ételek',
+        'nightlife' => 'Éjszakai élet',
+        'fashion' => 'Divat',
+        'people' => 'Emberek',
+        'nature' => 'Természet',
+        'sports' => 'Sport',
+        'technics' => 'Technika',
+        'transport' => 'Utazás'
     ]
 ];

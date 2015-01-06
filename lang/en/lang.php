@@ -57,6 +57,10 @@ return [
             'label' => 'RSS viewer',
             'error' => 'The URL address is incorrect or',
             'refresh' => 'refresh page'
+        ],
+        'images' => [
+            'label' => 'Random images',
+            'error' => 'The field can only contain numbers.'
         ]
     ],
     'properties' => [
@@ -85,6 +89,25 @@ return [
         'rss_url' => 'http://feeds.bbci.co.uk/news/rss.xml',
         'news' => 'Number of news',
         'date' => 'Show date',
-        'description' => 'Show description'
+        'description' => 'Show description',
+        'category' => 'Category',
+        'width' => 'Width',
+        'height' => 'Height'
+    ],
+    'category' => [
+        'all' => 'All',
+        'abstract' => 'Abstract',
+        'animals' => 'Animals',
+        'business' => 'Business',
+        'cats' => 'Cats',
+        'city' => 'City',
+        'food' => 'Food',
+        'nightlife' => 'Nightlife',
+        'fashion' => 'Fashion',
+        'people' => 'People',
+        'nature' => 'Nature',
+        'sports' => 'Sports',
+        'technics' => 'Technics',
+        'transport' => 'Transport'
     ]
 ];
