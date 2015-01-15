@@ -72,11 +72,16 @@ class Plugin extends PluginBase
                         'span'    => 'left',
                         'default' => 'false',
                         'comment' => 'indikator.backend::lang.settings.comment'
-                    ]
-                ]);
-                $form->addFields([
+                    ],
                     'focus_searchfield' => [
                         'label'   => 'indikator.backend::lang.settings.focus_searchfield',
+                        'type'    => 'switch',
+                        'span'    => 'left',
+                        'default' => 'false',
+                        'comment' => 'indikator.backend::lang.settings.comment'
+                    ],
+                    'virtual_keyboard' => [
+                        'label'   => 'indikator.backend::lang.settings.virtual_keyboard',
                         'type'    => 'switch',
                         'span'    => 'left',
                         'default' => 'false',

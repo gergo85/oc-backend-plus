@@ -10,11 +10,12 @@ This plugin extend the backend to some new features and widgets.
 * Server info (host, ip address and operation system)
 * PHP settings (upload limit, memory limit and timezone)
 * RSS viewer (title, date and description)
-* Random images (powered by lorempixel.com)
+* Random images (hundreds of high-quality image)
 
 ###New features
 * Hide or show descriptions in slidebar.
 * Focus search field automatically.
+* Show virtual keyboard by input fields.
 
 (They only work on Settings pages.)
 
@@ -32,3 +33,8 @@ This plugin extend the backend to some new features and widgets.
 * Switching between rounded and cube profile image.
 * Applying the new features to the whole backend.
 * Improving the Random images widget with slideshow.
+
+###Credits
+* Random images: [lorempixel](http://lorempixel.com)
+* Virtual keyboard: [MLKeyboard](https://github.com/mBut/jquery.mlkeyboard)
+* Plugin icon: [Web App icons](http://icons8.com/web-app/new-icons/all)

@@ -9,6 +9,7 @@ return [
     'settings' => [
         'sidebar_description' => 'Leírások rejtése az oldalsó menüben.',
         'focus_searchfield' => 'Kereső mező automatikus aktiválása.',
+        'virtual_keyboard' => 'Virtuális billentyűzet aktiválása.',
         'comment' => 'Csak a Beállítások aloldalain működik.'
     ],
     'widgets' => [

@@ -9,6 +9,7 @@ return [
     'settings' => [
         'sidebar_description' => 'Hide descriptions in slidebar.',
         'focus_searchfield' => 'Focus search field automatically.',
+        'virtual_keyboard' => 'Activate the virtual keyboard.',
         'comment' => 'It only works on Settings pages.'
     ],
     'widgets' => [
