@@ -1,5 +1,5 @@
 ##Backend Plus plugin for October CMS
-This plugin extend the backend to some new features and widgets.
+This plugin extend the backend to some new widgets, features and components.
 
 ###New Widgets
 * System status plus (updates, plugins and themes)
@@ -19,6 +19,10 @@ This plugin extend the backend to some new features and widgets.
 
 (They only work on Settings pages.)
 
+###New components
+* Lorem ipsum image
+* Lorem ipsum text
+
 ###Installation
 1. Go to the __Settings -> Updates__ page in Backend.
 1. Type the __Indikator.Backend__ in search field.
@@ -32,9 +36,10 @@ This plugin extend the backend to some new features and widgets.
 ###Roadmap
 * Switching between rounded and cube profile image.
 * Applying the new features to the whole backend.
-* Improving the Random images widget with slideshow.
+* Generate random "lorem ipsum" text.
 
 ###Credits
 * Random images: [lorempixel](http://lorempixel.com)
 * Virtual keyboard: [MLKeyboard](https://github.com/mBut/jquery.mlkeyboard)
+* Image slideshow: [Cycle2](https://github.com/malsup/cycle2)
 * Plugin icon: [Web App icons](http://icons8.com/web-app/new-icons/all)

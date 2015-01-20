@@ -59,6 +59,14 @@ class Plugin extends PluginBase
         ];
     }
 
+    public function registerComponents()
+    {
+        return [
+            'Indikator\Backend\Components\Image' => 'image',
+            'Indikator\Backend\Components\Text' => 'text'
+        ];
+    }
+
     public function boot()
     {
         Event::listen('backend.form.extendFields', function($form)
@@ -72,14 +80,18 @@ class Plugin extends PluginBase
                         'span'    => 'left',
                         'default' => 'false',
                         'comment' => 'indikator.backend::lang.settings.comment'
-                    ],
+                    ]
+                ]);
+                $form->addFields([
                     'focus_searchfield' => [
                         'label'   => 'indikator.backend::lang.settings.focus_searchfield',
                         'type'    => 'switch',
                         'span'    => 'left',
                         'default' => 'false',
                         'comment' => 'indikator.backend::lang.settings.comment'
-                    ],
+                    ]
+                ]);
+                $form->addFields([
                     'virtual_keyboard' => [
                         'label'   => 'indikator.backend::lang.settings.virtual_keyboard',
                         'type'    => 'switch',

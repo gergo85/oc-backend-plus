@@ -1,7 +1,12 @@
 1.0.0: First version of Backend Plus.
 1.0.1: Fixed the update count issue.
-1.0.2: Add Last logins widget.
-1.0.3: Add RSS viewer widget.
+1.0.2: Added Last logins widget.
+1.0.3: Added RSS viewer widget.
 1.0.4: Minor improvements and bugfix.
-1.0.5: Add Random images widget.
-1.0.6: Add virtual keyboard option.
+1.0.5: Added Random images widget.
+1.0.6: Added virtual keyboard option.
+1.1.0:
+ Added Lorem ipsum components (image and text).
+ Improving the Random images widget with slideshow.
+ Added Turkish translation (thanks to mahony0).
+ Fixed the URL path issue by virtual keyboard.
