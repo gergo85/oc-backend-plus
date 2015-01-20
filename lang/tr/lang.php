@@ -61,7 +61,9 @@ return [
         ],
         'images' => [
             'label' => 'Rastgele Resim',
-            'error' => 'Bu alana sadece sayı girebilirsiniz.'
+            'error' => 'Bu alana sadece sayı girebilirsiniz.',
+            'simple' => 'Basit',
+            'slideshow' => 'Slayt gösterisi'
         ]
     ],
     'properties' => [
@@ -92,8 +94,11 @@ return [
         'date' => 'Tarihi göster',
         'description' => 'Tanımı göster',
         'category' => 'Kategori',
-        'width' => 'Genişlik',
-        'height' => 'Yükseklik'
+        'type' => 'Tip',
+        'number' => 'Slayt gösterisi Görüntüler',
+        'width' => 'Genişlik (piksel)',
+        'height' => 'Yükseklik (piksel)',
+        'text' => 'Metin'
     ],
     'category' => [
         'all' => 'Tümü',
@@ -110,5 +115,19 @@ return [
         'sports' => 'Spor',
         'technics' => 'Teknik',
         'transport' => 'Taşımacılık'
+    ],
+    'component' => [
+        'image' => [
+            'name' => 'Lorem ipsum görüntü',
+            'description' => ''
+        ],
+        'text' => [
+            'name' => 'Lorem ipsum metin',
+            'description' => '',
+            'length' => 'Uzunluk',
+            'bit' => 'biraz',
+            'some' => 'bazı',
+            'lots' => 'çok'
+        ]
     ]
 ];

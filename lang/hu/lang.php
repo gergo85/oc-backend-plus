@@ -9,7 +9,7 @@ return [
     'settings' => [
         'sidebar_description' => 'Leírások rejtése az oldalsó menüben.',
         'focus_searchfield' => 'Kereső mező automatikus aktiválása.',
-        'virtual_keyboard' => 'Virtuális billentyűzet aktiválása.',
+        'virtual_keyboard' => 'Virtuális billentyűzet megjelenítése.',
         'comment' => 'Csak a Beállítások aloldalain működik.'
     ],
     'widgets' => [
@@ -61,7 +61,9 @@ return [
         ],
         'images' => [
             'label' => 'Véletlenszerű képek',
-            'error' => 'A mező csak számokat tartalmazhat.'
+            'error' => 'A mező csak számokat tartalmazhat.',
+            'simple' => 'Egyszerő',
+            'slideshow' => 'Képváltós'
         ]
     ],
     'properties' => [
@@ -92,8 +94,11 @@ return [
         'date' => 'Dátum mutatása',
         'description' => 'Leírás mutatása',
         'category' => 'Kategória',
-        'width' => 'Szélesség',
-        'height' => 'Magasság'
+        'type' => 'Típus',
+        'number' => 'Képek a diavetítésben',
+        'width' => 'Szélesség (pixelben)',
+        'height' => 'Magasság (pixelben)',
+        'text' => 'Szöveg'
     ],
     'category' => [
         'all' => 'Mind',
@@ -110,5 +115,19 @@ return [
         'sports' => 'Sport',
         'technics' => 'Technika',
         'transport' => 'Utazás'
+    ],
+    'component' => [
+        'image' => [
+            'name' => 'Lorem ipsum kép',
+            'description' => ''
+        ],
+        'text' => [
+            'name' => 'Lorem ipsum szöveg',
+            'description' => '',
+            'length' => 'Hossza',
+            'bit' => 'kevés',
+            'some' => 'több',
+            'lots' => 'sok'
+        ]
     ]
 ];

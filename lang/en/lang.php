@@ -9,7 +9,7 @@ return [
     'settings' => [
         'sidebar_description' => 'Hide descriptions in slidebar.',
         'focus_searchfield' => 'Focus search field automatically.',
-        'virtual_keyboard' => 'Activate the virtual keyboard.',
+        'virtual_keyboard' => 'Show virtual keyboard.',
         'comment' => 'It only works on Settings pages.'
     ],
     'widgets' => [
@@ -61,7 +61,9 @@ return [
         ],
         'images' => [
             'label' => 'Random images',
-            'error' => 'The field can only contain numbers.'
+            'error' => 'The field can only contain numbers.',
+            'simple' => 'Simple',
+            'slideshow' => 'Slideshow'
         ]
     ],
     'properties' => [
@@ -92,8 +94,11 @@ return [
         'date' => 'Show date',
         'description' => 'Show description',
         'category' => 'Category',
-        'width' => 'Width',
-        'height' => 'Height'
+        'type' => 'Type',
+        'number' => 'Images in slideshow',
+        'width' => 'Width (in pixel)',
+        'height' => 'Height (in pixel)',
+        'text' => 'Text'
     ],
     'category' => [
         'all' => 'All',
@@ -110,5 +115,19 @@ return [
         'sports' => 'Sports',
         'technics' => 'Technics',
         'transport' => 'Transport'
+    ],
+    'component' => [
+        'image' => [
+            'name' => 'Lorem ipsum image',
+            'description' => ''
+        ],
+        'text' => [
+            'name' => 'Lorem ipsum text',
+            'description' => '',
+            'length' => 'Length',
+            'bit' => 'a bit',
+            'some' => 'some',
+            'lots' => 'lots'
+        ]
     ]
 ];
