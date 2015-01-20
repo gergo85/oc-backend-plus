@@ -28,8 +28,8 @@ $preferences = UserPreferences::forUser()->get('backend::backend.preferences');
 </div>
 
 <?php if (isset($preferences['virtual_keyboard']) && $preferences['virtual_keyboard']): ?>
-<link href="/plugins/indikator/backend/assets/css/ml-keyboard.css" rel="stylesheet">
-<script src="/plugins/indikator/backend/assets/js/ml-keyboard.js"></script>
+<link href="<?php echo URL::to('plugins/indikator/backend/assets/css/ml-keyboard.css'); ?>" rel="stylesheet">
+<script src="<?php echo URL::to('plugins/indikator/backend/assets/js/ml-keyboard.js'); ?>"></script>
 <?php endif ?>
 
 <script type="text/javascript">
