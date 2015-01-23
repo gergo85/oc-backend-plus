@@ -1,7 +1,7 @@
 ##Backend Plus plugin for October CMS
 This plugin extend the backend to some new widgets, features and components.
 
-###New Widgets
+###New widgets
 * System status plus (updates, plugins and themes)
 * Versions (cms, php and gd library)
 * Logs (event, access and request)
