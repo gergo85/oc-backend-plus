@@ -10,6 +10,8 @@ return [
         'sidebar_description' => 'Sol kısayol bloğunda açıklamaları gizle.',
         'focus_searchfield' => 'Otomatik olarak arama alanına odaklan.',
         'virtual_keyboard' => 'Sanal klavyeyi aktifleştir.',
+        'more_themes' => 'Hide the "Find more themes..." link.',
+        'themes_comment' => 'Located on Front-end theme page.',
         'comment' => 'Sadece Ayarlar sayfalarında çalışır.'
     ],
     'widgets' => [

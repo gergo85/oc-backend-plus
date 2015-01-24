@@ -41,6 +41,8 @@ $(document).ready(function() {
     }
 <?php endif; if (isset($preferences['virtual_keyboard']) && $preferences['virtual_keyboard']): ?>
     $('input[type="text"], input[type="password"]').mlKeyboard();
-<?php endif ?>
+<?php endif; if (isset($preferences['more_themes']) && $preferences['more_themes']): ?>
+    $('.links').hide();
+<?php endif; ?>
 });
 </script>

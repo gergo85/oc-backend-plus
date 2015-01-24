@@ -86,7 +86,7 @@ class Plugin extends PluginBase
                     'focus_searchfield' => [
                         'label'   => 'indikator.backend::lang.settings.focus_searchfield',
                         'type'    => 'switch',
-                        'span'    => 'left',
+                        'span'    => 'right',
                         'default' => 'false',
                         'comment' => 'indikator.backend::lang.settings.comment'
                     ]
@@ -98,6 +98,15 @@ class Plugin extends PluginBase
                         'span'    => 'left',
                         'default' => 'false',
                         'comment' => 'indikator.backend::lang.settings.comment'
+                    ]
+                ]);
+                $form->addFields([
+                    'more_themes' => [
+                        'label'   => 'indikator.backend::lang.settings.more_themes',
+                        'type'    => 'switch',
+                        'span'    => 'right',
+                        'default' => 'false',
+                        'comment' => 'indikator.backend::lang.settings.themes_comment'
                     ]
                 ]);
             }

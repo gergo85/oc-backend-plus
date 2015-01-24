@@ -7,9 +7,11 @@ return [
         'author' => 'Gergő Szabó'
     ],
     'settings' => [
-        'sidebar_description' => 'Hide descriptions in slidebar.',
-        'focus_searchfield' => 'Focus search field automatically.',
-        'virtual_keyboard' => 'Show virtual keyboard.',
+        'sidebar_description' => 'Hide the menu description in slidebar.',
+        'focus_searchfield' => 'Focus the search field automatically.',
+        'virtual_keyboard' => 'Show the virtual keyboard by input fields.',
+        'more_themes' => 'Hide the "Find more themes..." link.',
+        'themes_comment' => 'Located on Front-end theme page.',
         'comment' => 'It only works on Settings pages.'
     ],
     'widgets' => [

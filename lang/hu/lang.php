@@ -10,6 +10,8 @@ return [
         'sidebar_description' => 'Leírások rejtése az oldalsó menüben.',
         'focus_searchfield' => 'Kereső mező automatikus aktiválása.',
         'virtual_keyboard' => 'Virtuális billentyűzet megjelenítése.',
+        'more_themes' => 'A "További témák..." link elrejtése.',
+        'themes_comment' => 'A Dizájn oldalon található.',
         'comment' => 'Csak a Beállítások aloldalain működik.'
     ],
     'widgets' => [

@@ -13,9 +13,10 @@ This plugin extend the backend to some new widgets, features and components.
 * Random images (hundreds of high-quality image)
 
 ###New features
-* Hide or show descriptions in slidebar.
-* Focus search field automatically.
-* Show virtual keyboard by input fields.
+* Hide the menu description in slidebar.
+* Focus the search field automatically.
+* Show the virtual keyboard by input fields.
+* Hide the "Find more themes..." link.
 
 (They only work on Settings pages.)
 
