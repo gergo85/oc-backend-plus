@@ -7,7 +7,7 @@ return [
         'author' => 'Gergő Szabó'
     ],
     'settings' => [
-        'sidebar_description' => 'Hide the menu description in slidebar.',
+        'sidebar_description' => 'Hide the menu description in sidebar.',
         'focus_searchfield' => 'Focus the search field automatically.',
         'virtual_keyboard' => 'Show the virtual keyboard by input fields.',
         'more_themes' => 'Hide the "Find more themes..." link.',
@@ -84,7 +84,7 @@ return [
         'groups' => 'Show groups',
         'login' => 'Show last login',
         'logins' => 'Show the number of logins',
-        'url' => 'Shor URL address',
+        'url' => 'Show URL address',
         'ip' => 'Show IP address',
         'os' => 'Show operation system',
         'upload_limit' => 'Show upload limit',

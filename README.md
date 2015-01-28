@@ -13,7 +13,7 @@ This plugin extend the backend to some new widgets, features and components.
 * Random images (hundreds of high-quality image)
 
 ###New features
-* Hide the menu description in slidebar.
+* Hide the menu description in sidebar.
 * Focus the search field automatically.
 * Show the virtual keyboard by input fields.
 * Hide the "Find more themes..." link.
@@ -23,6 +23,12 @@ This plugin extend the backend to some new widgets, features and components.
 ###New components
 * Lorem ipsum image
 * Lorem ipsum text
+
+###Available languages
+* en - English
+* de - Deutsch
+* hu - Magyar
+* tr - Türkçe
 
 ###Installation
 1. Go to the __Settings -> Updates__ page in Backend.
