@@ -2,7 +2,7 @@
 
 use Backend\Classes\ReportWidgetBase;
 use Exception;
-use System\Classes\UpdateManager;
+use DB;
 
 class Version extends ReportWidgetBase
 {
@@ -48,10 +48,7 @@ class Version extends ReportWidgetBase
 
     protected function loadData()
     {
-        $manager = UpdateManager::instance();
-        $result = $manager->requestUpdateList(true);
-
-        $this->vars['cms'] = array_get($result, 'core.build', false);
+        $this->vars['cms'] = substr(DB::table('system_parameters')->where('item', 'build')->pluck('value'), 1, -1);
         $this->vars['php'] = PHP_MAJOR_VERSION.'.'.PHP_MINOR_VERSION.'.'.PHP_RELEASE_VERSION;
 
         $gd = gd_info();

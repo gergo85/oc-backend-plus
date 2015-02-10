@@ -2,9 +2,9 @@
 
 use Backend\Classes\ReportWidgetBase;
 use Exception;
-use DB;
 use System\Classes\UpdateManager;
 use Cms\Models\MaintenanceSettings;
+use DB;
 
 class Status extends ReportWidgetBase
 {
@@ -56,10 +56,10 @@ class Status extends ReportWidgetBase
     protected function loadData()
     {
         $manager = UpdateManager::instance();
-        $result = $manager->requestUpdateList();
+        $manager->requestUpdateList();
 
         $this->vars['inMaintenance'] = MaintenanceSettings::get('is_enabled');
-        $this->vars['updates'] = $result['update'];
+        $this->vars['updates'] = DB::table('system_parameters')->where('item', 'count')->pluck('value');
         $this->vars['plugins'] = DB::table('system_plugin_versions')->count();
 
         $themes = 0;
