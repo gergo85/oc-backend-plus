@@ -27,6 +27,7 @@ This plugin extend the backend to some new widgets, features and components.
 ###Available languages
 * en - English
 * de - Deutsch
+* es - Español
 * hu - Magyar
 * tr - Türkçe
 
