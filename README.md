@@ -1,4 +1,4 @@
-##Backend Plus plugin for October CMS
+##Backend Plus plugin for OctoberCMS
 This plugin extend the backend to some new widgets, features and components.
 
 ###New widgets
