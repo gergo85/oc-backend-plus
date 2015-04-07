@@ -63,7 +63,7 @@ class Plugin extends PluginBase
     {
         return [
             'Indikator\Backend\Components\Image' => 'image',
-            'Indikator\Backend\Components\Text' => 'text'
+            'Indikator\Backend\Components\Text'  => 'text'
         ];
     }
 
