@@ -33,8 +33,8 @@ This plugin extend the backend to some new widgets, features and components.
 
 ###Installation
 1. Go to the __Settings -> Updates__ page in Backend.
-1. Type the __Indikator.Backend__ in search field.
-1. Click on the __Install Plugin__ button.
+1. Click on the __Install Plugins__ button.
+1. Type the __Backend Plus__ in search field.
 
 ###Add widget
 1. Go to the __Dashboard__ page in Backend.
