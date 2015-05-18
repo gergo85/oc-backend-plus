@@ -1,24 +1,23 @@
 ##Backend Plus plugin for OctoberCMS
-This plugin extend the backend to some new widgets, features and components.
-
-###New widgets
-* System status plus (updates, plugins and themes)
-* Versions (cms, php and gd library)
-* Logs (event, access and request)
-* Administrators (users, groups and last login)
-* Last logins (date, user name and ip address)
-* Server info (host, ip address and operation system)
-* PHP settings (upload limit, memory limit and timezone)
-* RSS viewer (title, date and description)
-* Random images (hundreds of high-quality image)
+This plugin extend the backend to some new widgets, useful features and components.
 
 ###New features
+* __Focus the search field automatically.__
 * Hide the menu description in sidebar.
-* Focus the search field automatically.
+* __Rounded profile image is optional in top menu.__
 * Show the virtual keyboard by input fields.
-* Hide the "Find more themes..." link.
+* __Hide the "Find more themes" link in Design.__
 
-(They only work on Settings pages.)
+###New widgets
+* __System status plus (updates, plugins and themes)__
+* Versions (cms, php and gd library)
+* __RSS viewer (title, date and description)__
+* Logs (event, access and request)
+* __Last logins (date, user name and ip address)__
+* Administrators (users, groups and last login)
+* __PHP settings (upload limit, memory limit and timezone)__
+* Server info (host, ip address and operation system)
+* __Random images (hundreds of high-quality image)__
 
 ###New components
 * Lorem ipsum image
@@ -33,18 +32,17 @@ This plugin extend the backend to some new widgets, features and components.
 
 ###Installation
 1. Go to the __Settings -> Updates__ page in Backend.
-1. Click on the __Install Plugins__ button.
-1. Type the __Backend Plus__ in search field.
+1. Type the __Indikator.Backend__ in search field.
+1. Click on the __Install Plugin__ button.
+
+###Activate features
+1. Go to the __Settings -> Back-end preferences__ page in Backend.
+1. You can activate any new features.
 
 ###Add widget
 1. Go to the __Dashboard__ page in Backend.
 1. Click on the __Add widget__ button.
 1. Select the current widget from the list.
-
-###Plans
-* Switching between rounded and cube profile image.
-* Applying the new features to the whole backend.
-* Generate random "lorem ipsum" text.
 
 ###Credits
 * Random images: [lorempixel](http://lorempixel.com)
