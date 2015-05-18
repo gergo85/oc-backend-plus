@@ -1,9 +1,3 @@
-<?php
-
-use Backend\Models\UserPreferences;
-$preferences = UserPreferences::forUser()->get('backend::backend.preferences');
-
-?>
 <div class="layout-cell sidenav-tree" data-control="sidenav-tree" data-search-input="#settings-search-input">
     <a class="back-link" href="<?= Backend::url('system/settings') ?>"><i class="icon-angle-left"></i><?= e(trans('system::lang.settings.menu_label')) ?></a>
     <div class="layout">
@@ -26,23 +20,3 @@ $preferences = UserPreferences::forUser()->get('backend::backend.preferences');
 
     </div>
 </div>
-
-<?php if (isset($preferences['virtual_keyboard']) && $preferences['virtual_keyboard']): ?>
-<link href="<?php echo URL::to('plugins/indikator/backend/assets/css/ml-keyboard.css'); ?>" rel="stylesheet">
-<script src="<?php echo URL::to('plugins/indikator/backend/assets/js/ml-keyboard.js'); ?>"></script>
-<?php endif ?>
-
-<script type="text/javascript">
-$(document).ready(function() {
-<?php if (isset($preferences['focus_searchfield']) && $preferences['focus_searchfield']): ?>
-    var searchfield = $('input[name="listToolbarSearch[term]"]');
-    if (searchfield.length == 1) {
-        searchfield.focus();
-    }
-<?php endif; if (isset($preferences['virtual_keyboard']) && $preferences['virtual_keyboard']): ?>
-    $('input[type="text"], input[type="password"]').mlKeyboard();
-<?php endif; if (isset($preferences['more_themes']) && $preferences['more_themes']): ?>
-    $('.links').hide();
-<?php endif; ?>
-});
-</script>
