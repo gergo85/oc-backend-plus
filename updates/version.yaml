@@ -10,7 +10,9 @@
     - Improving the Random images widget with slideshow.
     - Added Turkish translation (thanks to mahony0).
     - Fixed the URL path issue by virtual keyboard.
-1.1.1: Hide the "Find more themes..." link.
-1.1.2: Added German language.
+1.1.1: Hide the "Find more themes" link.
+1.1.2: Added German translation.
 1.1.3: The widgets work on localhost too.
-1.1.4: Added Spanish language.
+1.1.4: Added Spanish translation (thanks to jh2odo).
+1.2.0: All features are working on the whole backend.
+1.2.1: Rounded profile image is optional in top menu.
