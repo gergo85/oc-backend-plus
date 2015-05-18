@@ -1,8 +1,10 @@
 <?php namespace Indikator\Backend;
 
 use System\Classes\PluginBase;
+use Backend\Classes\Controller as BackendController;
 use Event;
 use Backend;
+use Backend\Models\UserPreferences;
 use BackendMenu;
 
 class Plugin extends PluginBase
@@ -74,41 +76,65 @@ class Plugin extends PluginBase
             if ($form->model instanceof Backend\Models\BackendPreferences)
             {
                 $form->addFields([
-                    'sidebar_description' => [
-                        'label'   => 'indikator.backend::lang.settings.sidebar_description',
+                    'focus_searchfield' => [
+                        'label'   => 'indikator.backend::lang.settings.search_label',
                         'type'    => 'switch',
                         'span'    => 'left',
-                        'default' => 'false',
-                        'comment' => 'indikator.backend::lang.settings.comment'
-                    ]
-                ]);
-                $form->addFields([
-                    'focus_searchfield' => [
-                        'label'   => 'indikator.backend::lang.settings.focus_searchfield',
+                        'default' => 'false'
+                    ],
+                    'sidebar_description' => [
+                        'label'   => 'indikator.backend::lang.settings.sidebar_label',
                         'type'    => 'switch',
                         'span'    => 'right',
-                        'default' => 'false',
-                        'comment' => 'indikator.backend::lang.settings.comment'
-                    ]
-                ]);
-                $form->addFields([
-                    'virtual_keyboard' => [
-                        'label'   => 'indikator.backend::lang.settings.virtual_keyboard',
+                        'default' => 'false'
+                    ],
+                    'rounded_avatar' => [
+                        'label'   => 'indikator.backend::lang.settings.avatar_label',
                         'type'    => 'switch',
                         'span'    => 'left',
                         'default' => 'false',
-                        'comment' => 'indikator.backend::lang.settings.comment'
-                    ]
-                ]);
-                $form->addFields([
+                        'comment' => 'indikator.backend::lang.settings.avatar_comment'
+                    ],
                     'more_themes' => [
-                        'label'   => 'indikator.backend::lang.settings.more_themes',
+                        'label'   => 'indikator.backend::lang.settings.themes_label',
                         'type'    => 'switch',
                         'span'    => 'right',
                         'default' => 'false',
                         'comment' => 'indikator.backend::lang.settings.themes_comment'
+                    ],
+                    'virtual_keyboard' => [
+                        'label'   => 'indikator.backend::lang.settings.keyboard_label',
+                        'type'    => 'switch',
+                        'span'    => 'left',
+                        'default' => 'false',
+                        'comment' => 'indikator.backend::lang.settings.keyboard_comment'
                     ]
                 ]);
+            }
+        });
+
+        BackendController::extend(function($controller) {
+            $preferences = UserPreferences::forUser()->get('backend::backend.preferences');
+
+            if (isset($preferences['virtual_keyboard']) && $preferences['virtual_keyboard'])
+            {
+                $controller->addCss('/plugins/indikator/backend/assets/css/ml-keyboard.css');
+                $controller->addJs('/plugins/indikator/backend/assets/js/ml-keyboard.js');
+            }
+
+            if (isset($preferences['rounded_avatar']) && $preferences['rounded_avatar'])
+            {
+                $controller->addCss('/plugins/indikator/backend/assets/css/rounded-avatar.css');
+            }
+
+            if (isset($preferences['focus_searchfield']) && $preferences['focus_searchfield'])
+            {
+                $controller->addJs('/plugins/indikator/backend/assets/js/setting-search.js');
+            }
+
+            if (isset($preferences['more_themes']) && $preferences['more_themes'])
+            {
+                $controller->addJs('/plugins/indikator/backend/assets/js/setting-theme.js');
             }
         });
 
