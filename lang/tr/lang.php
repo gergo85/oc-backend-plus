@@ -7,12 +7,14 @@ return [
         'author' => 'Gergő Szabó'
     ],
     'settings' => [
-        'sidebar_description' => 'Sol kısayol bloğunda açıklamaları gizle.',
-        'focus_searchfield' => 'Otomatik olarak arama alanına odaklan.',
-        'virtual_keyboard' => 'Sanal klavyeyi aktifleştir.',
-        'more_themes' => 'Hide the "Find more themes..." link.',
+        'search_label' => 'Otomatik olarak arama alanına odaklan.',
+        'sidebar_label' => 'Sol kısayol bloğunda açıklamaları gizle.',
+        'avatar_label' => 'Yuvarlak profil resmi yerine küp biri.',
+        'avatar_comment' => 'Avatar sadece üst menüde değiştirir.',
+        'themes_label' => 'Hide the "Medanis Tema..." link.',
         'themes_comment' => 'Located on Front-end theme page.',
-        'comment' => 'Sadece Ayarlar sayfalarında çalışır.'
+        'keyboard_label' => 'Sanal klavyeyi aktifleştir.',
+        'keyboard_comment' => 'Sadece basit metin alanları ile çalışır.'
     ],
     'widgets' => [
         'system' => [

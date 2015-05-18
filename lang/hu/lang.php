@@ -3,16 +3,18 @@
 return [
     'plugin' => [
         'name' => 'Admin Plusz',
-        'description' => 'Új funkciók és widgetek az admin felülethez.',
+        'description' => 'Új hasznos funkciók és widgetek az admin felülethez.',
         'author' => 'Szabó Gergő'
     ],
     'settings' => [
-        'sidebar_description' => 'Leírások rejtése az oldalsó menüben.',
-        'focus_searchfield' => 'Kereső mező automatikus aktiválása.',
-        'virtual_keyboard' => 'Virtuális billentyűzet megjelenítése.',
-        'more_themes' => 'A "További témák..." link elrejtése.',
+        'search_label' => 'Kereső mező automatikus aktiválása.',
+        'sidebar_label' => 'Leírások rejtése az oldalsó menüben.',
+        'avatar_label' => 'Kerek profilkép használata a szögletes helyett.',
+        'avatar_comment' => 'Csak a felső menünél módosul.',
+        'themes_label' => 'A "További témák ..." link elrejtése.',
         'themes_comment' => 'A Dizájn oldalon található.',
-        'comment' => 'Csak a Beállítások aloldalain működik.'
+        'keyboard_label' => 'Virtuális billentyűzet megjelenítése.',
+        'keyboard_comment' => 'Csak az egyszerű szöveges mezőknél működik.'
     ],
     'widgets' => [
         'system' => [

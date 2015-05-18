@@ -3,16 +3,18 @@
 return [
     'plugin' => [
         'name' => 'Backend Plus',
-        'description' => 'New features and widgets for backend.',
+        'description' => 'New useful features and widgets for backend.',
         'author' => 'Gergő Szabó'
     ],
     'settings' => [
-        'sidebar_description' => 'Hide the menu description in sidebar.',
-        'focus_searchfield' => 'Focus the search field automatically.',
-        'virtual_keyboard' => 'Show the virtual keyboard by input fields.',
-        'more_themes' => 'Hide the "Find more themes..." link.',
+        'search_label' => 'Focus the search field automatically.',
+        'sidebar_label' => 'Hide the menu description in sidebar.',
+        'avatar_label' => 'Rounded profile image instead of cube one.',
+        'avatar_comment' => 'The avatar modifies only in top menu.',
+        'themes_label' => 'Hide the "Find more themes" link.',
         'themes_comment' => 'Located on Front-end theme page.',
-        'comment' => 'It only works on Settings pages.'
+        'keyboard_label' => 'Show the virtual keyboard by forms.',
+        'keyboard_comment' => 'It only works by simple text fields.'
     ],
     'widgets' => [
         'system' => [

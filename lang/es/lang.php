@@ -7,12 +7,14 @@ return [
         'author' => 'Gergő Szabó'
     ],
     'settings' => [
-        'sidebar_description' => 'Ocultar la descripción del menú en la barra lateral.',
-        'focus_searchfield' => 'Hacer "focus" en el campo de búsqueda automáticamente.',
-        'virtual_keyboard' => 'Mostrar el teclado virtual para introducir datos.',
-        'more_themes' => 'Esconder el "Buscar más temas..." enlace.',
-        'themes_comment' => 'Está en la página del tema Front-end.',
-        'comment' => 'Sólo funciona en las páginas de configuración.'
+        'search_label' => 'Hacer "focus" en el campo de búsqueda automáticamente.',
+        'sidebar_label' => 'Ocultar la descripción del menú en la barra lateral.',
+        'avatar_label' => 'Imagen de perfil redondeado en lugar de un solo cubo.',
+        'avatar_comment' => 'La avataro modifas nur en supera menuo.',
+        'themes_label' => 'Esconder el "Buscar nuevos temas" enlace.',
+        'themes_comment' => 'Está en la página del tema Front-end.'.
+        'keyboard_label' => 'Mostrar el teclado virtual para introducir datos.',
+        'keyboard_comment' => 'Sólo funciona con campos de texto simples.'
     ],
     'widgets' => [
         'system' => [
