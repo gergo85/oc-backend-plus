@@ -114,7 +114,8 @@ class Plugin extends PluginBase
             }
         });
 
-        BackendController::extend(function($controller) {
+        BackendController::extend(function($controller)
+        {
             if (BackendAuth::check())
             {
                 $preferences = UserPreferences::forUser()->get('backend::backend.preferences');
