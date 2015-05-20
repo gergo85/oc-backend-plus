@@ -16,3 +16,4 @@
 1.1.4: Added Spanish translation (thanks to jh2odo).
 1.2.0: All features are working on the whole backend.
 1.2.1: Rounded profile image is optional in top menu.
+1.2.2: Fixed the authenticated user bug.
