@@ -4,6 +4,7 @@ use System\Classes\PluginBase;
 use Backend\Classes\Controller as BackendController;
 use Event;
 use Backend;
+use BackendAuth;
 use Backend\Models\UserPreferences;
 use BackendMenu;
 
@@ -114,27 +115,30 @@ class Plugin extends PluginBase
         });
 
         BackendController::extend(function($controller) {
-            $preferences = UserPreferences::forUser()->get('backend::backend.preferences');
-
-            if (isset($preferences['virtual_keyboard']) && $preferences['virtual_keyboard'])
+            if (BackendAuth::check())
             {
-                $controller->addCss('/plugins/indikator/backend/assets/css/ml-keyboard.css');
-                $controller->addJs('/plugins/indikator/backend/assets/js/ml-keyboard.js');
-            }
+                $preferences = UserPreferences::forUser()->get('backend::backend.preferences');
 
-            if (isset($preferences['rounded_avatar']) && $preferences['rounded_avatar'])
-            {
-                $controller->addCss('/plugins/indikator/backend/assets/css/rounded-avatar.css');
-            }
+                if (isset($preferences['virtual_keyboard']) && $preferences['virtual_keyboard'])
+                {
+                    $controller->addCss('/plugins/indikator/backend/assets/css/ml-keyboard.css');
+                    $controller->addJs('/plugins/indikator/backend/assets/js/ml-keyboard.js');
+                }
 
-            if (isset($preferences['focus_searchfield']) && $preferences['focus_searchfield'])
-            {
-                $controller->addJs('/plugins/indikator/backend/assets/js/setting-search.js');
-            }
+                if (isset($preferences['rounded_avatar']) && $preferences['rounded_avatar'])
+                {
+                    $controller->addCss('/plugins/indikator/backend/assets/css/rounded-avatar.css');
+                }
 
-            if (isset($preferences['more_themes']) && $preferences['more_themes'])
-            {
-                $controller->addJs('/plugins/indikator/backend/assets/js/setting-theme.js');
+                if (isset($preferences['focus_searchfield']) && $preferences['focus_searchfield'])
+                {
+                    $controller->addJs('/plugins/indikator/backend/assets/js/setting-search.js');
+                }
+
+                if (isset($preferences['more_themes']) && $preferences['more_themes'])
+                {
+                    $controller->addJs('/plugins/indikator/backend/assets/js/setting-theme.js');
+                }
             }
         });
 
