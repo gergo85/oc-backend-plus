@@ -81,13 +81,15 @@ class Plugin extends PluginBase
                         'label'   => 'indikator.backend::lang.settings.search_label',
                         'type'    => 'switch',
                         'span'    => 'left',
-                        'default' => 'false'
+                        'default' => 'false',
+                        'comment' => 'indikator.backend::lang.settings.search_comment'
                     ],
                     'sidebar_description' => [
                         'label'   => 'indikator.backend::lang.settings.sidebar_label',
                         'type'    => 'switch',
                         'span'    => 'right',
-                        'default' => 'false'
+                        'default' => 'false',
+                        'comment' => 'indikator.backend::lang.settings.sidebar_comment'
                     ],
                     'rounded_avatar' => [
                         'label'   => 'indikator.backend::lang.settings.avatar_label',
@@ -96,19 +98,26 @@ class Plugin extends PluginBase
                         'default' => 'false',
                         'comment' => 'indikator.backend::lang.settings.avatar_comment'
                     ],
+                    'virtual_keyboard' => [
+                        'label'   => 'indikator.backend::lang.settings.keyboard_label',
+                        'type'    => 'switch',
+                        'span'    => 'right',
+                        'default' => 'false',
+                        'comment' => 'indikator.backend::lang.settings.keyboard_comment'
+                    ],
+                    'media_menu' => [
+                        'label'   => 'indikator.backend::lang.settings.media_label',
+                        'type'    => 'switch',
+                        'span'    => 'left',
+                        'default' => 'false',
+                        'comment' => 'indikator.backend::lang.settings.media_comment'
+                    ],
                     'more_themes' => [
                         'label'   => 'indikator.backend::lang.settings.themes_label',
                         'type'    => 'switch',
                         'span'    => 'right',
                         'default' => 'false',
                         'comment' => 'indikator.backend::lang.settings.themes_comment'
-                    ],
-                    'virtual_keyboard' => [
-                        'label'   => 'indikator.backend::lang.settings.keyboard_label',
-                        'type'    => 'switch',
-                        'span'    => 'left',
-                        'default' => 'false',
-                        'comment' => 'indikator.backend::lang.settings.keyboard_comment'
                     ]
                 ]);
             }
@@ -120,10 +129,9 @@ class Plugin extends PluginBase
             {
                 $preferences = UserPreferences::forUser()->get('backend::backend.preferences');
 
-                if (isset($preferences['virtual_keyboard']) && $preferences['virtual_keyboard'])
+                if (isset($preferences['focus_searchfield']) && $preferences['focus_searchfield'])
                 {
-                    $controller->addCss('/plugins/indikator/backend/assets/css/ml-keyboard.css');
-                    $controller->addJs('/plugins/indikator/backend/assets/js/ml-keyboard.js');
+                    $controller->addJs('/plugins/indikator/backend/assets/js/setting-search.js');
                 }
 
                 if (isset($preferences['rounded_avatar']) && $preferences['rounded_avatar'])
@@ -131,9 +139,15 @@ class Plugin extends PluginBase
                     $controller->addCss('/plugins/indikator/backend/assets/css/rounded-avatar.css');
                 }
 
-                if (isset($preferences['focus_searchfield']) && $preferences['focus_searchfield'])
+                if (isset($preferences['virtual_keyboard']) && $preferences['virtual_keyboard'])
                 {
-                    $controller->addJs('/plugins/indikator/backend/assets/js/setting-search.js');
+                    $controller->addCss('/plugins/indikator/backend/assets/css/ml-keyboard.css');
+                    $controller->addJs('/plugins/indikator/backend/assets/js/ml-keyboard.js');
+                }
+
+                if (isset($preferences['media_menu']) && $preferences['media_menu'])
+                {
+                    $controller->addCss('/plugins/indikator/backend/assets/css/media-menu.css');
                 }
 
                 if (isset($preferences['more_themes']) && $preferences['more_themes'])

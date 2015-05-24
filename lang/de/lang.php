@@ -8,13 +8,17 @@ return [
     ],
     'settings' => [
         'search_label' => 'Fokus auf das Suchfeld automatisch.',
+        'search_comment' => 'Zum einen in Listen, zweitens in der Seitenleiste.',
         'sidebar_label' => 'Blenden Sie das Menü Beschreibung in der Seitenleiste.',
+        'sidebar_comment' => 'Es muss nicht in Seite aktualisieren noch zu arbeiten.',
         'avatar_label' => 'Abgerundete Profilbild statt eines Würfels.',
         'avatar_comment' => 'Der Avatar ändert nur in Top-Menü.',
-        'themes_label' => 'Blenden Sie die "Weitere Themen" Link.',
-        'themes_comment' => 'Das Hotel liegt am Frontend-Themenseite.',
         'keyboard_label' => 'Lassen Sie sich die virtuelle Tastatur von Formen.',
-        'keyboard_comment' => 'Es funktioniert nur mit einfachen Textfelder.'
+        'keyboard_comment' => 'Es funktioniert nur mit einfachen Textfelder.',
+        'media_label' => 'Ausblenden der Media Link in Top-Menü.',
+        'media_comment' => 'Es ist immer noch vorhanden, aber es nicht zu zeigen.',
+        'themes_label' => 'Blenden Sie die "Weitere Themen" Link.',
+        'themes_comment' => 'Das Hotel liegt am Frontend-Themenseite.'
     ],
     'widgets' => [
         'system' => [

@@ -8,13 +8,17 @@ return [
     ],
     'settings' => [
         'search_label' => 'Otomatik olarak arama alanına odaklan.',
+        'search_comment' => 'Öncelikle ikinci kenar çubuğundaki listeleri içinde.',
         'sidebar_label' => 'Sol kısayol bloğunda açıklamaları gizle.',
+        'sidebar_comment' => 'Henüz Güncelleme sayfasında çalışmıyor.',
         'avatar_label' => 'Yuvarlak profil resmi yerine küp biri.',
         'avatar_comment' => 'Avatar sadece üst menüde değiştirir.',
-        'themes_label' => 'Hide the "Medanis Tema..." link.',
-        'themes_comment' => 'Located on Front-end theme page.',
         'keyboard_label' => 'Sanal klavyeyi aktifleştir.',
-        'keyboard_comment' => 'Sadece basit metin alanları ile çalışır.'
+        'keyboard_comment' => 'Sadece basit metin alanları ile çalışır.',
+        'media_label' => 'Üst menüde Medya bağlantısını gizleyin.',
+        'media_comment' => 'Hala mevcut ama göstermiyor.',
+        'themes_label' => 'Hide the "Medanis Tema..." link.',
+        'themes_comment' => 'Located on Front-end theme page.'
     ],
     'widgets' => [
         'system' => [

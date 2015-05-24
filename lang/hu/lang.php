@@ -8,13 +8,17 @@ return [
     ],
     'settings' => [
         'search_label' => 'Kereső mező automatikus aktiválása.',
+        'search_comment' => 'Elsőként a listáknál, másodsorban az oldalsó menünél.',
         'sidebar_label' => 'Leírások rejtése az oldalsó menüben.',
+        'sidebar_comment' => 'Egyelőre nem működik a Frissítések oldalnál.',
         'avatar_label' => 'Kerek profilkép használata a szögletes helyett.',
         'avatar_comment' => 'Csak a felső menünél módosul.',
-        'themes_label' => 'A "További témák ..." link elrejtése.',
-        'themes_comment' => 'A Dizájn oldalon található.',
         'keyboard_label' => 'Virtuális billentyűzet megjelenítése.',
-        'keyboard_comment' => 'Csak az egyszerű szöveges mezőknél működik.'
+        'keyboard_comment' => 'Csak az egyszerű szöveges mezőknél működik.',
+        'media_label' => 'A Média link rejtése a felső menüben.',
+        'media_comment' => 'Továbbra is elérhető marad, csak nem látszik.',
+        'themes_label' => 'A "További témák ..." link elrejtése.',
+        'themes_comment' => 'A Dizájn oldalon található.'
     ],
     'widgets' => [
         'system' => [

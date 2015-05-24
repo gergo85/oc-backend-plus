@@ -8,13 +8,17 @@ return [
     ],
     'settings' => [
         'search_label' => 'Hacer "focus" en el campo de búsqueda automáticamente.',
+        'search_comment' => 'En primer lugar en las listas, en segundo lugar, en la barra lateral.',
         'sidebar_label' => 'Ocultar la descripción del menú en la barra lateral.',
+        'sidebar_comment' => 'No funciona en la página de actualización todavía.',
         'avatar_label' => 'Imagen de perfil redondeado en lugar de un solo cubo.',
         'avatar_comment' => 'La avataro modifas nur en supera menuo.',
-        'themes_label' => 'Esconder el "Buscar nuevos temas" enlace.',
-        'themes_comment' => 'Está en la página del tema Front-end.'.
         'keyboard_label' => 'Mostrar el teclado virtual para introducir datos.',
-        'keyboard_comment' => 'Sólo funciona con campos de texto simples.'
+        'keyboard_comment' => 'Sólo funciona con campos de texto simples.',
+        'media_label' => 'Ocultar el enlace de los medios de comunicación en el menú superior.',
+        'media_comment' => 'Todavía disponible, pero no muestra.',
+        'themes_label' => 'Esconder el "Buscar nuevos temas" enlace.',
+        'themes_comment' => 'Está en la página del tema Front-end.'
     ],
     'widgets' => [
         'system' => [

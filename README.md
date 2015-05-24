@@ -6,7 +6,8 @@ This plugin extend the backend to some new widgets, useful features and componen
 * Hide the menu description in sidebar.
 * __Rounded profile image is optional in top menu.__
 * Show the virtual keyboard by input fields.
-* __Hide the "Find more themes" link in Design.__
+* __Hide the Media menu in top menu.__
+* Hide the "Find more themes" link in Design.
 
 ###New widgets
 * __System status plus (updates, plugins and themes)__
@@ -32,8 +33,8 @@ This plugin extend the backend to some new widgets, useful features and componen
 
 ###Installation
 1. Go to the __Settings -> Updates__ page in Backend.
-1. Type the __Indikator.Backend__ in search field.
-1. Click on the __Install Plugin__ button.
+1. Click on the __Install Plugins__ button.
+1. Type the __Backend Plus__ in search field.
 
 ###Activate features
 1. Go to the __Settings -> Back-end preferences__ page in Backend.
