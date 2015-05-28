@@ -22,19 +22,22 @@ return [
     ],
     'widgets' => [
         'system' => [
-            'label' => 'Rendszer állapota Plusz',
+            'title' => 'Admin - Rendszer állapota',
+            'label' => 'Rendszer állapota',
             'webpage' => 'Weboldal',
             'updates' => 'Frissítések',
             'plugins' => 'Kiegészítők',
             'themes' => 'Témák'
         ],
         'version' => [
+            'title' => 'Admin - Verziók',
             'label' => 'Verziók',
             'cms' => 'CMS',
             'php' => 'PHP',
             'gd' => 'GD'
         ],
         'logs' => [
+            'title' => 'Admin - Naplók',
             'label' => 'Naplók',
             'access' => 'Hozzáférés',
             'event' => 'Esemény',
@@ -42,32 +45,38 @@ return [
             'total' => 'Összes'
         ],
         'admins' => [
+            'title' => 'Admin - Adminisztrátorok',
             'label' => 'Adminisztrátorok',
             'users' => 'Felhasználók',
             'groups' => 'Csoportok',
             'login' => 'Utoljára belépve'
         ],
         'logins' => [
+            'title' => 'Admin - Legutóbb beléptek',
             'label' => 'Legutóbb beléptek'
         ],
         'server' => [
+            'title' => 'Admin - Szerver infók',
             'label' => 'Szerver infók',
             'host' => 'Hoszt',
             'ip' => 'IP cím',
             'os' => 'Operációs rendszer'
         ],
         'php' => [
+            'title' => 'Admin - PHP beállítások',
             'label' => 'PHP beállítások',
             'upload_limit' => 'Feltöltési limit',
             'memory_limit' => 'Memória limit',
             'timezone' => 'Időzóna'
         ],
         'rss' => [
+            'title' => 'Admin - RSS megjelenítő',
             'label' => 'RSS megjelenítő',
             'error' => 'Az URL cím nem megfelelő vagy',
             'refresh' => 'frissítse az oldalt'
         ],
         'images' => [
+            'title' => 'Admin - Véletlenszerű képek',
             'label' => 'Véletlenszerű képek',
             'error' => 'A mező csak számokat tartalmazhat.',
             'simple' => 'Egyszerő',

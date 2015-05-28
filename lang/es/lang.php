@@ -22,6 +22,7 @@ return [
     ],
     'widgets' => [
         'system' => [
+            'title' => 'Backend - Estado del Sistema Plus',
             'label' => 'Estado del Sistema Plus',
             'webpage' => 'Página Web',
             'updates' => 'Actualizaciones',
@@ -29,12 +30,14 @@ return [
             'themes' => 'Temas'
         ],
         'version' => [
+            'title' => 'Backend - Versiones',
             'label' => 'Versiones',
             'cms' => 'CMS',
             'php' => 'PHP',
             'gd' => 'GD'
         ],
         'logs' => [
+            'title' => 'Backend - Logs',
             'label' => 'Logs',
             'access' => 'Accesos',
             'event' => 'Evento',
@@ -42,32 +45,38 @@ return [
             'total' => 'Total'
         ],
         'admins' => [
+            'title' => 'Backend - Administradores',
             'label' => 'Administradores',
             'users' => 'Usuarios',
             'groups' => 'Grupos',
             'login' => 'Último acceso'
         ],
         'logins' => [
+            'title' => 'Backend - Últimos accesos',
             'label' => 'Últimos accesos'
         ],
         'server' => [
+            'title' => 'Backend - Información del Servidor',
             'label' => 'Información del Servidor',
             'host' => 'Host',
             'ip' => 'Dirección IP',
             'os' => 'Sistema Operativo'
         ],
         'php' => [
+            'title' => 'Backend - Configuración PHP',
             'label' => 'Configuración PHP',
             'upload_limit' => 'Upload límite',
             'memory_limit' => 'Memoria límite',
             'timezone' => 'Zona Horaria'
         ],
         'rss' => [
+            'title' => 'Backend - Visor RSS',
             'label' => 'Visor RSS',
             'error' => 'La dirección URL es incorrecta o',
             'refresh' => 'Actualizar página'
         ],
         'images' => [
+            'title' => 'Backend - Imágenes aleatorias',
             'label' => 'Imágenes aleatorias',
             'error' => 'El campo solo puede contener números.',
             'simple' => 'Simple',

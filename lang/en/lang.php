@@ -22,6 +22,7 @@ return [
     ],
     'widgets' => [
         'system' => [
+            'title' => 'Backend - System status plus',
             'label' => 'System status plus',
             'webpage' => 'Webpage',
             'updates' => 'Updates',
@@ -29,12 +30,14 @@ return [
             'themes' => 'Themes'
         ],
         'version' => [
+            'title' => 'Backend - Versions',
             'label' => 'Versions',
             'cms' => 'CMS',
             'php' => 'PHP',
             'gd' => 'GD'
         ],
         'logs' => [
+            'title' => 'Backend - Logs',
             'label' => 'Logs',
             'access' => 'Access',
             'event' => 'Event',
@@ -42,32 +45,38 @@ return [
             'total' => 'Total'
         ],
         'admins' => [
+            'title' => 'Backend - Administrators',
             'label' => 'Administrators',
             'users' => 'Users',
             'groups' => 'Groups',
             'login' => 'Last login'
         ],
         'logins' => [
+            'title' => 'Backend - Last logins',
             'label' => 'Last logins'
         ],
         'server' => [
+            'title' => 'Backend - Server info',
             'label' => 'Server info',
             'host' => 'Host',
             'ip' => 'IP address',
             'os' => 'Operation system'
         ],
         'php' => [
+            'title' => 'Backend - PHP settings',
             'label' => 'PHP settings',
             'upload_limit' => 'Upload limit',
             'memory_limit' => 'Memory limit',
             'timezone' => 'Timezone'
         ],
         'rss' => [
+            'title' => 'Backend - RSS viewer',
             'label' => 'RSS viewer',
             'error' => 'The URL address is incorrect or',
             'refresh' => 'refresh page'
         ],
         'images' => [
+            'title' => 'Backend - Random images',
             'label' => 'Random images',
             'error' => 'The field can only contain numbers.',
             'simple' => 'Simple',

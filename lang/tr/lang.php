@@ -22,6 +22,7 @@ return [
     ],
     'widgets' => [
         'system' => [
+            'title' => 'Backend - Sistem Durumu',
             'label' => 'Sistem Durumu',
             'webpage' => 'Web site',
             'updates' => 'Güncellemeler',
@@ -29,12 +30,14 @@ return [
             'themes' => 'Temalar'
         ],
         'version' => [
+            'title' => 'Backend - Versiyonlar',
             'label' => 'Versiyonlar',
             'cms' => 'CMS',
             'php' => 'PHP',
             'gd' => 'GD'
         ],
         'logs' => [
+            'title' => 'Backend - Olay Kayıtları',
             'label' => 'Olay Kayıtları',
             'access' => 'Erişim',
             'event' => 'Olay',
@@ -42,32 +45,38 @@ return [
             'total' => 'Toplam'
         ],
         'admins' => [
+            'title' => 'Backend - Yöneticiler',
             'label' => 'Yöneticiler',
             'users' => 'Kullanıcılar',
             'groups' => 'Gruplar',
             'login' => 'Son giriş'
         ],
         'logins' => [
+            'title' => 'Backend - Son girişler',
             'label' => 'Son girişler'
         ],
         'server' => [
+            'title' => 'Backend - Server bilgisi',
             'label' => 'Server bilgisi',
             'host' => 'Sunucu',
             'ip' => 'IP adresi',
             'os' => 'İşletim sistemi'
         ],
         'php' => [
+            'title' => 'Backend - PHP ayarları',
             'label' => 'PHP ayarları',
             'upload_limit' => 'Yükleme limiti',
             'memory_limit' => 'Hafıza limiti',
             'timezone' => 'Zaman dilimi'
         ],
         'rss' => [
+            'title' => 'Backend - RSS görüntüleyici',
             'label' => 'RSS görüntüleyici',
             'error' => 'URL adresi yanlış veya',
             'refresh' => 'sayfayı yenile'
         ],
         'images' => [
+            'title' => 'Backend - Rastgele Resim',
             'label' => 'Rastgele Resim',
             'error' => 'Bu alana sadece sayı girebilirsiniz.',
             'simple' => 'Basit',

@@ -22,6 +22,7 @@ return [
     ],
     'widgets' => [
         'system' => [
+            'title' => 'Backend - Systemstatus Und',
             'label' => 'Systemstatus Und',
             'webpage' => 'Webseite',
             'updates' => 'Aktuelles',
@@ -29,12 +30,14 @@ return [
             'themes' => 'Themes'
         ],
         'version' => [
+            'title' => 'Backend - Versionen',
             'label' => 'Versionen',
             'cms' => 'CMS',
             'php' => 'PHP',
             'gd' => 'GD'
         ],
         'logs' => [
+            'title' => 'Backend - Logs',
             'label' => 'Logs',
             'access' => 'Zugriff',
             'event' => 'Ereignis',
@@ -42,32 +45,38 @@ return [
             'total' => 'Gesamt'
         ],
         'admins' => [
+            'title' => 'Backend - Administratoren',
             'label' => 'Administratoren',
             'users' => 'Benutzer',
             'groups' => 'Gruppen',
             'login' => 'Letzter Login'
         ],
         'logins' => [
+            'title' => 'Backend - Letzte Anmeldungen',
             'label' => 'Letzte Anmeldungen'
         ],
         'server' => [
+            'title' => 'Backend - Server info',
             'label' => 'Server info',
             'host' => 'Gastgeber',
             'ip' => 'IP-Adresse',
             'os' => 'Betriebssystem'
         ],
         'php' => [
+            'title' => 'Backend - PHP settings',
             'label' => 'PHP settings',
             'upload_limit' => 'Grenze hochladen',
             'memory_limit' => 'Speichergrenze',
             'timezone' => 'Timezone'
         ],
         'rss' => [
+            'title' => 'Backend - RSS-Viewer',
             'label' => 'RSS-Viewer',
             'error' => 'Die URL-Adresse ist nicht korrekt oder',
             'refresh' => 'refresh Seite'
         ],
         'images' => [
+            'title' => 'Backend - Zufallsbilder',
             'label' => 'Zufallsbilder',
             'error' => 'Das Feld kann nur Zahlen.',
             'simple' => 'Einfach',
