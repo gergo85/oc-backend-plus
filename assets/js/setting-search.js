@@ -1,12 +1,17 @@
 $(document).ready(function() {
     var content_search = $('input[name="listToolbarSearch[term]"]');
-    var menu_search = $('#settings-search-input');
+    var template_search = $('input[name="templatesToolbarSearch[term]"]');
+    var general_search = $('input[name="search"]');
 
     if (content_search.length == 1) {
         content_search.focus();
     }
 
-    else if (menu_search.length == 1) {
-        menu_search.focus();
+    else if (template_search.length == 1) {
+        template_search.focus();
+    }
+
+    else if (general_search.length == 1) {
+        general_search.focus();
     }
 });
