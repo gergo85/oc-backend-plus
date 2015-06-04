@@ -8,17 +8,17 @@ return [
     ],
     'settings' => [
         'search_label' => 'Focus the search field automatically.',
-        'search_comment' => 'Firstly in lists, secondly in sidebar.',
-        'sidebar_label' => 'Hide the menu description in sidebar.',
-        'sidebar_comment' => 'It doesn\'t work in Update page yet.',
+        'search_comment' => 'Firstly in the lists, secondly in the sidebar.',
+        'sidebar_label' => 'Hide the description of menus in the sidebar.',
+        'sidebar_comment' => 'It works only the pages of Settings menu.',
         'avatar_label' => 'Rounded profile image instead of cube one.',
-        'avatar_comment' => 'The avatar modifies only in top menu.',
+        'avatar_comment' => 'The avatar modifies only in the top menu.',
         'keyboard_label' => 'Show the virtual keyboard by forms.',
-        'keyboard_comment' => 'It only works by simple text fields.',
-        'media_label' => 'Hide the Media link in top menu.',
-        'media_comment' => 'It still available but it not show.',
+        'keyboard_comment' => 'It works only by simple text fields.',
+        'media_label' => 'Hide the Media link in the top menu.',
+        'media_comment' => 'It still available but it not shows.',
         'themes_label' => 'Hide the "Find more themes" link.',
-        'themes_comment' => 'Located on Front-end theme page.'
+        'themes_comment' => 'Located on the Front-end theme page.'
     ],
     'widgets' => [
         'system' => [

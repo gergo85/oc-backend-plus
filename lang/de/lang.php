@@ -10,7 +10,7 @@ return [
         'search_label' => 'Fokus auf das Suchfeld automatisch.',
         'search_comment' => 'Zum einen in Listen, zweitens in der Seitenleiste.',
         'sidebar_label' => 'Blenden Sie das Menü Beschreibung in der Seitenleiste.',
-        'sidebar_comment' => 'Es muss nicht in Seite aktualisieren noch zu arbeiten.',
+        'sidebar_comment' => 'Blenden Sie die Beschreibung der Menüs in der Seitenleiste.',
         'avatar_label' => 'Abgerundete Profilbild statt eines Würfels.',
         'avatar_comment' => 'Der Avatar ändert nur in Top-Menü.',
         'keyboard_label' => 'Lassen Sie sich die virtuelle Tastatur von Formen.',

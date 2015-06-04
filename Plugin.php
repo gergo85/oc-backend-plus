@@ -10,6 +10,8 @@ use BackendMenu;
 
 class Plugin extends PluginBase
 {
+    public $elevated = true;
+
     public function pluginDetails()
     {
         return [
@@ -160,7 +162,7 @@ class Plugin extends PluginBase
         BackendMenu::registerContextSidenavPartial(
             'October.System',
             'system',
-            '@/plugins/indikator/backend/partials/_system_sidebar.htm'
+            '~/plugins/indikator/backend/partials/_system_sidebar.htm'
         );
     }
 }

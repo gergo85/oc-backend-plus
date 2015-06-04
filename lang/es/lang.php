@@ -10,7 +10,7 @@ return [
         'search_label' => 'Hacer "focus" en el campo de búsqueda automáticamente.',
         'search_comment' => 'En primer lugar en las listas, en segundo lugar, en la barra lateral.',
         'sidebar_label' => 'Ocultar la descripción del menú en la barra lateral.',
-        'sidebar_comment' => 'No funciona en la página de actualización todavía.',
+        'sidebar_comment' => 'Ocultar la descripción de los menús en la barra lateral.',
         'avatar_label' => 'Imagen de perfil redondeado en lugar de un solo cubo.',
         'avatar_comment' => 'La avataro modifas nur en supera menuo.',
         'keyboard_label' => 'Mostrar el teclado virtual para introducir datos.',

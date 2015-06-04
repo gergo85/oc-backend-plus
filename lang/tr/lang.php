@@ -10,7 +10,7 @@ return [
         'search_label' => 'Otomatik olarak arama alanına odaklan.',
         'search_comment' => 'Öncelikle ikinci kenar çubuğundaki listeleri içinde.',
         'sidebar_label' => 'Sol kısayol bloğunda açıklamaları gizle.',
-        'sidebar_comment' => 'Henüz Güncelleme sayfasında çalışmıyor.',
+        'sidebar_comment' => 'Kenar çubuğunda menüler açıklamasını gizle.',
         'avatar_label' => 'Yuvarlak profil resmi yerine küp biri.',
         'avatar_comment' => 'Avatar sadece üst menüde değiştirir.',
         'keyboard_label' => 'Sanal klavyeyi aktifleştir.',

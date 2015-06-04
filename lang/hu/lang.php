@@ -10,7 +10,7 @@ return [
         'search_label' => 'Kereső mező automatikus aktiválása.',
         'search_comment' => 'Elsőként a listáknál, másodsorban az oldalsó menünél.',
         'sidebar_label' => 'Leírások rejtése az oldalsó menüben.',
-        'sidebar_comment' => 'Egyelőre nem működik a Frissítések oldalnál.',
+        'sidebar_comment' => 'Csak a Beállítások aloldalain működik.',
         'avatar_label' => 'Kerek profilkép használata a szögletes helyett.',
         'avatar_comment' => 'Csak a felső menünél módosul.',
         'keyboard_label' => 'Virtuális billentyűzet megjelenítése.',
