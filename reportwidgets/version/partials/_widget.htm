@@ -1,5 +1,7 @@
 <div class="report-widget">
     <h3 style="margin-bottom:5px;"><?= e(trans($this->property('title'))) ?></h3>
+
+<?php if (!isset($error)): ?>
     <?php if ($this->property('cms')): ?>
     <div class="scoreboard-item title-value pull-left" style="margin:20px 20px 0 0;">
         <h4><?= e(trans('indikator.backend::lang.widgets.version.cms')) ?></h4>
@@ -18,5 +20,9 @@
         <p class="text-center"><?= $gd ?></p>
     </div>
     <?php endif ?>
+
     <div style="clear:both;"></div>
+<?php else: ?>
+    <p class="flash-message static warning"><?= e($error) ?></p>
+<?php endif ?>
 </div>

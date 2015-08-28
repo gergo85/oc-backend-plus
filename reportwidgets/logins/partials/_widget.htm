@@ -1,5 +1,7 @@
 <div class="report-widget">
     <h3 style="margin-bottom:5px;"><?= e(trans($this->property('title'))) ?></h3>
+
+<?php if (!isset($error)): ?>
     <?php
     $count = count($users);
     if ($count < $this->property('logins')) $count = $count;
@@ -15,5 +17,9 @@
         <?php endif ?>
     </div>
     <?php endfor ?>
+
     <div style="clear:both;"></div>
+<?php else: ?>
+    <p class="flash-message static warning"><?= e($error) ?></p>
+<?php endif ?>
 </div>

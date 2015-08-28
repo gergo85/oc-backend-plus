@@ -19,6 +19,7 @@ class Plugin extends PluginBase
             'name'        => 'indikator.backend::lang.plugin.name',
             'description' => 'indikator.backend::lang.plugin.description',
             'author'      => 'indikator.backend::lang.plugin.author',
+            'icon'        => 'icon-cogs',
             'homepage'    => 'https://github.com/gergo85/oc-backend-plus'
         ];
     }
