@@ -63,17 +63,17 @@ class Status extends ReportWidgetBase
         $this->vars['plugins'] = DB::table('system_plugin_versions')->count();
 
         $themes = 0;
-        if ($handle = opendir('themes'))
-        {
-            while (false !== ($entry = readdir($handle)))
-            {
-                if ($entry != '.' && $entry != '..' && !is_file($entry))
-                {
+
+        if ($handle = opendir('themes')) {
+            while (false !== ($entry = readdir($handle))) {
+                if ($entry != '.' && $entry != '..' && !is_file($entry)) {
                     $themes++;
                 }
             }
+
             closedir($handle);
         }
+
         $this->vars['themes'] = $themes;
     }
 }

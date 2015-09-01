@@ -18,7 +18,9 @@ return [
         'media_label' => 'Üst menüde Medya bağlantısını gizleyin.',
         'media_comment' => 'Hala mevcut ama göstermiyor.',
         'themes_label' => 'Hide the "Medanis Tema..." link.',
-        'themes_comment' => 'Located on Front-end theme page.'
+        'themes_comment' => 'Located on Front-end theme page.',
+        'delete_plugin' => 'Ekim Demo eklentisi silin.',
+        'sidebar_search' => 'Kenar çubuğunda arama alanını gizleyin.'
     ],
     'widgets' => [
         'system' => [

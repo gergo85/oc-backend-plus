@@ -18,7 +18,9 @@ return [
         'media_label' => 'Ausblenden der Media Link in Top-Menü.',
         'media_comment' => 'Es ist immer noch vorhanden, aber es nicht zu zeigen.',
         'themes_label' => 'Blenden Sie die "Weitere Themen" Link.',
-        'themes_comment' => 'Das Hotel liegt am Frontend-Themenseite.'
+        'themes_comment' => 'Das Hotel liegt am Frontend-Themenseite.',
+        'delete_plugin' => 'Löschen Sie die Oktober-Demo Plugin.',
+        'sidebar_search' => 'Blenden Sie das Suchfeld in der Seitenleiste.'
     ],
     'widgets' => [
         'system' => [

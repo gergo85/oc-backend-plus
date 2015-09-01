@@ -18,7 +18,9 @@ return [
         'media_label' => 'Ocultar el enlace de los medios de comunicación en el menú superior.',
         'media_comment' => 'Todavía disponible, pero no muestra.',
         'themes_label' => 'Esconder el "Buscar nuevos temas" enlace.',
-        'themes_comment' => 'Está en la página del tema Front-end.'
+        'themes_comment' => 'Está en la página del tema Front-end.',
+        'delete_plugin' => 'Eliminar la Demo plugin de Octubre.',
+        'sidebar_search' => 'Ocultar el campo de búsqueda en la barra lateral.'
     ],
     'widgets' => [
         'system' => [

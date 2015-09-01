@@ -18,7 +18,9 @@ return [
         'media_label' => 'A Média link rejtése a felső menüben.',
         'media_comment' => 'Továbbra is elérhető marad, csak nem látszik.',
         'themes_label' => 'A "További témák ..." link elrejtése.',
-        'themes_comment' => 'A Dizájn oldalon található.'
+        'themes_comment' => 'A Dizájn oldalon található.',
+        'delete_plugin' => 'Az October Demo bővítményének törlése.',
+        'sidebar_search' => 'Kereső mező rejtése az oldalsó menünél.'
     ],
     'widgets' => [
         'system' => [

@@ -3,7 +3,7 @@
 return [
     'plugin' => [
         'name' => 'Backend Plus',
-        'description' => 'New useful features and widgets for backend.',
+        'description' => 'New useful features and widgets for back-end.',
         'author' => 'Gergő Szabó'
     ],
     'settings' => [
@@ -18,7 +18,9 @@ return [
         'media_label' => 'Hide the Media link in the top menu.',
         'media_comment' => 'It still available but it not shows.',
         'themes_label' => 'Hide the "Find more themes" link.',
-        'themes_comment' => 'Located on the Front-end theme page.'
+        'themes_comment' => 'Located on the Front-end theme page.',
+        'delete_plugin' => 'Delete the October Demo plugin.',
+        'sidebar_search' => 'Hide the search field in the sidebar.'
     ],
     'widgets' => [
         'system' => [

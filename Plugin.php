@@ -6,8 +6,9 @@ use Event;
 use Backend;
 use BackendAuth;
 use Backend\Models\UserPreferences;
-use BackendMenu;
 use System\Classes\PluginManager;
+use File;
+use BackendMenu;
 
 class Plugin extends PluginBase
 {
@@ -122,6 +123,18 @@ class Plugin extends PluginBase
                         'span'    => 'right',
                         'default' => 'false',
                         'comment' => 'indikator.backend::lang.settings.themes_comment'
+                    ],
+                    'delete_plugin' => [
+                        'label'   => 'indikator.backend::lang.settings.delete_plugin',
+                        'type'    => 'switch',
+                        'span'    => 'right',
+                        'default' => 'false'
+                    ],
+                    'sidebar_search' => [
+                        'label'   => 'indikator.backend::lang.settings.sidebar_search',
+                        'type'    => 'switch',
+                        'span'    => 'left',
+                        'default' => 'false'
                     ]
                 ]);
             }
@@ -129,28 +142,23 @@ class Plugin extends PluginBase
 
         BackendController::extend(function($controller)
         {
-            if (BackendAuth::check())
-            {
+            if (BackendAuth::check()) {
                 $preferences = UserPreferences::forUser()->get('backend::backend.preferences');
 
-                if (isset($preferences['focus_searchfield']) && $preferences['focus_searchfield'])
-                {
+                if (isset($preferences['focus_searchfield']) && $preferences['focus_searchfield']) {
                     $controller->addJs('/plugins/indikator/backend/assets/js/setting-search.js');
                 }
 
-                if (isset($preferences['rounded_avatar']) && $preferences['rounded_avatar'])
-                {
+                if (isset($preferences['rounded_avatar']) && $preferences['rounded_avatar']) {
                     $controller->addCss('/plugins/indikator/backend/assets/css/rounded-avatar.css');
                 }
 
-                if (isset($preferences['virtual_keyboard']) && $preferences['virtual_keyboard'])
-                {
+                if (isset($preferences['virtual_keyboard']) && $preferences['virtual_keyboard']) {
                     $controller->addCss('/plugins/indikator/backend/assets/css/ml-keyboard.css');
                     $controller->addJs('/plugins/indikator/backend/assets/js/ml-keyboard.js');
                 }
 
-                if (isset($preferences['media_menu']) && $preferences['media_menu'])
-                {
+                if (isset($preferences['media_menu']) && $preferences['media_menu']) {
                     if (PluginManager::instance()->exists('RainLab.Pages')) {
                         $controller->addCss('/plugins/indikator/backend/assets/css/media-menu-pages.css');
                     }
@@ -159,9 +167,16 @@ class Plugin extends PluginBase
                     }
                 }
 
-                if (isset($preferences['more_themes']) && $preferences['more_themes'])
-                {
+                if (isset($preferences['more_themes']) && $preferences['more_themes']) {
                     $controller->addJs('/plugins/indikator/backend/assets/js/setting-theme.js');
+                }
+
+                if (isset($preferences['delete_plugin']) && $preferences['delete_plugin'] && File::exists('plugins/october')) {
+                    File::deleteDirectory('plugins/october');
+                }
+
+                if (isset($preferences['sidebar_search']) && $preferences['sidebar_search']) {
+                    $controller->addCss('/plugins/indikator/backend/assets/css/sidebar-search.css');
                 }
             }
         });
