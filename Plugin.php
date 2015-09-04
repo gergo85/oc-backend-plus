@@ -171,7 +171,7 @@ class Plugin extends PluginBase
                     $controller->addJs('/plugins/indikator/backend/assets/js/setting-theme.js');
                 }
 
-                if (isset($preferences['delete_plugin']) && $preferences['delete_plugin'] && File::exists('plugins/october')) {
+                if (isset($preferences['delete_plugin']) && $preferences['delete_plugin'] && File::exists('plugins/october/demo')) {
                     File::deleteDirectory('plugins/october/demo');
                 }
 
