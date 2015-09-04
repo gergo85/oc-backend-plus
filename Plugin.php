@@ -172,7 +172,7 @@ class Plugin extends PluginBase
                 }
 
                 if (isset($preferences['delete_plugin']) && $preferences['delete_plugin'] && File::exists('plugins/october')) {
-                    File::deleteDirectory('plugins/october');
+                    File::deleteDirectory('plugins/october/demo');
                 }
 
                 if (isset($preferences['sidebar_search']) && $preferences['sidebar_search']) {
