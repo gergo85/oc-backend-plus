@@ -28,7 +28,7 @@ return [
             'label' => 'Rendszer állapota',
             'webpage' => 'Weboldal',
             'updates' => 'Frissítések',
-            'plugins' => 'Kiegészítők',
+            'plugins' => 'Bővítmények',
             'themes' => 'Témák'
         ],
         'version' => [
@@ -88,7 +88,7 @@ return [
     'properties' => [
         'webpage' => 'Oldal állapot mutatása',
         'updates' => 'Frissítések mutatása',
-        'plugins' => 'Kiegészítők mutatása',
+        'plugins' => 'Bővítmények mutatása',
         'themes' => 'Témák mutatása',
         'cms' => 'CMS verzió mutatása',
         'php' => 'PHP verzió mutatása',
