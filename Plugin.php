@@ -79,8 +79,7 @@ class Plugin extends PluginBase
     {
         Event::listen('backend.form.extendFields', function($form)
         {
-            if ($form->model instanceof Backend\Models\BackendPreferences)
-            {
+            if ($form->model instanceof Backend\Models\BackendPreferences) {
                 $form->addFields([
                     'focus_searchfield' => [
                         'label'   => 'indikator.backend::lang.settings.search_label',
@@ -89,52 +88,61 @@ class Plugin extends PluginBase
                         'default' => 'false',
                         'comment' => 'indikator.backend::lang.settings.search_comment'
                     ],
-                    'sidebar_description' => [
-                        'label'   => 'indikator.backend::lang.settings.sidebar_label',
-                        'type'    => 'switch',
-                        'span'    => 'right',
-                        'default' => 'false',
-                        'comment' => 'indikator.backend::lang.settings.sidebar_comment'
-                    ],
                     'rounded_avatar' => [
                         'label'   => 'indikator.backend::lang.settings.avatar_label',
                         'type'    => 'switch',
-                        'span'    => 'left',
+                        'span'    => 'auto',
                         'default' => 'false',
                         'comment' => 'indikator.backend::lang.settings.avatar_comment'
+                    ],
+                    'form_clearbutton' => [
+                        'label'   => 'indikator.backend::lang.settings.clearbutton_label',
+                        'type'    => 'switch',
+                        'span'    => 'auto',
+                        'default' => 'false',
+                        'comment' => 'indikator.backend::lang.settings.clearbutton_comment'
                     ],
                     'virtual_keyboard' => [
                         'label'   => 'indikator.backend::lang.settings.keyboard_label',
                         'type'    => 'switch',
-                        'span'    => 'right',
+                        'span'    => 'auto',
                         'default' => 'false',
                         'comment' => 'indikator.backend::lang.settings.keyboard_comment'
+                    ],
+                    'sidebar_description' => [
+                        'label'   => 'indikator.backend::lang.settings.sidebar_desc_label',
+                        'type'    => 'switch',
+                        'span'    => 'auto',
+                        'default' => 'false',
+                        'comment' => 'indikator.backend::lang.settings.sidebar_desc_comment'
+                    ],
+                    'sidebar_search' => [
+                        'label'   => 'indikator.backend::lang.settings.sidebar_search_label',
+                        'type'    => 'switch',
+                        'span'    => 'auto',
+                        'default' => 'false',
+                        'comment' => 'indikator.backend::lang.settings.sidebar_search_comment'
                     ],
                     'media_menu' => [
                         'label'   => 'indikator.backend::lang.settings.media_label',
                         'type'    => 'switch',
-                        'span'    => 'left',
+                        'span'    => 'auto',
                         'default' => 'false',
                         'comment' => 'indikator.backend::lang.settings.media_comment'
                     ],
                     'more_themes' => [
                         'label'   => 'indikator.backend::lang.settings.themes_label',
                         'type'    => 'switch',
-                        'span'    => 'right',
+                        'span'    => 'auto',
                         'default' => 'false',
                         'comment' => 'indikator.backend::lang.settings.themes_comment'
                     ],
                     'delete_plugin' => [
-                        'label'   => 'indikator.backend::lang.settings.delete_plugin',
+                        'label'   => 'indikator.backend::lang.settings.delete_plugin_label',
                         'type'    => 'switch',
-                        'span'    => 'right',
-                        'default' => 'false'
-                    ],
-                    'sidebar_search' => [
-                        'label'   => 'indikator.backend::lang.settings.sidebar_search',
-                        'type'    => 'switch',
-                        'span'    => 'left',
-                        'default' => 'false'
+                        'span'    => 'auto',
+                        'default' => 'false',
+                        'comment' => 'indikator.backend::lang.settings.delete_plugin_comment'
                     ]
                 ]);
             }
@@ -153,9 +161,17 @@ class Plugin extends PluginBase
                     $controller->addCss('/plugins/indikator/backend/assets/css/rounded-avatar.css');
                 }
 
+                if (isset($preferences['form_clearbutton']) && $preferences['form_clearbutton']) {
+                    $controller->addJs('/plugins/indikator/backend/assets/js/form-clearbutton.js');
+                }
+
                 if (isset($preferences['virtual_keyboard']) && $preferences['virtual_keyboard']) {
                     $controller->addCss('/plugins/indikator/backend/assets/css/ml-keyboard.css');
                     $controller->addJs('/plugins/indikator/backend/assets/js/ml-keyboard.js');
+                }
+
+                if (isset($preferences['sidebar_search']) && $preferences['sidebar_search']) {
+                    $controller->addCss('/plugins/indikator/backend/assets/css/sidebar-search.css');
                 }
 
                 if (isset($preferences['media_menu']) && $preferences['media_menu']) {
@@ -173,10 +189,6 @@ class Plugin extends PluginBase
 
                 if (isset($preferences['delete_plugin']) && $preferences['delete_plugin'] && File::exists('plugins/october/demo')) {
                     File::deleteDirectory('plugins/october/demo');
-                }
-
-                if (isset($preferences['sidebar_search']) && $preferences['sidebar_search']) {
-                    $controller->addCss('/plugins/indikator/backend/assets/css/sidebar-search.css');
                 }
             }
         });

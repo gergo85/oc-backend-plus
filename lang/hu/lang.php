@@ -3,24 +3,28 @@
 return [
     'plugin' => [
         'name' => 'Admin Plusz',
-        'description' => 'Új hasznos funkciók és widgetek az admin felülethez.',
+        'description' => 'Kiegészítő lehetőségek és widgetek az admin felülethez.',
         'author' => 'Szabó Gergő'
     ],
     'settings' => [
         'search_label' => 'Kereső mező automatikus aktiválása.',
-        'search_comment' => 'Elsőként a listáknál, másodsorban az oldalsó menünél.',
-        'sidebar_label' => 'Leírások rejtése az oldalsó menüben.',
-        'sidebar_comment' => 'Csak a Beállítások aloldalain működik.',
+        'search_comment' => 'Elsőként a listáknál, másodsorban az oldalsó menüben.',
         'avatar_label' => 'Kerek profilkép használata a szögletes helyett.',
-        'avatar_comment' => 'Csak a felső menünél módosul.',
+        'avatar_comment' => 'Csak a felső menüben módosul a bélyegkép.',
+        'clearbutton_label' => 'Törlés gomb hozzáadása a beviteli mezőkhöz.',
+        'clearbutton_comment' => 'Csak az egyszerű szöveges mezőknél működik.',
         'keyboard_label' => 'Virtuális billentyűzet megjelenítése.',
-        'keyboard_comment' => 'Csak az egyszerű szöveges mezőknél működik.',
+        'keyboard_comment' => 'Csak az egysoros szöveges mezőknél működik.',
+        'sidebar_desc_label' => 'Leírások rejtése az oldalsó menüben.',
+        'sidebar_desc_comment' => 'Csak a Beállítások aloldalain működik.',
+        'sidebar_search_label' => 'Kereső mező rejtése az oldalsó menüben.',
+        'sidebar_search_comment' => 'Csak a Beállítások aloldalain működik.',
         'media_label' => 'A Média link rejtése a felső menüben.',
         'media_comment' => 'Továbbra is elérhető marad, csak nem látszik.',
-        'themes_label' => 'A "További témák ..." link elrejtése.',
-        'themes_comment' => 'A Dizájn oldalon található.',
-        'delete_plugin' => 'Az October Demo bővítményének törlése.',
-        'sidebar_search' => 'Kereső mező rejtése az oldalsó menünél.'
+        'themes_label' => 'A "További témák ..." link rejtése.',
+        'themes_comment' => 'A Dizájn oldalon található a hivatkozás.',
+        'delete_plugin_label' => 'Az October Demo bővítményének törlése.',
+        'delete_plugin_comment' => 'Az összes fájl véglegesen eltávolításra kerül.'
     ],
     'widgets' => [
         'system' => [

@@ -9,18 +9,22 @@ return [
     'settings' => [
         'search_label' => 'Hacer "focus" en el campo de búsqueda automáticamente.',
         'search_comment' => 'En primer lugar en las listas, en segundo lugar, en la barra lateral.',
-        'sidebar_label' => 'Ocultar la descripción del menú en la barra lateral.',
-        'sidebar_comment' => 'Ocultar la descripción de los menús en la barra lateral.',
         'avatar_label' => 'Imagen de perfil redondeado en lugar de un solo cubo.',
         'avatar_comment' => 'La avataro modifas nur en supera menuo.',
+        'clearbutton_label' => 'Add the clear button to input fields.',
+        'clearbutton_comment' => 'It works only by simple text fields.',
         'keyboard_label' => 'Mostrar el teclado virtual para introducir datos.',
         'keyboard_comment' => 'Sólo funciona con campos de texto simples.',
+        'sidebar_desc_label' => 'Ocultar la descripción del menú en la barra lateral.',
+        'sidebar_desc_comment' => 'Ocultar la descripción de los menús en la barra lateral.',
+        'sidebar_search_label' => 'Ocultar el campo de búsqueda en la barra lateral.',
+        'sidebar_search_comment' => 'Ocultar la descripción de los menús en la barra lateral.',
         'media_label' => 'Ocultar el enlace de los medios de comunicación en el menú superior.',
         'media_comment' => 'Todavía disponible, pero no muestra.',
         'themes_label' => 'Esconder el "Buscar nuevos temas" enlace.',
         'themes_comment' => 'Está en la página del tema Front-end.',
-        'delete_plugin' => 'Eliminar la Demo plugin de Octubre.',
-        'sidebar_search' => 'Ocultar el campo de búsqueda en la barra lateral.'
+        'delete_plugin_label' => 'Eliminar la Demo plugin de Octubre.',
+        'delete_plugin_comment' => 'All files will be removed permanently.'
     ],
     'widgets' => [
         'system' => [

@@ -9,18 +9,22 @@ return [
     'settings' => [
         'search_label' => 'Otomatik olarak arama alanına odaklan.',
         'search_comment' => 'Öncelikle ikinci kenar çubuğundaki listeleri içinde.',
-        'sidebar_label' => 'Sol kısayol bloğunda açıklamaları gizle.',
-        'sidebar_comment' => 'Kenar çubuğunda menüler açıklamasını gizle.',
         'avatar_label' => 'Yuvarlak profil resmi yerine küp biri.',
         'avatar_comment' => 'Avatar sadece üst menüde değiştirir.',
+        'clearbutton_label' => 'Add the clear button to input fields.',
+        'clearbutton_comment' => 'It works only by simple text fields.',
         'keyboard_label' => 'Sanal klavyeyi aktifleştir.',
         'keyboard_comment' => 'Sadece basit metin alanları ile çalışır.',
+        'sidebar_desc_label' => 'Sol kısayol bloğunda açıklamaları gizle.',
+        'sidebar_desc_comment' => 'Kenar çubuğunda menüler açıklamasını gizle.',
+        'sidebar_search_label' => 'Kenar çubuğunda arama alanını gizleyin.',
+        'sidebar_search_comment' => 'Kenar çubuğunda menüler açıklamasını gizle.',
         'media_label' => 'Üst menüde Medya bağlantısını gizleyin.',
         'media_comment' => 'Hala mevcut ama göstermiyor.',
         'themes_label' => 'Hide the "Medanis Tema..." link.',
         'themes_comment' => 'Located on Front-end theme page.',
-        'delete_plugin' => 'Ekim Demo eklentisi silin.',
-        'sidebar_search' => 'Kenar çubuğunda arama alanını gizleyin.'
+        'delete_plugin_label' => 'Ekim Demo eklentisi silin.',
+        'delete_plugin_comment' => 'All files will be removed permanently.'
     ],
     'widgets' => [
         'system' => [

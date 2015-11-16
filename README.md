@@ -6,10 +6,11 @@ This plugin extend the backend to some new widgets, useful features and componen
 * Hide the menu description in sidebar.
 * __Rounded profile image is optional in top menu.__
 * Show the virtual keyboard by input fields.
-* __Hide the Media menu in top menu.__
+* __Add the clear button to input fields.__
 * Hide the search field in sidebar.
-* __Delete the October demo plugin.__
+* __Hide the Media menu in top menu.__
 * Hide the "Find more themes" link in Design.
+* __Delete the October demo plugin.__
 
 ###New widgets
 * __System status plus (updates, plugins and themes)__
@@ -48,6 +49,7 @@ This plugin extend the backend to some new widgets, useful features and componen
 1. __Select__ the current widget from the list.
 
 ###Credits
-* Random images: [lorempixel](http://lorempixel.com)
+* Clear button: [Add Clear](https://github.com/skorecky/Add-Clear)
 * Virtual keyboard: [MLKeyboard](https://github.com/mBut/jquery.mlkeyboard)
+* Random images: [lorempixel](http://lorempixel.com)
 * Image slideshow: [Cycle2](https://github.com/malsup/cycle2)

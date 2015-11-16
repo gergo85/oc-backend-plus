@@ -9,18 +9,22 @@ return [
     'settings' => [
         'search_label' => 'Fokus auf das Suchfeld automatisch.',
         'search_comment' => 'Zum einen in Listen, zweitens in der Seitenleiste.',
-        'sidebar_label' => 'Blenden Sie das Menü Beschreibung in der Seitenleiste.',
-        'sidebar_comment' => 'Blenden Sie die Beschreibung der Menüs in der Seitenleiste.',
         'avatar_label' => 'Abgerundete Profilbild statt eines Würfels.',
         'avatar_comment' => 'Der Avatar ändert nur in Top-Menü.',
+        'clearbutton_label' => 'Add the clear button to input fields.',
+        'clearbutton_comment' => 'It works only by simple text fields.',
         'keyboard_label' => 'Lassen Sie sich die virtuelle Tastatur von Formen.',
         'keyboard_comment' => 'Es funktioniert nur mit einfachen Textfelder.',
+        'sidebar_desc_label' => 'Blenden Sie das Menü Beschreibung in der Seitenleiste.',
+        'sidebar_desc_comment' => 'Blenden Sie die Beschreibung der Menüs in der Seitenleiste.',
+        'sidebar_search_label' => 'Blenden Sie das Suchfeld in der Seitenleiste.',
+        'sidebar_search_comment' => 'Blenden Sie die Beschreibung der Menüs in der Seitenleiste.',
         'media_label' => 'Ausblenden der Media Link in Top-Menü.',
         'media_comment' => 'Es ist immer noch vorhanden, aber es nicht zu zeigen.',
         'themes_label' => 'Blenden Sie die "Weitere Themen" Link.',
         'themes_comment' => 'Das Hotel liegt am Frontend-Themenseite.',
-        'delete_plugin' => 'Löschen Sie die Oktober-Demo Plugin.',
-        'sidebar_search' => 'Blenden Sie das Suchfeld in der Seitenleiste.'
+        'delete_plugin_label' => 'Löschen Sie die Oktober-Demo Plugin.',
+        'delete_plugin_comment' => 'All files will be removed permanently.'
     ],
     'widgets' => [
         'system' => [
