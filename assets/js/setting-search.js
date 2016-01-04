@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(function() {
     var content_search = $('input[name="listToolbarSearch[term]"]');
     var template_search = $('input[name="templatesToolbarSearch[term]"]');
     var general_search = $('input[name="search"]');

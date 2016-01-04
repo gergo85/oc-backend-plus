@@ -1,3 +1,3 @@
-$(document).ready(function() {
-    $('.find-more-themes').hide();
+$(function() {
+    $('.find-more-themes').css('display', 'none');
 });
