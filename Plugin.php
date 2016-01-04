@@ -6,7 +6,6 @@ use Event;
 use Backend;
 use BackendAuth;
 use Backend\Models\UserPreferences;
-use System\Classes\PluginManager;
 use File;
 use BackendMenu;
 
@@ -175,12 +174,7 @@ class Plugin extends PluginBase
                 }
 
                 if (isset($preferences['media_menu']) && $preferences['media_menu']) {
-                    if (PluginManager::instance()->exists('RainLab.Pages')) {
-                        $controller->addCss('/plugins/indikator/backend/assets/css/media-menu-pages.css');
-                    }
-                    else {
-                        $controller->addCss('/plugins/indikator/backend/assets/css/media-menu.css');
-                    }
+                    $controller->addJs('/plugins/indikator/backend/assets/js/media-menu.js');
                 }
 
                 if (isset($preferences['more_themes']) && $preferences['more_themes']) {
