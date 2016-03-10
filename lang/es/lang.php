@@ -87,6 +87,11 @@ return [
             'error' => 'El campo solo puede contener números.',
             'simple' => 'Simple',
             'slideshow' => 'Slideshow'
+        ],
+        'cache' => [
+            'title' => 'Backend - Cache',
+            'label' => 'Cache',
+            'clear' => 'Limpiar cache'
         ]
     ],
     'properties' => [

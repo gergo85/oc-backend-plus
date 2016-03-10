@@ -21,7 +21,8 @@ This plugin extend the backend to some new widgets, useful features and componen
 * Administrators (users, groups and last login)
 * __PHP settings (upload limit, memory limit and timezone)__
 * Server info (host, ip address and operation system)
-* __Random images (hundreds of high-quality photos)__
+* __Cache storage (view diagram and delete files)__
+* Random images (hundreds of high-quality photos)
 
 ###New components
 * Lorem ipsum image
@@ -35,12 +36,12 @@ This plugin extend the backend to some new widgets, useful features and componen
 * tr - Türkçe
 
 ###Installation
-1. Go to the __Settings -> Updates__ page in Backend.
+1. Go to the __Settings > Updates__ page in Backend.
 1. Click on the __Install Plugins__ button.
 1. Type the __Backend Plus__ in search field.
 
 ###Activate features
-1. Go to the __Settings -> Back-end preferences__ page in Backend.
+1. Go to the __Settings > Back-end preferences__ page in Backend.
 1. You can activate any new features.
 
 ###Add widget

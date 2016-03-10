@@ -87,6 +87,11 @@ return [
             'error' => 'The field can only contain numbers.',
             'simple' => 'Simple',
             'slideshow' => 'Slideshow'
+        ],
+        'cache' => [
+            'title' => 'Backend - Cache',
+            'label' => 'Cache usage',
+            'clear' => 'Clear cache'
         ]
     ],
     'properties' => [

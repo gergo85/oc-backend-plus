@@ -62,6 +62,10 @@ class Plugin extends PluginBase
             'Indikator\Backend\ReportWidgets\Images' => [
                 'label'   => 'indikator.backend::lang.widgets.images.title',
                 'context' => 'dashboard'
+            ],
+            'Indikator\Backend\ReportWidgets\Cache' => [
+                'label'   => 'indikator.backend::lang.widgets.cache.title',
+                'context' => 'dashboard'
             ]
         ];
     }

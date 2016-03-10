@@ -87,6 +87,11 @@ return [
             'error' => 'A mező csak számokat tartalmazhat.',
             'simple' => 'Egyszerő',
             'slideshow' => 'Képváltós'
+        ],
+        'cache' => [
+            'title' => 'Admin - Gyorsindítótár',
+            'label' => 'Gyorsindítótár',
+            'clear' => 'Fájlok törlése'
         ]
     ],
     'properties' => [

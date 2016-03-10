@@ -87,6 +87,11 @@ return [
             'error' => 'Das Feld kann nur Zahlen.',
             'simple' => 'Einfach',
             'slideshow' => 'Diashow'
+        ],
+        'cache' => [
+            'title' => 'Backend - Cache-Speicher',
+            'label' => 'Cache-Speicher',
+            'clear' => 'Cache leeren'
         ]
     ],
     'properties' => [

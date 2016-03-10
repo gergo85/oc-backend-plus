@@ -1,0 +1,24 @@
+<div class="report-widget" id="cache-sizes">
+    <h3 style="margin-bottom:5px;"><?= e(trans($this->property('title'))) ?></h3>
+
+<?php if (!isset($error)): ?>
+    <div class="control-chart" data-control="chart-pie" data-size="200" data-center-text="<?= $all ?>">
+        <ul>
+            <li>cms/cache<span><?= $cache ?></span></li>
+            <li>cms/combiner<span><?= $combiner ?></span></li>
+            <li>cms/twig<span><?= $twig ?></span></li>
+            <li>framework/cache<span><?= $framework ?></span></li>
+        </ul>
+    </div>
+    <button
+        type="button"
+        class="btn btn-success"
+        data-request="<?= $this->getEventHandler('onClear') ?>"
+        data-request-success="$('#cache-sizes').replaceWith(data.partial)">
+        <span class="fa icon-trash"></span> &nbsp; <?= e(trans('indikator.backend::lang.widgets.cache.clear')) ?>
+    </button>
+
+<?php else: ?>
+    <p class="flash-message static warning"><?= e($error) ?></p>
+<?php endif ?>
+</div>

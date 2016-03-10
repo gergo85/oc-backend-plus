@@ -87,6 +87,11 @@ return [
             'error' => 'Bu alana sadece sayı girebilirsiniz.',
             'simple' => 'Basit',
             'slideshow' => 'Slayt gösterisi'
+        ],
+        'cache' => [
+            'title' => 'Backend - Önbellek',
+            'label' => 'Önbellek',
+            'clear' => 'Önbelleği temizle'
         ]
     ],
     'properties' => [
