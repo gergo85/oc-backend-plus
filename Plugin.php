@@ -78,6 +78,20 @@ class Plugin extends PluginBase
         ];
     }
 
+    public function registerFormWidgets()
+    {
+        return [
+            'Indikator\Backend\FormWidgets\Pickadate' => [
+                'label' => 'Pickadate',
+                'code'  => 'pickadate'
+            ],
+            'Indikator\Backend\FormWidgets\TimePicki' => [
+                'label' => 'TimePicki',
+                'code'  => 'timepicki'
+            ]
+        ];
+    }
+
     public function boot()
     {
         Event::listen('backend.form.extendFields', function($form)

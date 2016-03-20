@@ -1,0 +1,32 @@
+<?php if ($this->previewMode): ?>
+    <div class="form-control"><?= $value ?></div>
+<?php else: ?>
+
+    <div
+        id="<?= $this->getId() ?>"
+        data-control="timepicki"
+        class="field-timepicki clockpicker">
+        <div class="input-with-icon right-align">
+            <i class="icon icon-clock-o"></i>
+            <input
+                type="text"
+                id="<?= $this->getId('input') ?>"
+                name="<?= $name ?>"
+                value="<?= substr($value, 0, 5) ?>"
+                class="form-control"
+                autocomplete="off"
+                data-increase-direction="<?= $increaseDirection ?>"
+                data-custom-classes="<?= $customClasses ?>"
+                data-min-hour-value="<?= $minHourValue ?>"
+                data-max-hour-value="<?= $maxHourValue ?>"
+                data-show-meridian="<?= $showMeridian ?>"
+                data-step-size-hours="<?= $stepSizeHours ?>"
+                data-step-size-minutes="<?= $stepSizeMinutes ?>"
+                data-overflow-minutes="<?= $overflowMinutes ?>"
+                data-disable-keyboard-mobile="<?= $disableKeyboardMobile ?>"
+                data-reset="<?= $reset ?>"
+                <?= $field->getAttributes() ?> />
+        </div>
+    </div>
+
+<?php endif ?>

@@ -1,0 +1,92 @@
+<?php if ($this->previewMode): ?>
+    <div class="form-control"><?= $value ?></div>
+<?php else: ?>
+
+    <?php if ($mode == 'date'): ?>
+
+        <div
+            id="<?= $this->getId() ?>"
+            class="field-pickadate"
+            data-control="pickadate">
+            <div class="input-with-icon right-align">
+                <i class="icon icon-calendar-o"></i>
+                <input
+                    type="text"
+                    id="<?= $this->getId('input') ?>"
+                    name="<?= $name ?>"
+                    value="<?= $value ?>"
+                    class="form-control align-right"
+                    autocomplete="off"
+                    data-selectYears="<?= $selectYears ?>"
+                    data-selectMonths="<?= $selectMonths ?>"
+                    <?= $field->getAttributes() ?> />
+            </div>
+        </div>
+
+    <?php elseif ($mode == 'datetime'): ?>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div
+                    id="<?= $this->getId() ?>"
+                    class="field-pickadate"
+                    data-control="pickadate">
+                    <div class="input-with-icon right-align">
+                        <i class="icon icon-calendar-o"></i>
+                        <input
+                            type="text"
+                            id="<?= $this->getId('input') ?>"
+                            name="<?= $name ?>"
+                            value="<?= $value ?>"
+                            class="form-control align-right"
+                            autocomplete="off"
+                            data-selectYears="<?= $selectYears ?>"
+                            data-selectMonths="<?= $selectMonths ?>"
+                            <?= $field->getAttributes() ?> />
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div
+                    id="<?= $this->getId() ?>-time"
+                    data-control="pickatime"
+                    class="field-pickatime clockpicker">
+                    <div class="input-with-icon right-align">
+                        <i class="icon icon-clock-o"></i>
+                        <input
+                            type="text"
+                            id="<?= $this->getId('input') ?>-time"
+                            name="<?= $timeName ?>"
+                            value="<?= $timeValue ?>"
+                            class="form-control align-right"
+                            autocomplete="off"
+                            data-interval="<?= $interval ?>"
+                            <?= $field->getAttributes() ?> />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <?php elseif ($mode == 'time'): ?>
+
+        <div
+            id="<?= $this->getId() ?>"
+            data-control="pickatime"
+            class="field-pickatime clockpicker">
+            <div class="input-with-icon right-align">
+                <i class="icon icon-clock-o"></i>
+                <input
+                    type="text"
+                    id="<?= $this->getId('input') ?>"
+                    name="<?= $name ?>"
+                    value="<?= $value ?>"
+                    class="form-control align-right"
+                    autocomplete="off"
+                    data-interval="<?= $interval ?>"
+                    <?= $field->getAttributes() ?> />
+            </div>
+        </div>
+
+    <?php endif ?>
+
+<?php endif ?>
