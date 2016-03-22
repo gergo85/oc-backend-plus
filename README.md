@@ -1,7 +1,7 @@
 ##Backend toolkit plugin for OctoberCMS
-This plugin extend the backend to some new widgets, useful features and components.
+This plugin extend the backend to some new dashboard widgets, form widgets, useful features and front-end components.
 
-###New features
+###New back-end features
 * __Focus the search field automatically.__
 * Hide the menu description in sidebar.
 * __Rounded profile image is optional in top menu.__
@@ -12,7 +12,7 @@ This plugin extend the backend to some new widgets, useful features and componen
 * Hide the "Find more themes" link in Design.
 * __Delete the October demo plugin.__
 
-###New widgets
+###New dashboard widgets
 * __System status plus (updates, plugins and themes)__
 * Versions (cms, php and gd library)
 * __RSS viewer (title, date and description)__
@@ -24,13 +24,14 @@ This plugin extend the backend to some new widgets, useful features and componen
 * __PHP settings (upload limit, memory limit and timezone)__
 * Server info (host, ip address and operation system)
 
-###New components
-* Lorem ipsum image
-* Lorem ipsum text
-
 ###New form widgets
 * __Pickadate__ (datepicker and timepicker)
 * __TimePicki__ (timepicker)
+* __MiniColors__ (colorpicker)
+
+###New front-end components
+* Lorem ipsum image
+* Lorem ipsum text
 
 ###Form widgets documentation
 
@@ -58,7 +59,7 @@ See the demo: [http://amsul.ca/pickadate.js](http://amsul.ca/pickadate.js)
         label: Time
         type: timepicki
         stepSizeMinutes: 10
-        
+
 Option | Description
 ------------- | -------------
 **increaseDirection** | set increase hour or minute direction. Default: 'down'.
@@ -73,6 +74,29 @@ Option | Description
 **reset** | if want to reset time in input, to enable reset option. Default: false.
 
 See the demo: [http://senthilraj.github.io/TimePicki](http://senthilraj.github.io/TimePicki)
+
+#####MiniColors
+`minicolors` - renders controls to select a color value.
+
+    theme:
+        label: Choose color
+        type: minicolors
+        control: wheel
+
+Option | Description
+------------- | -------------
+**animationSpeed** | the animation speed of the sliders when the user taps or clicks a new color. Default: 50.
+**animationEasing** | the easing to use when animating the sliders. Default: 'swing'.
+**changeDelay** | the time, in milliseconds, to defer the change event from firing while the user makes a selection. Default: 0.
+**control** | determines the type of control. Valid options are 'hue', 'brightness', 'saturation', and 'wheel'. Default: 'hue'.
+**format** | the format MiniColors should use. Valid options are 'hex' and 'rgb'. Default: 'hex'.
+**hideSpeed** | the speed at which to hide the color picker. Default: 100.
+**keywords** | a comma-separated list of keywords that the control should accept (e.g. inherit, transparent, initial). Default: ''.
+**letterCase** | determines the letter case of the hex code value. Valid options are 'uppercase' or 'lowercase'. Default: 'lowercase'.
+**position** | sets the position of the dropdown. Valid options are 'bottom left', 'bottom right', 'top left', and 'top right'. Default: 'bottom left'.
+**showSpeed** | the speed at which to show the color picker. Default: 100.
+
+See the demo: [http://labs.abeautifulsite.net/jquery-minicolors](http://labs.abeautifulsite.net/jquery-minicolors)
 
 ###Available languages
 * en - English
@@ -102,3 +126,4 @@ See the demo: [http://senthilraj.github.io/TimePicki](http://senthilraj.github.i
 * Image slideshow: [Cycle2](https://github.com/malsup/cycle2)
 * Datepicker: [Pickadate](http://amsul.ca/pickadate.js)
 * Timepicker: [TimePicki](http://senthilraj.github.io/TimePicki)
+* Colorpicker: [MiniColors](http://labs.abeautifulsite.net/jquery-minicolors)

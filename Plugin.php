@@ -88,6 +88,10 @@ class Plugin extends PluginBase
             'Indikator\Backend\FormWidgets\TimePicki' => [
                 'label' => 'TimePicki',
                 'code'  => 'timepicki'
+            ],
+            'Indikator\Backend\FormWidgets\MiniColors' => [
+                'label' => 'MiniColors',
+                'code'  => 'minicolors'
             ]
         ];
     }
