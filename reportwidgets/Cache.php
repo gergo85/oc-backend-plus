@@ -1,10 +1,10 @@
 <?php namespace Indikator\Backend\ReportWidgets;
 
 use Backend\Classes\ReportWidgetBase;
-use Backend\Models\UserPreferences;
+use Exception;
+use App;
 use RecursiveDirectoryIterator;
 use RecursiveIteratorIterator;
-use Exception;
 
 class Cache extends ReportWidgetBase
 {
@@ -54,30 +54,17 @@ class Cache extends ReportWidgetBase
     protected function formatSize($size)
     {
         if ($size > 0) {
-            $name = ['B', 'KB', 'MB', 'GB', 'TB'];
             $common = ['au', 'bn', 'bw', 'ch', 'cn', 'do', 'eg', 'gt', 'hk', 'hn', 'ie', 'il', 'in', 'jp', 'ke', 'kp', 'kr', 'lb', 'lk', 'mn', 'mo', 'mt', 'mx', 'my', 'ng', 'ni', 'np', 'nz', 'pa', 'ph', 'pk', 'sg', 'th', 'tw', 'tz', 'ug', 'uk', 'us', 'zw'];
+            $size = round($size / 1048576, 1);
 
-            for ($i = 0; $size >= 1024; $i++) {
-                $size /= 1024;
-
-                if ($i < 1) {
-                    $size = round($size, 0);
-                }
-                else {
-                    $size = round($size, 1);
-                }
-            }
-
-            $preferences = UserPreferences::forUser()->get('backend::backend.preferences');
-
-            if (!in_array($preferences['locale'], $common)) {
+            if (!in_array(App::getLocale(), $common)) {
                 $size = str_replace('.', ',', $size);
             }
 
-            return $size.' '.$name[$i];
+            return $size.' MB';
         }
 
-        return '0 B';
+        return '0 MB';
     }
 
     protected function folderSize($directory)
