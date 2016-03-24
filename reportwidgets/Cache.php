@@ -44,7 +44,7 @@ class Cache extends ReportWidgetBase
 
     protected function loadData()
     {
-        $this->vars['cache']  = $this->formatSize($cache = $this->folderSize(storage_path().'/cms/cache'));
+        $this->vars['cache'] = $this->formatSize($cache = $this->folderSize(storage_path().'/cms/cache'));
         $this->vars['combiner'] = $this->formatSize($combiner = $this->folderSize(storage_path().'/cms/combiner'));
         $this->vars['twig'] = $this->formatSize($twig = $this->folderSize(storage_path().'/cms/twig'));
         $this->vars['framework'] = $this->formatSize($framework = $this->folderSize(storage_path().'/framework/cache'));
