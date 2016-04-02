@@ -53,18 +53,7 @@ class Cache extends ReportWidgetBase
 
     protected function formatSize($size)
     {
-        if ($size > 0) {
-            $common = ['au', 'bn', 'bw', 'ch', 'cn', 'do', 'eg', 'gt', 'hk', 'hn', 'ie', 'il', 'in', 'jp', 'ke', 'kp', 'kr', 'lb', 'lk', 'mn', 'mo', 'mt', 'mx', 'my', 'ng', 'ni', 'np', 'nz', 'pa', 'ph', 'pk', 'sg', 'th', 'tw', 'tz', 'ug', 'uk', 'us', 'zw'];
-            $size = round($size / 1048576, 1);
-
-            if (!in_array(App::getLocale(), $common)) {
-                $size = str_replace('.', ',', $size);
-            }
-
-            return $size.' MB';
-        }
-
-        return '0 MB';
+        return round($size / 1024, 0).' KB';
     }
 
     protected function folderSize($directory)

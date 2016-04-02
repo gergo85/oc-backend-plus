@@ -1,13 +1,13 @@
 <div class="report-widget" id="cache-sizes">
-    <h3 style="margin-bottom:5px;"><?= e(trans($this->property('title'))) ?></h3>
+    <h3 style="margin-bottom:25px;"><?= e(trans($this->property('title'))) ?></h3>
 
 <?php if (!isset($error)): ?>
     <div class="control-chart" data-control="chart-pie" data-size="200" data-center-text="<?= $all ?>">
         <ul>
-            <li>cms/cache<span><?= $cache ?></span></li>
-            <li>cms/combiner<span><?= $combiner ?></span></li>
-            <li>cms/twig<span><?= $twig ?></span></li>
-            <li>framework/cache<span><?= $framework ?></span></li>
+            <li data-color="#7e709a">cms/cache<span><?= $cache ?></span></li>
+            <li data-color="#903030">cms/combiner<span><?= $combiner ?></span></li>
+            <li data-color="#c4b004">cms/twig<span><?= $twig ?></span></li>
+            <li data-color="#408080">framework/cache<span><?= $framework ?></span></li>
         </ul>
     </div>
     <button
