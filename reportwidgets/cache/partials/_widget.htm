@@ -2,7 +2,7 @@
     <h3 style="margin-bottom:25px;"><?= e(trans($this->property('title'))) ?></h3>
 
 <?php if (!isset($error)): ?>
-    <div class="control-chart" data-control="chart-pie" data-size="200" data-center-text="<?= $all ?>">
+    <div class="control-chart" data-control="chart-pie" data-size="200" data-center-text="<?= $all ?>" style="margin-bottom:15px;">
         <ul>
             <li data-color="#7e709a">cms/cache<span><?= $cache ?></span></li>
             <li data-color="#903030">cms/combiner<span><?= $combiner ?></span></li>
