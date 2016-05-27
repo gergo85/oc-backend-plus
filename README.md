@@ -1,4 +1,4 @@
-##Backend toolkit plugin for OctoberCMS
+##Backend toolkit plugin
 This plugin extend the backend to some new dashboard widgets, form widgets, useful features and front-end components.
 
 ###New back-end features
