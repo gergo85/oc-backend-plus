@@ -19,8 +19,6 @@ return [
         'sidebar_desc_comment' => 'It works only the pages of Settings menu.',
         'sidebar_search_label' => 'Hide the search field in the sidebar.',
         'sidebar_search_comment' => 'It works only the pages of Settings menu.',
-        'media_label' => 'Hide the Media link in the top menu.',
-        'media_comment' => 'It still available but it not shows.',
         'themes_label' => 'Hide the "Find more themes" link.',
         'themes_comment' => 'Located on the Front-end theme page.',
         'delete_plugin_label' => 'Delete the October Demo plugin.',

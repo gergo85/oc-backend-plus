@@ -19,8 +19,6 @@ return [
         'sidebar_desc_comment' => 'Blenden Sie die Beschreibung der Menüs in der Seitenleiste.',
         'sidebar_search_label' => 'Blenden Sie das Suchfeld in der Seitenleiste.',
         'sidebar_search_comment' => 'Blenden Sie die Beschreibung der Menüs in der Seitenleiste.',
-        'media_label' => 'Ausblenden der Media Link in Top-Menü.',
-        'media_comment' => 'Es ist immer noch vorhanden, aber es nicht zu zeigen.',
         'themes_label' => 'Blenden Sie die "Weitere Themen" Link.',
         'themes_comment' => 'Das Hotel liegt am Frontend-Themenseite.',
         'delete_plugin_label' => 'Löschen Sie die Oktober-Demo Plugin.',

@@ -19,8 +19,6 @@ return [
         'sidebar_desc_comment' => 'Kenar çubuğunda menüler açıklamasını gizle.',
         'sidebar_search_label' => 'Kenar çubuğunda arama alanını gizleyin.',
         'sidebar_search_comment' => 'Kenar çubuğunda menüler açıklamasını gizle.',
-        'media_label' => 'Üst menüde Medya bağlantısını gizleyin.',
-        'media_comment' => 'Hala mevcut ama göstermiyor.',
         'themes_label' => 'Hide the "Medanis Tema..." link.',
         'themes_comment' => 'Located on Front-end theme page.',
         'delete_plugin_label' => 'Ekim Demo eklentisi silin.',

@@ -144,13 +144,6 @@ class Plugin extends PluginBase
                         'default' => 'false',
                         'comment' => 'indikator.backend::lang.settings.sidebar_search_comment'
                     ],
-                    'media_menu' => [
-                        'label'   => 'indikator.backend::lang.settings.media_label',
-                        'type'    => 'switch',
-                        'span'    => 'auto',
-                        'default' => 'false',
-                        'comment' => 'indikator.backend::lang.settings.media_comment'
-                    ],
                     'more_themes' => [
                         'label'   => 'indikator.backend::lang.settings.themes_label',
                         'type'    => 'switch',
@@ -193,10 +186,6 @@ class Plugin extends PluginBase
 
                 if (isset($preferences['sidebar_search']) && $preferences['sidebar_search']) {
                     $controller->addCss('/plugins/indikator/backend/assets/css/sidebar-search.css');
-                }
-
-                if (isset($preferences['media_menu']) && $preferences['media_menu']) {
-                    $controller->addJs('/plugins/indikator/backend/assets/js/media-menu.js');
                 }
 
                 if (isset($preferences['more_themes']) && $preferences['more_themes']) {
