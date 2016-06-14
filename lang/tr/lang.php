@@ -7,6 +7,7 @@ return [
         'author' => 'Gergő Szabó'
     ],
     'settings' => [
+        'tab_title' => 'Aksesuarlar',
         'search_label' => 'Otomatik olarak arama alanına odaklan.',
         'search_comment' => 'Öncelikle ikinci kenar çubuğundaki listeleri içinde.',
         'avatar_label' => 'Yuvarlak profil resmi yerine küp biri.',

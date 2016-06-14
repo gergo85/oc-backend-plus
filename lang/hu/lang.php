@@ -7,6 +7,7 @@ return [
         'author' => 'Szabó Gergő'
     ],
     'settings' => [
+        'tab_title' => 'Kiegészítések',
         'search_label' => 'Kereső mező automatikus aktiválása.',
         'search_comment' => 'Elsőként a listáknál, másodsorban az oldalsó menüben.',
         'avatar_label' => 'Kerek profilkép használata a szögletes helyett.',

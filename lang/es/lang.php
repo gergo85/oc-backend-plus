@@ -7,6 +7,7 @@ return [
         'author' => 'Gergő Szabó'
     ],
     'settings' => [
+        'tab_title' => 'Accesorios',
         'search_label' => 'Hacer "focus" en el campo de búsqueda automáticamente.',
         'search_comment' => 'En primer lugar en las listas, en segundo lugar, en la barra lateral.',
         'avatar_label' => 'Imagen de perfil redondeado en lugar de un solo cubo.',

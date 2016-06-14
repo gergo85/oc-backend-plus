@@ -7,6 +7,7 @@ return [
         'author' => 'Gergő Szabó'
     ],
     'settings' => [
+        'tab_title' => 'Zubehör',
         'search_label' => 'Fokus auf das Suchfeld automatisch.',
         'search_comment' => 'Zum einen in Listen, zweitens in der Seitenleiste.',
         'avatar_label' => 'Abgerundete Profilbild statt eines Würfels.',

@@ -100,16 +100,18 @@ class Plugin extends PluginBase
     {
         Event::listen('backend.form.extendFields', function($form)
         {
-            if ($form->model instanceof Backend\Models\BackendPreferences) {
+            if ($form->model instanceof Backend\Models\Preference) {
                 $form->addFields([
                     'focus_searchfield' => [
+                        'tab'     => 'indikator.backend::lang.settings.tab_title',
                         'label'   => 'indikator.backend::lang.settings.search_label',
                         'type'    => 'switch',
-                        'span'    => 'left',
+                        'span'    => 'auto',
                         'default' => 'false',
                         'comment' => 'indikator.backend::lang.settings.search_comment'
                     ],
                     'rounded_avatar' => [
+                        'tab'     => 'indikator.backend::lang.settings.tab_title',
                         'label'   => 'indikator.backend::lang.settings.avatar_label',
                         'type'    => 'switch',
                         'span'    => 'auto',
@@ -117,6 +119,7 @@ class Plugin extends PluginBase
                         'comment' => 'indikator.backend::lang.settings.avatar_comment'
                     ],
                     'form_clearbutton' => [
+                        'tab'     => 'indikator.backend::lang.settings.tab_title',
                         'label'   => 'indikator.backend::lang.settings.clearbutton_label',
                         'type'    => 'switch',
                         'span'    => 'auto',
@@ -124,6 +127,7 @@ class Plugin extends PluginBase
                         'comment' => 'indikator.backend::lang.settings.clearbutton_comment'
                     ],
                     'virtual_keyboard' => [
+                        'tab'     => 'indikator.backend::lang.settings.tab_title',
                         'label'   => 'indikator.backend::lang.settings.keyboard_label',
                         'type'    => 'switch',
                         'span'    => 'auto',
@@ -131,6 +135,7 @@ class Plugin extends PluginBase
                         'comment' => 'indikator.backend::lang.settings.keyboard_comment'
                     ],
                     'sidebar_description' => [
+                        'tab'     => 'indikator.backend::lang.settings.tab_title',
                         'label'   => 'indikator.backend::lang.settings.sidebar_desc_label',
                         'type'    => 'switch',
                         'span'    => 'auto',
@@ -138,6 +143,7 @@ class Plugin extends PluginBase
                         'comment' => 'indikator.backend::lang.settings.sidebar_desc_comment'
                     ],
                     'sidebar_search' => [
+                        'tab'     => 'indikator.backend::lang.settings.tab_title',
                         'label'   => 'indikator.backend::lang.settings.sidebar_search_label',
                         'type'    => 'switch',
                         'span'    => 'auto',
@@ -145,6 +151,7 @@ class Plugin extends PluginBase
                         'comment' => 'indikator.backend::lang.settings.sidebar_search_comment'
                     ],
                     'more_themes' => [
+                        'tab'     => 'indikator.backend::lang.settings.tab_title',
                         'label'   => 'indikator.backend::lang.settings.themes_label',
                         'type'    => 'switch',
                         'span'    => 'auto',
@@ -152,6 +159,7 @@ class Plugin extends PluginBase
                         'comment' => 'indikator.backend::lang.settings.themes_comment'
                     ],
                     'delete_plugin' => [
+                        'tab'     => 'indikator.backend::lang.settings.tab_title',
                         'label'   => 'indikator.backend::lang.settings.delete_plugin_label',
                         'type'    => 'switch',
                         'span'    => 'auto',
