@@ -7,9 +7,9 @@
         <h4><?= e(trans('indikator.backend::lang.widgets.system.webpage')) ?></h4>
         <a href="<?= Backend::url('system/settings/update/october/cms/maintenance_settings') ?>" style="text-decoration:none;">
         <?php if ($inMaintenance): ?>
-        <p class="system-offline"><?= e(trans('backend::lang.dashboard.status.maintenance')) ?></p>
+        <p class="system-offline"><?= e(trans('cms::lang.dashboard.active_theme.maintenance')) ?></p>
         <?php else: ?>
-        <p class="system-online"><?= e(trans('backend::lang.dashboard.status.online')) ?></p>
+        <p class="system-online"><?= e(trans('cms::lang.dashboard.active_theme.online')) ?></p>
         <?php endif ?>
         </a>
     </div>
