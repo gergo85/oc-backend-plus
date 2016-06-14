@@ -8,21 +8,20 @@ This plugin extend the backend to some new dashboard widgets, form widgets, usef
 * Show the virtual keyboard by input fields.
 * __Add the clear button to input fields.__
 * Hide the search field in sidebar.
-* __Hide the Media menu in top menu.__
-* Hide the "Find more themes" link in Design.
 * __Delete the October demo plugin.__
+* Hide the "Find more themes" link in Design.
 
 ###New dashboard widgets
 * __System status plus (updates, plugins and themes)__
-* Versions (cms, php and gd library)
+* Versions (CMS, PHP and GD library)
 * __RSS viewer (title, date and description)__
 * Logs (event, access and request)
 * __Cache storage (view diagram and delete files)__
 * Random images (hundreds of high-quality photos)
-* __Last logins (date, user name and ip address)__
+* __Last logins (date, user name and IP address)__
 * Administrators (users, groups and last login)
 * __PHP settings (upload limit, memory limit and timezone)__
-* Server info (host, ip address and operation system)
+* Server info (host, IP address and operation system)
 
 ###New form widgets
 * __Pickadate__ (datepicker and timepicker)
