@@ -53,8 +53,8 @@ class Logs extends ReportWidgetBase
 
     protected function loadData()
     {
-        $this->vars['access'] = DB::table('backend_access_log')->count();
-        $this->vars['event'] = DB::table('system_event_logs')->count();
+        $this->vars['access']  = DB::table('backend_access_log')->count();
+        $this->vars['event']   = DB::table('system_event_logs')->count();
         $this->vars['request'] = DB::table('system_request_logs')->count();
     }
 }

@@ -28,7 +28,7 @@ class Pickadate extends FormWidgetBase
             'interval'
         ]);
 
-        $this->mode = strtolower($this->mode); 
+        $this->mode = strtolower($this->mode);
     }
 
     public function render()
@@ -39,12 +39,12 @@ class Pickadate extends FormWidgetBase
     }
 
     protected function prepareVars()
-    {        
+    {
         $this->vars['name'] = $this->formField->getName();
         $this->vars['field'] = $this->formField;
 
         $this->vars['timeName'] = self::TIME_PREFIX.$this->formField->getName(false);
-        $this->vars['timeValue'] = null; 
+        $this->vars['timeValue'] = null;
 
         if ($value = $this->getLoadValue()) {
             // Date and time
@@ -115,14 +115,14 @@ class Pickadate extends FormWidgetBase
             return null;
         }
 
-        $timeValue = post(self::TIME_PREFIX . $this->formField->getName(false));
+        $timeValue = post(self::TIME_PREFIX.$this->formField->getName(false));
 
         if ($this->mode == 'datetime' && $timeValue) {
-            $value .= ' ' . $timeValue . ':00';
+            $value .= ' '.$timeValue.':00';
         }
 
         else if ($this->mode == 'time') {
-            $value = substr($value, 0, 5) . ':00';
+            $value = substr($value, 0, 5).':00';
         }
 
         return $value;

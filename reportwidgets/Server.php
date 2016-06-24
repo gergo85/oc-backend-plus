@@ -48,7 +48,7 @@ class Server extends ReportWidgetBase
     protected function loadData()
     {
         $this->vars['host'] = php_uname('n');
-        $this->vars['ip'] = $_SERVER['SERVER_ADDR'];
-        $this->vars['os'] = php_uname('s');
+        $this->vars['ip']   = $_SERVER['SERVER_ADDR'];
+        $this->vars['os']   = php_uname('s');
     }
 }

@@ -49,6 +49,6 @@ class Php extends ReportWidgetBase
     {
         $this->vars['upload_limit'] = str_replace('M', ' MB', ini_get('upload_max_filesize'));
         $this->vars['memory_limit'] = str_replace('M', ' MB', ini_get('memory_limit'));
-        $this->vars['timezone'] = str_replace('/', ' / ', ini_get('date.timezone'));
+        $this->vars['timezone']     = str_replace('/', ' / ', ini_get('date.timezone'));
     }
 }

@@ -4,8 +4,12 @@
 <?php if (!isset($error)): ?>
     <?php
     $count = count($users);
-    if ($count < $this->property('logins')) $count = $count;
-    else $count = $this->property('logins');
+    if ($count < $this->property('logins')) {
+        $count = $count;
+    }
+    else {
+        $count = $this->property('logins');
+    }
 
     for ($i = 0; $i < $count; $i++):
     ?>

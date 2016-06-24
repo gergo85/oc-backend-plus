@@ -42,7 +42,11 @@ class Image extends ComponentBase
         $this->page['width'] = $this->property('width');
         $this->page['height'] = $this->property('height');
 
-        if ($this->property('text') == '') $this->page['text'] = '';
-        else $this->page['text'] = '&text='.urlencode($this->property('text'));
+        if ($this->property('text') == '') {
+            $this->page['text'] = '';
+        }
+        else {
+            $this->page['text'] = '&text='.urlencode($this->property('text'));
+        }
     }
 }

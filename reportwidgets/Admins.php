@@ -48,15 +48,15 @@ class Admins extends ReportWidgetBase
 
     protected function loadData()
     {
-        $this->vars['users'] = DB::table('backend_users')->count();
+        $this->vars['users']  = DB::table('backend_users')->count();
         $this->vars['groups'] = DB::table('backend_user_groups')->count();
 
         if (DB::table('backend_users')->where('last_login', '!=', 'NULL')->count() == 1) {
-            $this->vars['login'] = DB::table('backend_users')->where('id', 1)->pluck('login');
+            $this->vars['login']  = DB::table('backend_users')->where('id', 1)->pluck('login');
             $this->vars['userid'] = DB::table('backend_users')->where('id', 1)->pluck('id');
         }
         else {
-            $this->vars['login'] = DB::table('backend_users')->where('id', '>', 1)->orderBy('last_login', 'desc')->pluck('login');
+            $this->vars['login']  = DB::table('backend_users')->where('id', '>', 1)->orderBy('last_login', 'desc')->pluck('login');
             $this->vars['userid'] = DB::table('backend_users')->where('id', '>', 1)->orderBy('last_login', 'desc')->pluck('id');
         }
     }

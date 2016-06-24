@@ -5,20 +5,24 @@
     $rss = new DOMDocument();
 
     if (@$rss -> load($this->property('rss'))):
-        foreach ($rss -> getElementsByTagName('item') as $content)
-        {
-            $item = array(
+        foreach ($rss -> getElementsByTagName('item') as $content) {
+            $item = [
                 'title' => $content -> getElementsByTagName('title') -> item(0) -> nodeValue,
                 'description' => $content -> getElementsByTagName('description') -> item(0) -> nodeValue,
                 'link' => $content -> getElementsByTagName('link') -> item(0) -> nodeValue,
                 'date' => $content -> getElementsByTagName('pubDate') -> item(0) -> nodeValue
-            );
+            ];
             array_push($feed, $item);
         }
 
         $count = count($feed);
-        if ($count < $this->property('news')) $count = $count;
-        else $count = $this->property('news');
+
+        if ($count < $this->property('news')) {
+            $count = $count;
+        }
+        else {
+            $count = $this->property('news');
+        }
 
         for ($i = 0; $i < $count; $i++):
     ?>

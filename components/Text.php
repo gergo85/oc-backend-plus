@@ -20,18 +20,22 @@ class Text extends ComponentBase
                 'title'   => 'indikator.backend::lang.component.text.length',
                 'default' => 'some',
                 'type'    => 'dropdown',
-                'options' => ['bit' => Lang::get('indikator.backend::lang.component.text.bit'), 'some' => Lang::get('indikator.backend::lang.component.text.some'), 'lots' => Lang::get('indikator.backend::lang.component.text.lots')]
+                'options' => [
+                    'bit'  => Lang::get('indikator.backend::lang.component.text.bit'),
+                    'some' => Lang::get('indikator.backend::lang.component.text.some'),
+                    'lots' => Lang::get('indikator.backend::lang.component.text.lots')
+                ]
             ]
         ];
     }
 
     public function onRun()
     {
-        $loremtext = array(
-            'bit' => 'Lorem ipsum Reprehenderit do dolore irure.',
+        $loremtext = [
+            'bit'  => 'Lorem ipsum Reprehenderit do dolore irure.',
             'some' => 'Lorem ipsum Amet aliqua exercitation pariatur quis cupidatat officia aliquip magna nulla enim amet deserunt reprehenderit sit dolor irure culpa esse.',
             'lots' => 'Lorem ipsum Sed velit occaecat exercitation aliqua sit ex minim mollit minim exercitation velit dolor reprehenderit exercitation in enim anim ullamco aliqua sed consequat dolore eiusmod ut in aliqua sit deserunt Ut irure tempor irure exercitation exercitation irure exercitation.'
-        );
+        ];
 
         $this->page['text'] = $loremtext[$this->property('length')];
     }

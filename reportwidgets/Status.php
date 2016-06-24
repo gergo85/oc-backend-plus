@@ -5,6 +5,7 @@ use Exception;
 use System\Classes\UpdateManager;
 use Cms\Models\MaintenanceSettings;
 use DB;
+use File;
 
 class Status extends ReportWidgetBase
 {
@@ -62,18 +63,18 @@ class Status extends ReportWidgetBase
         $this->vars['updates'] = DB::table('system_parameters')->where('item', 'count')->pluck('value');
         $this->vars['plugins'] = DB::table('system_plugin_versions')->count();
 
-        $themes = 0;
+        $count = 0;
 
-        if ($handle = opendir('themes')) {
-            while (false !== ($entry = readdir($handle))) {
-                if ($entry != '.' && $entry != '..' && !is_file($entry)) {
-                    $themes++;
+        if ($themes = opendir('themes')) {
+            while (false !== ($theme = readdir($themes))) {
+                if ($theme != '.' && $theme != '..' && !File::isFile($theme)) {
+                    $count++;
                 }
             }
 
-            closedir($handle);
+            closedir($themes);
         }
 
-        $this->vars['themes'] = $themes;
+        $this->vars['themes'] = $count;
     }
 }

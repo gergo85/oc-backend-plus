@@ -105,18 +105,18 @@ See the demo: [http://labs.abeautifulsite.net/jquery-minicolors](http://labs.abe
 * tr - Türkçe
 
 ###Installation
-1. Go to the __Settings > Updates__ page in Backend.
-1. Click on the __Install Plugins__ button.
-1. Type the __Backend Plus__ in search field.
+1. Go to the __Settings > Updates & Plugins__ page in the Backend.
+1. Click on the __Install plugins__ button.
+1. Type the __Backend Plus__ text in the search field.
 
 ###Activate features
-1. Go to the __Settings > Back-end preferences__ page in Backend.
-1. You can activate any new features.
+1. Go to the __Settings > Back-end preferences__ page in the Backend.
+1. You can __activate any new features__.
 
 ###Add widget
-1. Go to the __Dashboard__ page in Backend.
-1. Click on the __Add widget__ button.
-1. __Select__ the current widget from the list.
+1. Go to the __Dashboard__ page in the Backend.
+1. Click on the __Manage widgets > Add widget__ button.
+1. Select the any __Backend Plus widgets__ from the list.
 
 ###Credits
 * Clear button: [Add Clear](https://github.com/skorecky/Add-Clear)
