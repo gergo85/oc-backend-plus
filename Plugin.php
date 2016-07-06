@@ -170,12 +170,13 @@ class Plugin extends PluginBase
         });
 
         BackendController::extend(function($controller)
-        {
-            $preferenceModel = class_exists('Backend\Models\UserPreference')
-                ? Backend\Models\UserPreference::forUser()
-                : Backend\Models\UserPreferences::forUser();
-            
+        {   
             if (BackendAuth::check()) {
+
+                $preferenceModel = class_exists('Backend\Models\UserPreference')
+                    ? Backend\Models\UserPreference::forUser()
+                    : Backend\Models\UserPreferences::forUser();
+                    
                 $preferences = $preferenceModel->get('backend::backend.preferences');
 
                 if (isset($preferences['focus_searchfield']) && $preferences['focus_searchfield']) {
