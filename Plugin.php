@@ -5,7 +5,6 @@ use Backend\Classes\Controller as BackendController;
 use Event;
 use Backend;
 use BackendAuth;
-use Backend\Models\UserPreferences;
 use File;
 use BackendMenu;
 
@@ -172,8 +171,12 @@ class Plugin extends PluginBase
 
         BackendController::extend(function($controller)
         {
+            $preferenceModel = class_exists('Backend\Models\UserPreference')
+                ? Backend\Models\UserPreference::forUser()
+                : Backend\Models\UserPreferences::forUser();
+            
             if (BackendAuth::check()) {
-                $preferences = UserPreferences::forUser()->get('backend::backend.preferences');
+                $preferences = $preferenceModel->get('backend::backend.preferences');
 
                 if (isset($preferences['focus_searchfield']) && $preferences['focus_searchfield']) {
                     $controller->addJs('/plugins/indikator/backend/assets/js/setting-search.js');
