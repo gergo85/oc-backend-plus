@@ -5,8 +5,11 @@
         isset($_COOKIE['sidenav_treegroupStatus']) ? $_COOKIE['sidenav_treegroupStatus'] : null
     );
 
-    use Backend\Models\UserPreferences;
-    $preferences = UserPreferences::forUser()->get('backend::backend.preferences');
+    $preferenceModel = class_exists('Backend\Models\UserPreference')
+        ? Backend\Models\UserPreference::forUser()
+        : Backend\Models\UserPreferences::forUser();
+
+    $preferences = $preferenceModel->get('backend::backend.preferences');
 ?>
 <ul class="top-level">
     <?php foreach ($items as $category => $items):
