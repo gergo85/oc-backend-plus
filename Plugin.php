@@ -1,12 +1,12 @@
 <?php namespace Indikator\Backend;
 
 use System\Classes\PluginBase;
+use System\Classes\PluginManager;
 use Backend\Classes\Controller as BackendController;
-use Event;
 use Backend;
 use BackendAuth;
-use File;
 use BackendMenu;
+use Event;
 
 class Plugin extends PluginBase
 {
@@ -170,13 +170,13 @@ class Plugin extends PluginBase
         });
 
         BackendController::extend(function($controller)
-        {   
+        {
             if (BackendAuth::check()) {
 
                 $preferenceModel = class_exists('Backend\Models\UserPreference')
                     ? Backend\Models\UserPreference::forUser()
                     : Backend\Models\UserPreferences::forUser();
-                    
+
                 $preferences = $preferenceModel->get('backend::backend.preferences');
 
                 if (isset($preferences['focus_searchfield']) && $preferences['focus_searchfield']) {
@@ -204,8 +204,8 @@ class Plugin extends PluginBase
                     $controller->addJs('/plugins/indikator/backend/assets/js/setting-theme.js');
                 }
 
-                if (isset($preferences['delete_plugin']) && $preferences['delete_plugin'] && File::exists('plugins/october/demo')) {
-                    File::deleteDirectory('plugins/october/demo');
+                if (isset($preferences['delete_plugin']) && $preferences['delete_plugin'] && PluginManager::instance()->exists('October.Demo')) {
+                    PluginManager::instance()->deletePlugin('October.Demo');
                 }
             }
         });
