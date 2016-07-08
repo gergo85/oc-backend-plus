@@ -22,7 +22,7 @@ return [
         'sidebar_search_comment' => 'It works only the pages of Settings menu.',
         'themes_label' => 'Hide the "Find more themes" link.',
         'themes_comment' => 'Located on the Front-end theme page.',
-        'delete_plugin_label' => 'Delete the October Demo plugin.',
+        'delete_plugin_label' => 'Uninstall the October Demo plugin.',
         'delete_plugin_comment' => 'All files will be removed permanently.'
     ],
     'widgets' => [

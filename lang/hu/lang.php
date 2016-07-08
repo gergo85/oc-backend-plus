@@ -22,7 +22,7 @@ return [
         'sidebar_search_comment' => 'Csak a Beállítások aloldalain működik.',
         'themes_label' => 'A "További témák ..." link rejtése.',
         'themes_comment' => 'A Dizájn oldalon található a hivatkozás.',
-        'delete_plugin_label' => 'Az October Demo bővítményének törlése.',
+        'delete_plugin_label' => 'Az October Demo bővítmény eltávolítása.',
         'delete_plugin_comment' => 'Az összes fájl véglegesen eltávolításra kerül.'
     ],
     'widgets' => [
