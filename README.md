@@ -8,7 +8,7 @@ This plugin extend the backend to some new dashboard widgets, form widgets, usef
 * Show the virtual keyboard by input fields.
 * __Add the clear button to input fields.__
 * Hide the search field in sidebar.
-* __Delete the October demo plugin.__
+* __Uninstall the October Demo plugin.__
 * Hide the "Find more themes" link in Design.
 
 ###New dashboard widgets
