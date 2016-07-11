@@ -59,7 +59,7 @@ class Status extends ReportWidgetBase
         $manager = UpdateManager::instance();
         $manager->requestUpdateList();
 
-        $this->vars['inMaintenance'] = MaintenanceSettings::get('is_enabled');
+        $this->vars['inMaintenance'] = MaintenanceSetting::get('is_enabled');
         $this->vars['updates'] = DB::table('system_parameters')->where('item', 'count')->pluck('value');
         $this->vars['plugins'] = DB::table('system_plugin_versions')->count();
 
