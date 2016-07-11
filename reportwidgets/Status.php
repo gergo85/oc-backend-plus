@@ -3,7 +3,7 @@
 use Backend\Classes\ReportWidgetBase;
 use Exception;
 use System\Classes\UpdateManager;
-use Cms\Models\MaintenanceSettings;
+use Cms\Models\MaintenanceSetting;
 use DB;
 use File;
 
