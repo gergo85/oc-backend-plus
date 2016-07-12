@@ -5,7 +5,6 @@ use System\Classes\PluginManager;
 use Backend\Classes\Controller as BackendController;
 use Backend;
 use BackendAuth;
-use BackendMenu;
 use Event;
 
 class Plugin extends PluginBase
@@ -100,68 +99,60 @@ class Plugin extends PluginBase
         Event::listen('backend.form.extendFields', function($form)
         {
             if ($form->model instanceof Backend\Models\Preference) {
-                $form->addFields([
-                    'focus_searchfield' => [
-                        'tab'     => 'indikator.backend::lang.settings.tab_title',
-                        'label'   => 'indikator.backend::lang.settings.search_label',
-                        'type'    => 'switch',
-                        'span'    => 'auto',
-                        'default' => 'false',
-                        'comment' => 'indikator.backend::lang.settings.search_comment'
-                    ],
+                $form->addTabFields([
                     'rounded_avatar' => [
-                        'tab'     => 'indikator.backend::lang.settings.tab_title',
+                        'tab'     => 'indikator.backend::lang.settings.tab_display',
                         'label'   => 'indikator.backend::lang.settings.avatar_label',
                         'type'    => 'switch',
-                        'span'    => 'auto',
                         'default' => 'false',
                         'comment' => 'indikator.backend::lang.settings.avatar_comment'
                     ],
-                    'form_clearbutton' => [
-                        'tab'     => 'indikator.backend::lang.settings.tab_title',
-                        'label'   => 'indikator.backend::lang.settings.clearbutton_label',
-                        'type'    => 'switch',
-                        'span'    => 'auto',
-                        'default' => 'false',
-                        'comment' => 'indikator.backend::lang.settings.clearbutton_comment'
-                    ],
-                    'virtual_keyboard' => [
-                        'tab'     => 'indikator.backend::lang.settings.tab_title',
-                        'label'   => 'indikator.backend::lang.settings.keyboard_label',
-                        'type'    => 'switch',
-                        'span'    => 'auto',
-                        'default' => 'false',
-                        'comment' => 'indikator.backend::lang.settings.keyboard_comment'
-                    ],
                     'sidebar_description' => [
-                        'tab'     => 'indikator.backend::lang.settings.tab_title',
+                        'tab'     => 'indikator.backend::lang.settings.tab_display',
                         'label'   => 'indikator.backend::lang.settings.sidebar_desc_label',
                         'type'    => 'switch',
-                        'span'    => 'auto',
                         'default' => 'false',
                         'comment' => 'indikator.backend::lang.settings.sidebar_desc_comment'
                     ],
                     'sidebar_search' => [
-                        'tab'     => 'indikator.backend::lang.settings.tab_title',
+                        'tab'     => 'indikator.backend::lang.settings.tab_display',
                         'label'   => 'indikator.backend::lang.settings.sidebar_search_label',
                         'type'    => 'switch',
-                        'span'    => 'auto',
                         'default' => 'false',
                         'comment' => 'indikator.backend::lang.settings.sidebar_search_comment'
                     ],
                     'more_themes' => [
-                        'tab'     => 'indikator.backend::lang.settings.tab_title',
+                        'tab'     => 'indikator.backend::lang.settings.tab_display',
                         'label'   => 'indikator.backend::lang.settings.themes_label',
                         'type'    => 'switch',
-                        'span'    => 'auto',
                         'default' => 'false',
                         'comment' => 'indikator.backend::lang.settings.themes_comment'
                     ],
+                    'focus_searchfield' => [
+                        'tab'     => 'indikator.backend::lang.settings.tab_behavior',
+                        'label'   => 'indikator.backend::lang.settings.search_label',
+                        'type'    => 'switch',
+                        'default' => 'false',
+                        'comment' => 'indikator.backend::lang.settings.search_comment'
+                    ],
+                    'form_clearbutton' => [
+                        'tab'     => 'indikator.backend::lang.settings.tab_behavior',
+                        'label'   => 'indikator.backend::lang.settings.clearbutton_label',
+                        'type'    => 'switch',
+                        'default' => 'false',
+                        'comment' => 'indikator.backend::lang.settings.clearbutton_comment'
+                    ],
+                    'virtual_keyboard' => [
+                        'tab'     => 'indikator.backend::lang.settings.tab_behavior',
+                        'label'   => 'indikator.backend::lang.settings.keyboard_label',
+                        'type'    => 'switch',
+                        'default' => 'false',
+                        'comment' => 'indikator.backend::lang.settings.keyboard_comment'
+                    ],
                     'delete_plugin' => [
-                        'tab'     => 'indikator.backend::lang.settings.tab_title',
+                        'tab'     => 'indikator.backend::lang.settings.tab_behavior',
                         'label'   => 'indikator.backend::lang.settings.delete_plugin_label',
                         'type'    => 'switch',
-                        'span'    => 'auto',
                         'default' => 'false',
                         'comment' => 'indikator.backend::lang.settings.delete_plugin_comment'
                     ]
@@ -172,11 +163,9 @@ class Plugin extends PluginBase
         BackendController::extend(function($controller)
         {
             if (BackendAuth::check()) {
-
                 $preferenceModel = class_exists('Backend\Models\UserPreference')
                     ? Backend\Models\UserPreference::forUser()
                     : Backend\Models\UserPreferences::forUser();
-
                 $preferences = $preferenceModel->get('backend::backend.preferences');
 
                 if (isset($preferences['focus_searchfield']) && $preferences['focus_searchfield']) {
@@ -200,6 +189,10 @@ class Plugin extends PluginBase
                     $controller->addCss('/plugins/indikator/backend/assets/css/sidebar-search.css');
                 }
 
+                if (isset($preferences['sidebar_description']) && $preferences['sidebar_description']) {
+                    $controller->addCss('/plugins/indikator/backend/assets/css/sidebar-description.css');
+                }
+
                 if (isset($preferences['more_themes']) && $preferences['more_themes']) {
                     $controller->addJs('/plugins/indikator/backend/assets/js/setting-theme.js');
                 }
@@ -209,11 +202,5 @@ class Plugin extends PluginBase
                 }
             }
         });
-
-        BackendMenu::registerContextSidenavPartial(
-            'October.System',
-            'system',
-            '~/plugins/indikator/backend/partials/_system_sidebar.htm'
-        );
     }
 }
