@@ -6,10 +6,11 @@ This plugin extend the backend to some new dashboard widgets, form widgets, usef
 * Hide the menu description in sidebar.
 * __Rounded profile image is optional in top menu.__
 * Show the virtual keyboard by input fields.
-* __Add the clear button to input fields.__
+* __Hide the label in top menu.__
 * Hide the search field in sidebar.
-* __Uninstall the October Demo plugin.__
+* __Add the clear button to input fields.__
 * Hide the "Find more themes" link in Design.
+* __Uninstall the October Demo plugin.__
 
 ###New dashboard widgets
 * __System status plus (updates, plugins and themes)__

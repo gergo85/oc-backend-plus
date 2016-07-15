@@ -10,6 +10,8 @@ return [
         'tab_display' => 'Megjelenés',
         'avatar_label' => 'Kerek profilkép használata a szögletes helyett.',
         'avatar_comment' => 'Csak a felső menüben módosul a bélyegkép.',
+        'topmenu_label' => 'Címke elrejtése a felső menüben.',
+        'topmenu_comment' => 'Mindegyik menü stílusnál működik.',
         'sidebar_desc_label' => 'Leírások rejtése az oldalsó menüben.',
         'sidebar_desc_comment' => 'Csak a Beállítások aloldalain működik.',
         'sidebar_search_label' => 'Kereső mező rejtése az oldalsó menüben.',

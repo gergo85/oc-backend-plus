@@ -10,6 +10,8 @@ return [
         'tab_display' => 'Display',
         'avatar_label' => 'Rounded profile image instead of cube one.',
         'avatar_comment' => 'The avatar modifies only in the top menu.',
+        'topmenu_label' => 'Hide the label in the top menu.',
+        'topmenu_comment' => 'It works with all menu style.',
         'sidebar_desc_label' => 'Hide the description of menus in the sidebar.',
         'sidebar_desc_comment' => 'It works only the pages of Settings menu.',
         'sidebar_search_label' => 'Hide the search field in the sidebar.',

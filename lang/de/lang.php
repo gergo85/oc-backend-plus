@@ -10,6 +10,8 @@ return [
         'tab_display' => 'Anzeigen',
         'avatar_label' => 'Abgerundete Profilbild statt eines Würfels.',
         'avatar_comment' => 'Der Avatar ändert nur in Top-Menü.',
+        'topmenu_label' => 'Blenden Sie das Etikett im oberen Top-Menü.',
+        'topmenu_comment' => 'Es funktioniert mit allen Menüstil.',
         'sidebar_desc_label' => 'Blenden Sie das Menü Beschreibung in der Seitenleiste.',
         'sidebar_desc_comment' => 'Blenden Sie die Beschreibung der Menüs in der Seitenleiste.',
         'sidebar_search_label' => 'Blenden Sie das Suchfeld in der Seitenleiste.',
@@ -19,12 +21,12 @@ return [
         'tab_behavior' => 'Verhalten',
         'search_label' => 'Fokus auf das Suchfeld automatisch.',
         'search_comment' => 'Zum einen in Listen, zweitens in der Seitenleiste.',
-        'clearbutton_label' => 'Add the clear button to input fields.',
-        'clearbutton_comment' => 'It works only by simple text fields.',
+        'clearbutton_label' => 'Fügen Sie die Löschtaste, um Eingabefelder ein.',
+        'clearbutton_comment' => 'Es funktioniert nur mit einfachen Textfelder.',
         'keyboard_label' => 'Lassen Sie sich die virtuelle Tastatur von Formen.',
         'keyboard_comment' => 'Es funktioniert nur mit einfachen Textfelder.',
         'delete_plugin_label' => 'Löschen Sie die Oktober-Demo Plugin.',
-        'delete_plugin_comment' => 'All files will be removed permanently.'
+        'delete_plugin_comment' => 'Alle Dateien werden dauerhaft entfernt werden.'
     ],
     'widgets' => [
         'system' => [
