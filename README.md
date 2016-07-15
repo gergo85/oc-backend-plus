@@ -112,6 +112,7 @@ See the demo: [http://labs.abeautifulsite.net/jquery-minicolors](http://labs.abe
 
 ###Activate features
 1. Go to the __Settings > Back-end preferences__ page in the Backend.
+1. Click on the __Display__ or __Behavior__ tab. 
 1. You can __activate any new features__.
 
 ###Add widget
