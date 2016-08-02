@@ -26,7 +26,9 @@ return [
         'keyboard_label' => 'Mostrar el teclado virtual para introducir datos.',
         'keyboard_comment' => 'Sólo funciona con campos de texto simples.',
         'delete_plugin_label' => 'Eliminar la Demo plugin de Octubre.',
-        'delete_plugin_comment' => 'Todos los archivos serán eliminados de forma permanente.'
+        'delete_plugin_comment' => 'Todos los archivos serán eliminados de forma permanente.',
+        'enabled_gzip_label' => 'Habilitar la compresión gzip.',
+        'enabled_gzip_comment' => 'Funciona en la herramienta de frontend y backend.'
     ],
     'widgets' => [
         'system' => [

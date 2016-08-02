@@ -26,7 +26,9 @@ return [
         'keyboard_label' => 'Lassen Sie sich die virtuelle Tastatur von Formen.',
         'keyboard_comment' => 'Es funktioniert nur mit einfachen Textfelder.',
         'delete_plugin_label' => 'Löschen Sie die Oktober-Demo Plugin.',
-        'delete_plugin_comment' => 'Alle Dateien werden dauerhaft entfernt werden.'
+        'delete_plugin_comment' => 'Alle Dateien werden dauerhaft entfernt werden.',
+        'enabled_gzip_label' => 'Aktivieren Sie die gzip-Kompression.',
+        'enabled_gzip_comment' => 'Es funktioniert auf dem Frontend und Backend-Tool.'
     ],
     'widgets' => [
         'system' => [

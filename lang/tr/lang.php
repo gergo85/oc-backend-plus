@@ -26,7 +26,9 @@ return [
         'keyboard_label' => 'Sanal klavyeyi aktifleştir.',
         'keyboard_comment' => 'Sadece basit metin alanları ile çalışır.',
         'delete_plugin_label' => 'Ekim Demo eklentisi silin.',
-        'delete_plugin_comment' => 'Tüm dosyalar kalıcı olarak silinecektir.'
+        'delete_plugin_comment' => 'Tüm dosyalar kalıcı olarak silinecektir.',
+        'enabled_gzip_label' => 'Gzip sıkıştırmasını etkinleştirin.',
+        'enabled_gzip_comment' => 'Bu önuç ve arka uç aracı çalışır.'
     ],
     'widgets' => [
         'system' => [

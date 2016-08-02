@@ -26,7 +26,9 @@ return [
         'keyboard_label' => 'Virtuális billentyűzet megjelenítése.',
         'keyboard_comment' => 'Csak az egysoros szöveges mezőknél működik.',
         'delete_plugin_label' => 'Az October Demo bővítmény eltávolítása.',
-        'delete_plugin_comment' => 'Az összes fájl véglegesen eltávolításra kerül.'
+        'delete_plugin_comment' => 'Az összes fájl véglegesen eltávolításra kerül.',
+        'enabled_gzip_label' => 'Gzip tömörítés engedélyezése.',
+        'enabled_gzip_comment' => 'A teljes weboldalra érvényes a beállítás.'
     ],
     'widgets' => [
         'system' => [

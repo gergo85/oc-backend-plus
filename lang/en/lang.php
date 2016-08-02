@@ -26,7 +26,9 @@ return [
         'keyboard_label' => 'Show the virtual keyboard by forms.',
         'keyboard_comment' => 'It works only by simple text fields.',
         'delete_plugin_label' => 'Uninstall the October Demo plugin.',
-        'delete_plugin_comment' => 'All files will be removed permanently.'
+        'delete_plugin_comment' => 'All files will be removed permanently.',
+        'enabled_gzip_label' => 'Enable the gzip compression.',
+        'enabled_gzip_comment' => 'It works on the front-end and back-end too.'
     ],
     'widgets' => [
         'system' => [

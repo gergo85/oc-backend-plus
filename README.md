@@ -1,16 +1,17 @@
 ##Backend toolkit plugin
-This plugin extend the backend to some new dashboard widgets, form widgets, useful features and front-end components.
+This plugin extend the back-end to some new dashboard widgets, form widgets, useful features and front-end components.
 
 ###New back-end features
-* __Focus the search field automatically.__
+* __Enable the gzip compression.__ [More info &raquo;](https://developers.google.com/speed/docs/insights/EnableCompression))
 * Hide the menu description in sidebar.
+* __Focus the search field automatically.__
+* Hide the search field in sidebar.
 * __Rounded profile image is optional in top menu.__
 * Show the virtual keyboard by input fields.
 * __Hide the label in top menu.__
-* Hide the search field in sidebar.
-* __Add the clear button to input fields.__
 * Hide the "Find more themes" link in Design.
-* __Uninstall the October Demo plugin.__
+* __Add the clear button to input fields.__
+* Uninstall the October Demo plugin.
 
 ###New dashboard widgets
 * __System status plus (updates, plugins and themes)__
@@ -112,7 +113,7 @@ See the demo: [http://labs.abeautifulsite.net/jquery-minicolors](http://labs.abe
 
 ###Activate features
 1. Go to the __Settings > Back-end preferences__ page in the Backend.
-1. Click on the __Display__ or __Behavior__ tab. 
+1. Click on the __Display__ or __Behavior__ tab.
 1. You can __activate any new features__.
 
 ###Add widget

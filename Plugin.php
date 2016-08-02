@@ -5,6 +5,7 @@ use System\Classes\PluginManager;
 use Backend\Classes\Controller as BackendController;
 use Backend;
 use BackendAuth;
+use File;
 use Event;
 
 class Plugin extends PluginBase
@@ -96,6 +97,10 @@ class Plugin extends PluginBase
 
     public function boot()
     {
+        if ((bool)File::get('plugins/indikator/backend/assets/gzip.txt')) {
+            ob_start('ob_gzhandler');
+        }
+
         Event::listen('backend.form.extendFields', function($form)
         {
             if ($form->model instanceof Backend\Models\Preference) {
@@ -165,6 +170,13 @@ class Plugin extends PluginBase
                         'comment' => 'indikator.backend::lang.settings.delete_plugin_comment',
                         'type'    => 'switch',
                         'default' => 'false'
+                    ],
+                    'enabled_gzip' => [
+                        'tab'     => 'indikator.backend::lang.settings.tab_behavior',
+                        'label'   => 'indikator.backend::lang.settings.enabled_gzip_label',
+                        'comment' => 'indikator.backend::lang.settings.enabled_gzip_comment',
+                        'type'    => 'switch',
+                        'default' => 'false'
                     ]
                 ]);
             }
@@ -216,6 +228,13 @@ class Plugin extends PluginBase
 
                 if (isset($preferences['delete_plugin']) && $preferences['delete_plugin'] && PluginManager::instance()->exists('October.Demo')) {
                     PluginManager::instance()->deletePlugin('October.Demo');
+                }
+
+                if (isset($preferences['enabled_gzip']) && $preferences['enabled_gzip']) {
+                    File::put('plugins/indikator/backend/assets/gzip.txt', 1);
+                }
+                else {
+                    File::put('plugins/indikator/backend/assets/gzip.txt', 0);
                 }
             }
         });
