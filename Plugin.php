@@ -97,7 +97,7 @@ class Plugin extends PluginBase
 
     public function boot()
     {
-        if ((bool)File::get('plugins/indikator/backend/assets/gzip.txt')) {
+        if ((bool)File::get(base_path().'/plugins/indikator/backend/assets/gzip.txt')) {
             ob_start('ob_gzhandler');
         }
 
@@ -231,10 +231,10 @@ class Plugin extends PluginBase
                 }
 
                 if (isset($preferences['enabled_gzip']) && $preferences['enabled_gzip']) {
-                    File::put('plugins/indikator/backend/assets/gzip.txt', 1);
+                    File::put(base_path().'/plugins/indikator/backend/assets/gzip.txt', 1);
                 }
                 else {
-                    File::put('plugins/indikator/backend/assets/gzip.txt', 0);
+                    File::put(base_path().'/plugins/indikator/backend/assets/gzip.txt', 0);
                 }
             }
         });
