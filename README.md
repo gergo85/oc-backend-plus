@@ -1,8 +1,14 @@
 ##Backend toolkit plugin
-This plugin extend the back-end to some new dashboard widgets, form widgets, useful features and front-end components.
+This plugin extend the back-end to useful features, some new dashboard widgets, form widgets and front-end components.
+
+###Advantages of plugin
+* __Increase the speed of your webpage!__ - Enable the gzip compression of server.
+* __Let's work effectively and quickly!__ - Extend the operation of input fields.
+* __Be simpler the back-end interface!__ - Hide the unused elements and texts.
+* __Make an informative nice dashboard!__ - Add some new widgets to dashboard.
 
 ###New back-end features
-* __Enable the gzip compression.__ [More info &raquo;](https://developers.google.com/speed/docs/insights/EnableCompression))
+* __Enable the gzip compression.__ [More info &raquo;](https://developers.google.com/speed/docs/insights/EnableCompression)
 * Hide the menu description in sidebar.
 * __Focus the search field automatically.__
 * Hide the search field in sidebar.
