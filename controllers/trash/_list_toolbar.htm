@@ -1,0 +1,32 @@
+<div data-control="toolbar">
+    <button
+        class="btn btn-succes oc-icon-refresh"
+        data-request="onSearchItems"
+        data-stripe-load-indicator>
+        <?= e(trans('indikator.backend::lang.trash.search')) ?>
+    </button>
+    <button
+        class="btn btn-default oc-icon-trash-o"
+        disabled="disabled"
+        onclick="$(this).data('request-data', {
+            checked: $('.control-list').listWidget('getChecked')
+        })"
+        data-request="onRemoveItems"
+        data-request-confirm="<?= e(trans('indikator.backend::lang.trash.delete')) ?>"
+        data-trigger-action="enable"
+        data-trigger=".control-list input[type=checkbox]"
+        data-trigger-condition="checked"
+        data-stripe-load-indicator>
+        <?= e(trans('system::lang.plugins.remove')) ?>
+    </button>
+    <button
+        class="btn btn-default oc-icon-trash-o"
+        onclick="$(this).data('request-data', {
+            checked: $('.control-list').listWidget('getChecked')
+        })"
+        data-request="onRemoveAllItems"
+        data-request-confirm="<?= e(trans('indikator.backend::lang.trash.delete')) ?>"
+        data-stripe-load-indicator>
+        <?= e(trans('indikator.backend::lang.trash.remove_all')) ?>
+    </button>
+</div>

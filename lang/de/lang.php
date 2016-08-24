@@ -30,6 +30,25 @@ return [
         'enabled_gzip_label' => 'Aktivieren Sie die gzip-Kompression.',
         'enabled_gzip_comment' => 'Es funktioniert auf dem Frontend und Backend-Tool.'
     ],
+    'trash' => [
+        'title' => 'Trash items',
+        'description' => 'Delete the unused files and folders.',
+        'permission' => 'Manage the trash items',
+        'type' => 'Type',
+        'path' => 'Path',
+        'size' => 'Size',
+        'file' => 'File',
+        'folder' => 'Folder',
+        'database' => 'Database',
+        'items' => 'Item|Items',
+        'hint' => 'After that you updated the OctoberCMS core, you click on the Search button again. If you want to delete the cache of your webpage, you need to add the "Backend - Cache" widget to the Dashboard. Please <b>rate this plugin</b> if it helped your work:',
+        'search' => 'Search',
+        'success' => 'The scan was successfully completed.',
+        'no_items' => 'Congratulations, no unused files on the website!',
+        'remove_all' => 'Delete all',
+        'delete' => 'Do you want to delete this items?',
+        'remove' => 'Successfully removed those items.'
+    ],
     'widgets' => [
         'system' => [
             'title' => 'Backend - Systemstatus Und',

@@ -19,6 +19,9 @@ This plugin extend the back-end to useful features, some new dashboard widgets, 
 * __Add the clear button to input fields.__
 * Uninstall the October Demo plugin.
 
+###New menu in System panel
+Delete the unused files and folders of OctoberCMS such as readme files, text files and old files. You can find this feature on __Settings > System > Trash items__ page.
+
 ###New dashboard widgets
 * __System status plus (updates, plugins and themes)__
 * Versions (CMS, PHP and GD library)

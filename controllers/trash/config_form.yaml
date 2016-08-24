@@ -1,0 +1,17 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+name: indikator.backend::lang.trash.title
+form: ~/plugins/indikator/backend/models/trash/fields.yaml
+
+modelClass: Indikator\Backend\Models\Trash
+defaultRedirect: indikator/backend/trash
+
+create:
+    redirect: indikator/backend/trash
+    redirectClose: indikator/backend/trash
+
+update:
+    redirect: indikator/backend/trash
+    redirectClose: indikator/backend/trash

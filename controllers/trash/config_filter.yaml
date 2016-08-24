@@ -1,0 +1,20 @@
+# ===================================
+# Filter Scope Definitions
+# ===================================
+
+scopes:
+
+    file:
+        label: indikator.backend::lang.trash.file
+        type: checkbox
+        conditions: type = 1
+
+    folder:
+        label: indikator.backend::lang.trash.folder
+        type: checkbox
+        conditions: type = 2
+
+    database:
+        label: indikator.backend::lang.trash.database
+        type: checkbox
+        conditions: type = 3

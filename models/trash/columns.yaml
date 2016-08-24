@@ -1,0 +1,22 @@
+# ===================================
+#  Column Definitions
+# ===================================
+
+columns:
+
+    type:
+        label: indikator.backend::lang.trash.type
+        type: partial
+        path: ~/plugins/indikator/backend/models/trash/_type.htm
+        clickable: false
+
+    path:
+        label: indikator.backend::lang.trash.path
+        clickable: false
+        searchable: true
+
+    size:
+        label: indikator.backend::lang.trash.size
+        type: partial
+        path: ~/plugins/indikator/backend/models/trash/_size.htm
+        clickable: false

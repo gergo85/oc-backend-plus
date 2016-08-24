@@ -2,6 +2,7 @@
 
 use System\Classes\PluginBase;
 use System\Classes\PluginManager;
+use System\Classes\SettingsManager;
 use Backend\Classes\Controller as BackendController;
 use Backend;
 use BackendAuth;
@@ -20,6 +21,20 @@ class Plugin extends PluginBase
             'author'      => 'indikator.backend::lang.plugin.author',
             'icon'        => 'icon-cogs',
             'homepage'    => 'https://github.com/gergo85/oc-backend-plus'
+        ];
+    }
+
+    public function registerSettings()
+    {
+        return [
+            'trash' => [
+                'label'       => 'indikator.backend::lang.trash.title',
+                'description' => 'indikator.backend::lang.trash.description',
+                'icon'        => 'icon-eraser',
+                'permissions' => ['indikator.backend.trash'],
+                'url'         => Backend::url('indikator/backend/trash'),
+                'category'    => SettingsManager::CATEGORY_SYSTEM
+            ]
         ];
     }
 
@@ -91,6 +106,16 @@ class Plugin extends PluginBase
             'Indikator\Backend\FormWidgets\MiniColors' => [
                 'label' => 'MiniColors',
                 'code'  => 'minicolors'
+            ]
+        ];
+    }
+
+    public function registerPermissions()
+    {
+        return [
+            'indikator.backend.trash' => [
+                'tab'   => 'indikator.backend::lang.plugin.name',
+                'label' => 'indikator.backend::lang.trash.permission'
             ]
         ];
     }

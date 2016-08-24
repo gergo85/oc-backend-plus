@@ -40,3 +40,6 @@
 1.4.6: Improved the UI and fixed bug.
 1.4.7: Hide the label in top menu.
 1.4.8: Enable the gzip compression.
+1.5.0:
+    - Delete the unused files and folders.
+    - create_trash_table.php

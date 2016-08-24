@@ -1,0 +1,18 @@
+<div class="control-breadcrumb">
+    <ul>
+        <li><?= e(trans('indikator.backend::lang.trash.title')) ?></li>
+        <li>
+            <span class="text-info"><strong><?= DB::table('indikator_backend_trash')->count() ?></strong> <?= e(trans_choice('indikator.backend::lang.trash.items', DB::table('indikator_backend_trash')->count())) ?></span>
+            &nbsp; | &nbsp;
+            <span class="text-danger"><strong><?= number_format(round(DB::table('indikator_backend_trash')->sum('size') / 1024), 0, '.', ' ') ?></strong> KB</span>
+        </li>
+    </ul>
+</div>
+
+<div class="scoreboard">
+    <div class="container-flush">
+        <?= $this->makeHintPartial('indikator_trash_hint', 'hint') ?>
+    </div>
+</div>
+
+<?= $this->listRender() ?>

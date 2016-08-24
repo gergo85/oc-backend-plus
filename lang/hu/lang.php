@@ -30,6 +30,25 @@ return [
         'enabled_gzip_label' => 'Gzip tömörítés engedélyezése.',
         'enabled_gzip_comment' => 'A teljes weboldalra érvényes a beállítás.'
     ],
+    'trash' => [
+        'title' => 'Felesleges fájlok',
+        'description' => 'Nem használt fájlok és mappák törlése.',
+        'permission' => 'Felesleges fájlok menedzselése',
+        'type' => 'Típus',
+        'path' => 'Elérés',
+        'size' => 'Méret',
+        'file' => 'Fájl',
+        'folder' => 'Mappa',
+        'database' => 'Adatbázis',
+        'items' => 'Elem|Elem',
+        'hint' => 'Miután frissítette a weboldalt, kattintson újra a Keresés gombra. Amennyiben a honlap ideglenes fájlait szeretné törölni, adja hozzá a Vezérlőpulthoz az "Admin - Gyorsindítótár" widget-et. Kérjük <b>értékelje a bővítményt</b>, amennyiben segítette a munkáját:',
+        'search' => 'Keresés',
+        'success' => 'A beolvasás sikeresen befejeződött.',
+        'no_items' => 'Gratulálunk, nincs felesleges fájl a weboldalon!',
+        'remove_all' => 'Összes törlése',
+        'delete' => 'Valóban törölni akarja a tételeket?',
+        'remove' => 'A tételek sikeresen eltávolításra kerültek.'
+    ],
     'widgets' => [
         'system' => [
             'title' => 'Admin - Rendszer állapota',

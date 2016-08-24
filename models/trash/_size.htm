@@ -1,0 +1,11 @@
+<?php
+
+$size = $record->size / 1024;
+
+if ($size < 100) {
+    echo round($record->size / 1024, 1).' KB';
+}
+
+else {
+    echo '<span class="text-danger"><strong>'.number_format(round($record->size / 1024, 0), 0, '.', ' ').' KB</strong></span>';
+}
