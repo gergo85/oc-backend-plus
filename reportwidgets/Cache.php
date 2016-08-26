@@ -36,6 +36,7 @@ class Cache extends ReportWidgetBase
     public function onClear()
     {
         \Artisan::call('cache:clear');
+        \Artisan::call('view:clear');
 
         return [
             'partial' => $this->makePartial('widget', ['size' => $this->loadData()])
