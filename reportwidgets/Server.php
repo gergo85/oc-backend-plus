@@ -50,5 +50,8 @@ class Server extends ReportWidgetBase
         $this->vars['host'] = php_uname('n');
         $this->vars['ip']   = $_SERVER['SERVER_ADDR'];
         $this->vars['os']   = php_uname('s');
+        foreach ($this->vars as $key=>$item){
+            $this->vars[$key] = utf8_encode($this->vars[$key]);
+        }
     }
 }
