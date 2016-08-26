@@ -3,6 +3,7 @@ This plugin extend the back-end to useful features, some new dashboard widgets, 
 
 ###Advantages of plugin
 * __Increase the speed of your webpage!__ - Enable the gzip compression of server.
+* __Delete the unused files and folders!__ - Scan and find the unnecessary elements.
 * __Let's work effectively and quickly!__ - Extend the operation of input fields.
 * __Be simpler the back-end interface!__ - Hide the unused elements and texts.
 * __Make an informative nice dashboard!__ - Add some new widgets to dashboard.
@@ -20,7 +21,7 @@ This plugin extend the back-end to useful features, some new dashboard widgets, 
 * Uninstall the October Demo plugin.
 
 ###New menu in System panel
-Delete the unused files and folders of OctoberCMS such as readme files, text files and old files. You can find this feature on __Settings > System > Trash items__ page.
+__Delete the unused files and folders__ of OctoberCMS such as text files (readme and license), old files, empty folders and unnecessary database settings. You can find this feature on the __Settings > System > Trash items__ page. For compatibility reasons you can __use the latest version__ of OctoberCMS and plugins!
 
 ###New dashboard widgets
 * __System status plus (updates, plugins and themes)__

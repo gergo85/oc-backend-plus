@@ -14,8 +14,8 @@ showCheckboxes: true
 showSetup: true
 
 defaultSort:
-    column: id
-    direction: asc
+    column: type
+    direction: desc
 
 toolbar:
     buttons: list_toolbar
