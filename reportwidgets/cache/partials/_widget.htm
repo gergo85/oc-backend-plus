@@ -11,10 +11,10 @@
         </ul>
     </div>
     <button
-        type="button"
-        class="btn btn-default"
-        data-request="<?= $this->getEventHandler('onClear') ?>"
-        data-request-success="$('#cache-sizes').replaceWith(data.partial)">
+        type="submit"
+        data-request="<?= $this->getEventHandler('onClearCache') ?>"
+        data-request-success="$('#cache-sizes').replaceWith(data.partial)"
+        class="btn btn-default">
         <span class="fa icon-trash"></span> &nbsp; <?= e(trans('indikator.backend::lang.widgets.cache.clear')) ?>
     </button>
 

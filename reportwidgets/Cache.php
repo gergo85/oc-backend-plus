@@ -33,7 +33,7 @@ class Cache extends ReportWidgetBase
         ];
     }
 
-    public function onClear()
+    public function onClearCache()
     {
         \Artisan::call('cache:clear');
         \Artisan::call('view:clear');
