@@ -5,8 +5,10 @@ use BackendMenu;
 use System\Classes\SettingsManager;
 use File;
 use DB;
+use Indikator\Backend\Models\Trash as Items;
 use Flash;
 use Lang;
+use Redirect;
 
 class Trash extends Controller
 {
@@ -36,8 +38,8 @@ class Trash extends Controller
         foreach ($sql as $row) {
             $name = explode('_', $row->item);
 
-            if ($name[0] != 'backend' && $name[0] != 'system' && isset($name[2]) && !File::exists(base_path().'/plugins/'.$name[0].'/'.$name[1]) && DB::table('indikator_backend_trash')->where('path', $row->item)->count() == 0) {
-                DB::table('indikator_backend_trash')->insertGetId([
+            if ($name[0] != 'backend' && $name[0] != 'system' && isset($name[2]) && !File::exists(base_path().'/plugins/'.$name[0].'/'.$name[1]) && Items::where('path', $row->item)->count() == 0) {
+                Items::insertGetId([
                     'type' => 3,
                     'path' => $row->item,
                     'size' => strlen($row->value)
@@ -47,6 +49,10 @@ class Trash extends Controller
 
         // Trash files and folders
         $trash = [
+            // Install
+            'README.md' => [1, 1029],
+            'install.php' => [1, 7908],
+            'install_files' => [2, 365436],
             // Backend
             'modules/backend/assets/css/controls.css' => [1, 128471],
             'modules/backend/assets/font' => [2, 4116420],
@@ -131,10 +137,10 @@ class Trash extends Controller
             'modules/backend/assets/vendor/mustache' => [2, 5498],
             'modules/backend/assets/vendor/select2' => [2, 295075],
             'modules/backend/assets/vendor/sweet-alert/sweet-alert.html' => [1, 833],
+            'modules/backend/formwidgets/datagrid' => [2, 270],
             'modules/backend/formwidgets/colorpicker/assets/vendor/colpick/LICENSE' => [1, 18069],
             'modules/backend/formwidgets/colorpicker/assets/vendor/colpick/README.md' => [1, 1169],
-            'modules/backend/formwidgets/datepicker/assets/vendor/moment/README.md' => [1, 1599],
-            'modules/backend/formwidgets/datepicker/assets/vendor/pikaday/README.md' => [1, 10988],
+            'modules/backend/formwidgets/datepicker/assets' => [2, 233745],
             'modules/backend/formwidgets/richeditor/assets/vendor/redactor' => [2, 307615],
             // CMS
             'modules/cms/assets/less/css' => [2, 2993],
@@ -160,8 +166,8 @@ class Trash extends Controller
         ];
 
         foreach ($trash as $path => $data) {
-            if (File::exists(base_path().'/'.$path) && DB::table('indikator_backend_trash')->where('path', '/'.$path)->count() == 0) {
-                DB::table('indikator_backend_trash')->insertGetId([
+            if (File::exists(base_path().'/'.$path) && Items::where('path', '/'.$path)->count() == 0) {
+                Items::insertGetId([
                     'type' => $data[0],
                     'path' => '/'.$path,
                     'size' => $data[1]
@@ -172,8 +178,8 @@ class Trash extends Controller
         // Plugins empty folder
         if ($folders = opendir('plugins')) {
             while (false !== ($folder = readdir($folders))) {
-                if ($folder != '.' && $folder != '..' && count(File::allFiles(base_path().'/plugins/'.$folder)) == 0 && DB::table('indikator_backend_trash')->where('path', '/plugins/'.$folder)->count() == 0) {
-                    DB::table('indikator_backend_trash')->insertGetId([
+                if ($folder != '.' && $folder != '..' && count(File::allFiles(base_path().'/plugins/'.$folder)) == 0 && Items::where('path', '/plugins/'.$folder)->count() == 0) {
+                    Items::insertGetId([
                         'type' => 2,
                         'path' => '/plugins/'.$folder,
                         'size' => 0
@@ -188,14 +194,14 @@ class Trash extends Controller
         $this->scanVendor();
 
         // Flash message
-        if (DB::table('indikator_backend_trash')->count() > 0) {
+        if (Items::count() > 0) {
             Flash::success(Lang::get('indikator.backend::lang.trash.success'));
+
+            return Redirect::refresh();
         }
         else {
             Flash::success(Lang::get('indikator.backend::lang.trash.no_items'));
         }
-
-        return $this->listRefresh('manage');
     }
 
     public function scanVendor($folder = 'vendor', $deph = 0)
@@ -217,8 +223,8 @@ class Trash extends Controller
                 }
 
                 // File
-                else if ((substr_count($element, 'LICENSE') == 1 || substr_count($element, 'README') == 1 || substr_count($element, 'CHANGELOG') == 1) && DB::table('indikator_backend_trash')->where('path', '/'.$folder.'/'.$element)->count() == 0) {
-                    DB::table('indikator_backend_trash')->insertGetId([
+                else if ((substr_count($element, 'LICENSE') == 1 || substr_count($element, 'README') == 1 || substr_count($element, 'CHANGELOG') == 1) && Items::where('path', '/'.$folder.'/'.$element)->count() == 0) {
+                    Items::insertGetId([
                         'type' => 1,
                         'path' => '/'.$folder.'/'.$element,
                         'size' => File::size(base_path().'/'.$folder.'/'.$element)
@@ -234,8 +240,8 @@ class Trash extends Controller
     {
         if (($checkedIds = post('checked')) && is_array($checkedIds) && count($checkedIds)) {
             foreach ($checkedIds as $objectId) {
-                if (DB::table('indikator_backend_trash')->where('id', $objectId)->count() == 1) {
-                    $item = DB::table('indikator_backend_trash')->where('id', $objectId)->first();
+                if (Items::where('id', $objectId)->count() == 1) {
+                    $item = Items::where('id', $objectId)->first();
                     // File
                     if ($item->type == 1) {
                         File::delete(base_path().$item->path);
@@ -251,19 +257,19 @@ class Trash extends Controller
                         DB::table('system_settings')->where('item', $item->path)->delete();
                     }
 
-                    DB::table('indikator_backend_trash')->where('id', $objectId)->delete();
+                    Items::where('id', $objectId)->delete();
                 }
             }
 
             Flash::success(Lang::get('indikator.backend::lang.trash.remove'));
         }
 
-        return $this->listRefresh('manage');
+        return Redirect::refresh();
     }
 
     public function onRemoveAllItems()
     {
-        $sql = DB::table('indikator_backend_trash')->get();
+        $sql = Items::get();
 
         foreach ($sql as $item) {
             // File
@@ -281,11 +287,11 @@ class Trash extends Controller
                 DB::table('system_settings')->where('item', $item->path)->delete();
             }
 
-            DB::table('indikator_backend_trash')->where('id', $item->id)->delete();
+            Items::where('id', $item->id)->delete();
         }
 
         Flash::success(Lang::get('indikator.backend::lang.trash.remove'));
 
-        return $this->listRefresh('manage');
+        return Redirect::refresh();
     }
 }
