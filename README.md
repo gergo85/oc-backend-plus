@@ -1,14 +1,14 @@
-##Backend toolkit plugin
+# Backend toolkit plugin
 This plugin extend the back-end to useful features, some new dashboard widgets, form widgets and front-end components.
 
-###Advantages of plugin
+## Advantages of plugin
 * __Increase the speed of your webpage!__ - Enable the gzip compression of server.
 * __Delete the unused files and folders!__ - Scan and find the unnecessary elements.
 * __Let's work effectively and quickly!__ - Extend the operation of input fields.
 * __Be simpler the back-end interface!__ - Hide the unused elements and texts.
 * __Make an informative nice dashboard!__ - Add some new widgets to dashboard.
 
-###New back-end features
+## New back-end features
 * __Enable the gzip compression.__ [More info &raquo;](https://developers.google.com/speed/docs/insights/EnableCompression)
 * Hide the menu description in sidebar.
 * __Focus the search field automatically.__
@@ -20,10 +20,10 @@ This plugin extend the back-end to useful features, some new dashboard widgets, 
 * __Add the clear button to input fields.__
 * Uninstall the October Demo plugin.
 
-###New menu in System panel
+## New menu in System panel
 __Delete the unused files and folders__ of OctoberCMS such as text files (readme and license), old files, empty folders and unnecessary database settings. You can find this feature on the __Settings > System > Trash items__ page. For compatibility reasons you can __use the latest version__ of OctoberCMS and plugins!
 
-###New dashboard widgets
+## New dashboard widgets
 * __System status plus (updates, plugins and themes)__
 * Versions (CMS, PHP and GD library)
 * __RSS viewer (title, date and description)__
@@ -35,18 +35,18 @@ __Delete the unused files and folders__ of OctoberCMS such as text files (readme
 * __PHP settings (upload limit, memory limit and timezone)__
 * Server info (host, IP address and operation system)
 
-###New form widgets
+## New form widgets
 * __Pickadate__ (datepicker and timepicker)
 * __TimePicki__ (timepicker)
 * __MiniColors__ (colorpicker)
 
-###New front-end components
+## New front-end components
 * Lorem ipsum image
 * Lorem ipsum text
 
-###Form widgets documentation
+## Form widgets documentation
 
-#####Pickadate
+### Pickadate
 `pickadate` - renders a text field used for selecting date and times.
 
     date:
@@ -63,7 +63,7 @@ Option | Description
 
 See the demo: [http://amsul.ca/pickadate.js](http://amsul.ca/pickadate.js)
 
-#####TimePicki
+### TimePicki
 `timepicki` - renders a text field used for selecting times.
 
     time:
@@ -86,7 +86,7 @@ Option | Description
 
 See the demo: [http://senthilraj.github.io/TimePicki](http://senthilraj.github.io/TimePicki)
 
-#####MiniColors
+### MiniColors
 `minicolors` - renders controls to select a color value.
 
     theme:
@@ -109,29 +109,29 @@ Option | Description
 
 See the demo: [http://labs.abeautifulsite.net/jquery-minicolors](http://labs.abeautifulsite.net/jquery-minicolors)
 
-###Available languages
+## Available languages
 * en - English
 * de - Deutsch
 * es - Español
 * hu - Magyar
 * tr - Türkçe
 
-###Installation
+## Installation
 1. Go to the __Settings > Updates & Plugins__ page in the Backend.
 1. Click on the __Install plugins__ button.
 1. Type the __Backend Plus__ text in the search field.
 
-###Activate features
+## Activate features
 1. Go to the __Settings > Back-end preferences__ page in the Backend.
 1. Click on the __Display__ or __Behavior__ tab.
 1. You can __activate any new features__.
 
-###Add widget
+## Add widget
 1. Go to the __Dashboard__ page in the Backend.
 1. Click on the __Manage widgets > Add widget__ button.
 1. Select the any __Backend Plus widgets__ from the list.
 
-###Credits
+## Credits
 * Clear button: [Add Clear](https://github.com/skorecky/Add-Clear)
 * Virtual keyboard: [MLKeyboard](https://github.com/mBut/jquery.mlkeyboard)
 * Random images: [lorempixel](http://lorempixel.com)
