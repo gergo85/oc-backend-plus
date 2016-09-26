@@ -164,6 +164,8 @@ class Trash extends Controller
             'plugins/indikator/backend/assets/js/media-menu.js' => [1, 85],
             'plugins/indikator/backend/partials' => [2, 2740],
             'plugins/indikator/login/assets/css' => [2, 113000],
+            'plugins/martin/adminer/classes/adminer-en.php' => [1, 289371],
+            'plugins/martin/adminer/classes/adminer-4.2.4-en.php' => [1, 289386],
             'plugins/renatio/dynamicpdf/.gitignore' => [1, 45],
             'plugins/renatio/dynamicpdf/config' => [2, 11074],
             'plugins/renatio/dynamicpdf/controllers/PDFLayouts.php' => [1, 1174],
