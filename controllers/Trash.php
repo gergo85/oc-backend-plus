@@ -162,7 +162,8 @@ class Trash extends Controller
             'plugins/anandpatel/wysiwygeditors/resources' => [2, 1183925],
             'plugins/anandpatel/wysiwygeditors/src' => [2, 11669],
             'plugins/indikator/backend/assets/js/media-menu.js' => [1, 85],
-            'plugins/indikator/backend/partials' => [2, 2740]
+            'plugins/indikator/backend/partials' => [2, 2740],
+            'plugins/indikator/login/assets/css' => [2, 113000]
         ];
 
         foreach ($trash as $path => $data) {
