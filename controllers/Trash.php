@@ -163,7 +163,18 @@ class Trash extends Controller
             'plugins/anandpatel/wysiwygeditors/src' => [2, 11669],
             'plugins/indikator/backend/assets/js/media-menu.js' => [1, 85],
             'plugins/indikator/backend/partials' => [2, 2740],
-            'plugins/indikator/login/assets/css' => [2, 113000]
+            'plugins/indikator/login/assets/css' => [2, 113000],
+            'plugins/renatio/dynamicpdf/.gitignore' => [1, 45],
+            'plugins/renatio/dynamicpdf/config' => [2, 11074],
+            'plugins/renatio/dynamicpdf/controllers/PDFLayouts.php' => [1, 1174],
+            'plugins/renatio/dynamicpdf/controllers/PDFTemplates.php' => [1, 1322],
+            'plugins/renatio/dynamicpdf/controllers/pdflayouts' => [2, 6141],
+            'plugins/renatio/dynamicpdf/controllers/pdftemplates' => [2, 6243],
+            'plugins/renatio/dynamicpdf/models/PDFLayout.php' => [1, 2439],
+            'plugins/renatio/dynamicpdf/models/PDFTemplate.php' => [1, 2841],
+            'plugins/renatio/dynamicpdf/models/pdflayout' => [2, 2049],
+            'plugins/renatio/dynamicpdf/models/pdftemplate' => [2, 1689],
+            'plugins/renatio/dynamicpdf/src' => [2, 9818]
         ];
 
         foreach ($trash as $path => $data) {
