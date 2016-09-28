@@ -1,7 +1,8 @@
-<div data-control="toolbar">
+<div data-control="toolbar" class="loading-indicator-container">
     <button
         class="btn btn-primary oc-icon-refresh"
         data-request="onSearchItems"
+        data-load-indicator="<?= e(trans('backend::lang.list.updating')) ?>"
         data-stripe-load-indicator>
         <?= e(trans('indikator.backend::lang.trash.search')) ?>
     </button>
@@ -13,6 +14,7 @@
         })"
         data-request="onRemoveAllItems"
         data-request-confirm="<?= e(trans('indikator.backend::lang.trash.delete')) ?>"
+        data-load-indicator="<?= e(trans('backend::lang.list.updating')) ?>"
         data-stripe-load-indicator>
         <?= e(trans('indikator.backend::lang.trash.remove_all')) ?>
     </button>
