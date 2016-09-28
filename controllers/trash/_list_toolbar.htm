@@ -7,7 +7,7 @@
     </button>
     <?php if (DB::table('indikator_backend_trash')->count() > 0): ?>
     <button
-        class="btn btn-default oc-oc-icon-eraser"
+        class="btn btn-default oc-icon-eraser"
         onclick="$(this).data('request-data', {
             checked: $('.control-list').listWidget('getChecked')
         })"
