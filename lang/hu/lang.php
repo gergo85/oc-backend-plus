@@ -45,7 +45,7 @@ return [
         'search' => 'Keresés',
         'success' => 'A beolvasás sikeresen befejeződött.',
         'no_items' => 'Gratulálunk, nem találtunk felesleges fájlt a weboldalon!',
-        'remove_all' => 'Összes törlése',
+        'remove_all' => 'Kiürítés',
         'delete' => 'Valóban törölni akarja a tételeket?',
         'remove' => 'A tételek sikeresen eltávolításra kerültek.'
     ],
