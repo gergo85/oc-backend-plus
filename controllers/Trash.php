@@ -99,6 +99,8 @@ class Trash extends Controller
             'modules/backend/assets/js/october.triggerapi.js' => [1, 6047],
             'modules/backend/assets/js/october.utils.js' => [1, 5644],
             'modules/backend/assets/js/editorpreferences' => [2, 1523],
+            'modules/backend/assets/js/vendor/jquery-2.0.3.min.js' => [1, 83573],
+            'modules/backend/assets/js/vendor/jquery.touchwipe.min.js' => [1, 1561],
             'modules/backend/assets/js/vendor/modernizr.min.js' => [1, 15406],
             'modules/backend/assets/js/vendor/moment.js' => [1, 99200],
             'modules/backend/assets/js/vendor/mousewheel.js' => [1, 7348],
@@ -161,11 +163,15 @@ class Trash extends Controller
             'plugins/anandpatel/wysiwygeditors/formwidgets/editor/partials/_froala.htm' => [1, 9707],
             'plugins/anandpatel/wysiwygeditors/resources' => [2, 1183925],
             'plugins/anandpatel/wysiwygeditors/src' => [2, 11669],
-            'plugins/indikator/backend/assets/css/media-menu.css' => [1, 57],  
-            'plugins/indikator/backend/assets/css/media-menu-pages.css' => [1, 57], 
+            'plugins/indikator/backend/assets/css/media-menu.css' => [1, 57],
+            'plugins/indikator/backend/assets/css/media-menu-pages.css' => [1, 57],
             'plugins/indikator/backend/assets/js/media-menu.js' => [1, 85],
             'plugins/indikator/backend/partials' => [2, 2740],
+            'plugins/indikator/content/models/BlogCategory.php' => [1, 689],
+            'plugins/indikator/content/models/NewsCategory.php' => [1, 689],
+            'plugins/indikator/content/models/PortfolioCategory.php' => [1, 704],
             'plugins/indikator/login/assets/css' => [2, 113000],
+            'plugins/indikator/news/models/Post.php' => [1, 2283],
             'plugins/martin/adminer/classes/adminer-en.php' => [1, 289371],
             'plugins/martin/adminer/classes/adminer-4.2.4-en.php' => [1, 289386],
             'plugins/renatio/dynamicpdf/.gitignore' => [1, 45],
@@ -239,7 +245,7 @@ class Trash extends Controller
                 }
 
                 // File
-                else if ((substr_count($element, 'LICENSE') == 1 || substr_count($element, 'README') == 1 || substr_count($element, 'CHANGELOG') == 1) && Items::where('path', '/'.$folder.'/'.$element)->count() == 0) {
+                else if ((substr_count($element, 'LICENSE') == 1 || substr_count($element, 'README') == 1 || substr_count($element, 'readme') == 1 || substr_count($element, 'CHANGELOG') == 1) && Items::where('path', '/'.$folder.'/'.$element)->count() == 0) {
                     Items::insertGetId([
                         'type' => 1,
                         'path' => '/'.$folder.'/'.$element,

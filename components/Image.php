@@ -39,7 +39,7 @@ class Image extends ComponentBase
 
     public function onRun()
     {
-        $this->page['width'] = $this->property('width');
+        $this->page['width']  = $this->property('width');
         $this->page['height'] = $this->property('height');
 
         if ($this->property('text') == '') {

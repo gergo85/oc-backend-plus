@@ -2,6 +2,7 @@
 
 use Backend\Classes\ReportWidgetBase;
 use Exception;
+use Request;
 
 class Server extends ReportWidgetBase
 {
@@ -48,7 +49,7 @@ class Server extends ReportWidgetBase
     protected function loadData()
     {
         $this->vars['host'] = php_uname('n');
-        $this->vars['ip']   = $_SERVER['SERVER_ADDR'];
+        $this->vars['ip']   = Request::ip();
         $this->vars['os']   = php_uname('s');
 
         foreach ($this->vars as $key=>$item) {
