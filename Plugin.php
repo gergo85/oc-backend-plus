@@ -223,6 +223,7 @@ class Plugin extends PluginBase
 
                 if (isset($preferences['topmenu_label']) && $preferences['topmenu_label']) {
                     $controller->addCss('/plugins/indikator/backend/assets/css/topmenu-label.css');
+                    $controller->addJs('/plugins/indikator/backend/assets/js/topmenu-label.js');
                 }
 
                 if (isset($preferences['sidebar_search']) && $preferences['sidebar_search']) {
