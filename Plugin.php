@@ -130,7 +130,9 @@ class Plugin extends PluginBase
         {
             if ($form->model instanceof Backend\Models\Preference) {
                 $form->addTabFields([
-                    // Display settings
+                    /*
+                     * Display settings
+                     */
                     'rounded_avatar' => [
                         'tab'     => 'indikator.backend::lang.settings.tab_display',
                         'label'   => 'indikator.backend::lang.settings.avatar_label',
@@ -167,7 +169,9 @@ class Plugin extends PluginBase
                         'default' => 'false'
                     ],
 
-                    // Behavior settings
+                    /*
+                     *  Behavior settings
+                     */
                     'focus_searchfield' => [
                         'tab'     => 'indikator.backend::lang.settings.tab_behavior',
                         'label'   => 'indikator.backend::lang.settings.search_label',
@@ -210,13 +214,17 @@ class Plugin extends PluginBase
         BackendController::extend(function($controller)
         {
             if (BackendAuth::check()) {
-                // User settings
+                /*
+                 * User settings
+                 */
                 $preferenceModel = class_exists('Backend\Models\UserPreference')
                     ? Backend\Models\UserPreference::forUser()
                     : Backend\Models\UserPreferences::forUser();
                 $preferences = $preferenceModel->get('backend::backend.preferences');
 
-                // Display settings
+                /*
+                 * Display settings
+                 */
                 if (isset($preferences['rounded_avatar']) && $preferences['rounded_avatar']) {
                     $controller->addCss('/plugins/indikator/backend/assets/css/rounded-avatar.css');
                 }
@@ -238,7 +246,9 @@ class Plugin extends PluginBase
                     $controller->addJs('/plugins/indikator/backend/assets/js/setting-theme.js');
                 }
 
-                // Behavior settings
+                /*
+                 * Behavior settings
+                 */
                 if (isset($preferences['focus_searchfield']) && $preferences['focus_searchfield']) {
                     $controller->addJs('/plugins/indikator/backend/assets/js/setting-search.js');
                 }
