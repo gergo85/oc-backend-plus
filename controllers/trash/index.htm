@@ -2,9 +2,9 @@
     <ul>
         <li><?= e(trans('indikator.backend::lang.trash.title')) ?></li>
         <li>
-            <span class="text-info"><strong><?= DB::table('indikator_backend_trash')->count() ?></strong> <?= e(trans_choice('indikator.backend::lang.trash.items', DB::table('indikator_backend_trash')->count())) ?></span>
+            <span class="text-info"><strong><?= Indikator\Backend\Models\Trash::count() ?></strong> <?= e(trans_choice('indikator.backend::lang.trash.items', Indikator\Backend\Models\Trash::count())) ?></span>
             &nbsp; | &nbsp;
-            <span class="text-danger"><strong><?= number_format(round(DB::table('indikator_backend_trash')->sum('size') / 1024), 0, '.', ' ') ?></strong> KB</span>
+            <span class="text-danger"><strong><?= number_format(round(Indikator\Backend\Models\Trash::sum('size') / 1024), 0, '.', ' ') ?></strong> KB</span>
         </li>
     </ul>
 </div>
