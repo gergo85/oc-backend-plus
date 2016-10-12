@@ -250,6 +250,7 @@ class Plugin extends PluginBase
                  * Behavior settings
                  */
                 if (isset($preferences['focus_searchfield']) && $preferences['focus_searchfield']) {
+                    $controller->addCss('/plugins/indikator/backend/assets/css/setting-search.css');
                     $controller->addJs('/plugins/indikator/backend/assets/js/setting-search.js');
                 }
 
