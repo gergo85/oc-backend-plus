@@ -246,7 +246,7 @@ class Trash extends Controller
                 }
 
                 // File
-                else if ((substr_count($element, 'LICENSE') == 1 || substr_count($element, 'README') == 1 || substr_count($element, 'readme') == 1 || substr_count($element, 'CHANGELOG') == 1) && Items::where('path', '/'.$folder.'/'.$element)->count() == 0) {
+                else if ((substr_count($element, 'LICENSE') == 1 || substr_count($element, 'README') == 1 || substr_count($element, 'readme') == 1 || substr_count($element, 'CHANGE') == 1 || substr_count($element, 'UPGRADE') == 1 || substr_count($element, 'SECURITY') == 1 || substr_count($element, 'CONTRIBUT') == 1 || substr_count($element, 'ERRATA') == 1) && Items::where('path', '/'.$folder.'/'.$element)->count() == 0) {
                     Items::insertGetId([
                         'type' => 1,
                         'path' => '/'.$folder.'/'.$element,
