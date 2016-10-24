@@ -240,6 +240,7 @@ class Trash extends Controller
         // Scan folder
         foreach ($elements as $element) {
             if ($element != '.' && $element != '..') {
+
                 // Folder
                 if (filetype($folder.'/'.$element) == 'dir') {
                     $this->scanVendor($folder.'/'.$element, $deph + 1);
@@ -263,8 +264,9 @@ class Trash extends Controller
     {
         if (($checkedIds = post('checked')) && is_array($checkedIds) && count($checkedIds)) {
             foreach ($checkedIds as $objectId) {
-                if (Items::where('id', $objectId)->count() == 1) {
-                    $item = Items::where('id', $objectId)->first();
+                if (Items::whereId($objectId)->count() == 1) {
+                    $item = Items::whereId($objectId)->first();
+
                     // File
                     if ($item->type == 1) {
                         File::delete(base_path().$item->path);
@@ -280,7 +282,7 @@ class Trash extends Controller
                         DB::table('system_settings')->where('item', $item->path)->delete();
                     }
 
-                    Items::where('id', $objectId)->delete();
+                    Items::whereId($objectId)->delete();
                 }
             }
 
@@ -310,7 +312,7 @@ class Trash extends Controller
                 DB::table('system_settings')->where('item', $item->path)->delete();
             }
 
-            Items::where('id', $item->id)->delete();
+            Items::whereId($item->id)->delete();
         }
 
         Flash::success(Lang::get('indikator.backend::lang.trash.remove'));
