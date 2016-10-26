@@ -138,35 +138,35 @@ class Plugin extends PluginBase
                         'label'   => 'indikator.backend::lang.settings.avatar_label',
                         'comment' => 'indikator.backend::lang.settings.avatar_comment',
                         'type'    => 'switch',
-                        'default' => 'false'
+                        'default' => false
                     ],
                     'topmenu_label' => [
                         'tab'     => 'indikator.backend::lang.settings.tab_display',
                         'label'   => 'indikator.backend::lang.settings.topmenu_label',
                         'comment' => 'indikator.backend::lang.settings.topmenu_comment',
                         'type'    => 'switch',
-                        'default' => 'false'
+                        'default' => false
                     ],
                     'sidebar_description' => [
                         'tab'     => 'indikator.backend::lang.settings.tab_display',
                         'label'   => 'indikator.backend::lang.settings.sidebar_desc_label',
                         'comment' => 'indikator.backend::lang.settings.sidebar_desc_comment',
                         'type'    => 'switch',
-                        'default' => 'false'
+                        'default' => false
                     ],
                     'sidebar_search' => [
                         'tab'     => 'indikator.backend::lang.settings.tab_display',
                         'label'   => 'indikator.backend::lang.settings.sidebar_search_label',
                         'comment' => 'indikator.backend::lang.settings.sidebar_search_comment',
                         'type'    => 'switch',
-                        'default' => 'false'
+                        'default' => false
                     ],
                     'more_themes' => [
                         'tab'     => 'indikator.backend::lang.settings.tab_display',
                         'label'   => 'indikator.backend::lang.settings.themes_label',
                         'comment' => 'indikator.backend::lang.settings.themes_comment',
                         'type'    => 'switch',
-                        'default' => 'false'
+                        'default' => false
                     ],
 
                     /*
@@ -177,35 +177,35 @@ class Plugin extends PluginBase
                         'label'   => 'indikator.backend::lang.settings.search_label',
                         'comment' => 'indikator.backend::lang.settings.search_comment',
                         'type'    => 'switch',
-                        'default' => 'false'
+                        'default' => false
                     ],
                     'form_clearbutton' => [
                         'tab'     => 'indikator.backend::lang.settings.tab_behavior',
                         'label'   => 'indikator.backend::lang.settings.clearbutton_label',
                         'comment' => 'indikator.backend::lang.settings.clearbutton_comment',
                         'type'    => 'switch',
-                        'default' => 'false'
+                        'default' => false
                     ],
                     'virtual_keyboard' => [
                         'tab'     => 'indikator.backend::lang.settings.tab_behavior',
                         'label'   => 'indikator.backend::lang.settings.keyboard_label',
                         'comment' => 'indikator.backend::lang.settings.keyboard_comment',
                         'type'    => 'switch',
-                        'default' => 'false'
+                        'default' => false
                     ],
                     'delete_plugin' => [
                         'tab'     => 'indikator.backend::lang.settings.tab_behavior',
                         'label'   => 'indikator.backend::lang.settings.delete_plugin_label',
                         'comment' => 'indikator.backend::lang.settings.delete_plugin_comment',
                         'type'    => 'switch',
-                        'default' => 'false'
+                        'default' => false
                     ],
                     'enabled_gzip' => [
                         'tab'     => 'indikator.backend::lang.settings.tab_behavior',
                         'label'   => 'indikator.backend::lang.settings.enabled_gzip_label',
                         'comment' => 'indikator.backend::lang.settings.enabled_gzip_comment',
                         'type'    => 'switch',
-                        'default' => 'false'
+                        'default' => false
                     ]
                 ]);
             }
