@@ -41,6 +41,10 @@ class Plugin extends PluginBase
     public function registerReportWidgets()
     {
         return [
+            'Indikator\Backend\ReportWidgets\Cache' => [
+                'label'   => 'indikator.backend::lang.widgets.cache.title',
+                'context' => 'dashboard'
+            ],
             'Indikator\Backend\ReportWidgets\Status' => [
                 'label'   => 'indikator.backend::lang.widgets.system.title',
                 'context' => 'dashboard'
@@ -75,10 +79,6 @@ class Plugin extends PluginBase
             ],
             'Indikator\Backend\ReportWidgets\Images' => [
                 'label'   => 'indikator.backend::lang.widgets.images.title',
-                'context' => 'dashboard'
-            ],
-            'Indikator\Backend\ReportWidgets\Cache' => [
-                'label'   => 'indikator.backend::lang.widgets.cache.title',
                 'context' => 'dashboard'
             ]
         ];
