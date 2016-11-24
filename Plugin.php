@@ -179,6 +179,13 @@ class Plugin extends PluginBase
                         'type'    => 'switch',
                         'default' => false
                     ],
+                    'context_menu' => [
+                        'tab'     => 'indikator.backend::lang.settings.tab_behavior',
+                        'label'   => 'indikator.backend::lang.settings.context_menu_label',
+                        'comment' => 'indikator.backend::lang.settings.context_menu_comment',
+                        'type'    => 'switch',
+                        'default' => false
+                    ],
                     'form_clearbutton' => [
                         'tab'     => 'indikator.backend::lang.settings.tab_behavior',
                         'label'   => 'indikator.backend::lang.settings.clearbutton_label',
@@ -190,13 +197,6 @@ class Plugin extends PluginBase
                         'tab'     => 'indikator.backend::lang.settings.tab_behavior',
                         'label'   => 'indikator.backend::lang.settings.keyboard_label',
                         'comment' => 'indikator.backend::lang.settings.keyboard_comment',
-                        'type'    => 'switch',
-                        'default' => false
-                    ],
-                    'delete_plugin' => [
-                        'tab'     => 'indikator.backend::lang.settings.tab_behavior',
-                        'label'   => 'indikator.backend::lang.settings.delete_plugin_label',
-                        'comment' => 'indikator.backend::lang.settings.delete_plugin_comment',
                         'type'    => 'switch',
                         'default' => false
                     ],
@@ -254,6 +254,11 @@ class Plugin extends PluginBase
                     $controller->addJs('/plugins/indikator/backend/assets/js/setting-search.js');
                 }
 
+                if (isset($preferences['context_menu']) && $preferences['context_menu']) {
+                    $controller->addCss('/plugins/indikator/backend/assets/css/context-menu.css');
+                    $controller->addJs('/plugins/indikator/backend/assets/js/context-menu.js');
+                }
+
                 if (isset($preferences['form_clearbutton']) && $preferences['form_clearbutton']) {
                     $controller->addJs('/plugins/indikator/backend/assets/js/form-clearbutton.js');
                 }
@@ -261,10 +266,6 @@ class Plugin extends PluginBase
                 if (isset($preferences['virtual_keyboard']) && $preferences['virtual_keyboard']) {
                     $controller->addCss('/plugins/indikator/backend/assets/css/ml-keyboard.css');
                     $controller->addJs('/plugins/indikator/backend/assets/js/ml-keyboard.js');
-                }
-
-                if (isset($preferences['delete_plugin']) && $preferences['delete_plugin'] && PluginManager::instance()->exists('October.Demo')) {
-                    PluginManager::instance()->deletePlugin('October.Demo');
                 }
 
                 if (isset($preferences['enabled_gzip']) && $preferences['enabled_gzip']) {
