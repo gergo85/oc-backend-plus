@@ -156,6 +156,9 @@ class Trash extends Controller
             'modules/system/assets/vendor/font-autumn' => [2, 803504],
             'modules/system/assets/vendor/syntaxhighlighter/LGPL-LICENSE' => [1, 7638],
             'modules/system/assets/vendor/syntaxhighlighter/MIT-LICENSE' => [1, 1061],
+            'modules/system/models/MailSettings.php' => [1, 4435],
+            'modules/system/models/mailsettings' => [2, 5121],
+            'modules/system/models/Parameters.php' => [1, 3904],
             // Plugins
             'plugins/anandpatel/wysiwygeditors/routes.php' => [1, 2406],
             'plugins/anandpatel/wysiwygeditors/config' => [2, 2262],
