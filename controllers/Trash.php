@@ -176,6 +176,7 @@ class Trash extends Controller
             'plugins/indikator/login/assets/css' => [2, 113000],
             'plugins/indikator/news/models/Post.php' => [1, 2283],
             'plugins/indikator/news/models/posts/_statistics.htm' => [1, 84],
+            'plugins/indikator/plugins/models/frontend/_name.htm' => [1, 354],
             'plugins/martin/adminer/classes/adminer-en.php' => [1, 289371],
             'plugins/martin/adminer/classes/adminer-4.2.4-en.php' => [1, 289386],
             'plugins/renatio/dynamicpdf/.gitignore' => [1, 45],
