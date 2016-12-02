@@ -22,7 +22,7 @@ return [
         'search_label' => 'Keresőmező automatikus aktiválása',
         'search_comment' => 'Elsőként a listáknál, másodsorban az oldalsó menüben.',
         'context_menu_label' => 'Gyorsmenü engedélyezése',
-        'context_menu_comment' => 'Jobb egérgomb lenyomásával jelenik meg.',
+        'context_menu_comment' => 'A jobb egérgomb lenyomásával jelenik meg.',
         'clearbutton_label' => 'Gyorstörlés gomb megjelenítése (béta)',
         'clearbutton_comment' => 'Csak az egysoros beviteli mezőknél működik.',
         'keyboard_label' => 'Virtuális billentyűzet megjelenítése (béta)',
