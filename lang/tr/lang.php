@@ -16,7 +16,7 @@ return [
         'sidebar_desc_comment' => 'Kenar çubuğunda menüler açıklamasını gizle.',
         'sidebar_search_label' => 'Kenar çubuğunda arama alanını gizleyin',
         'sidebar_search_comment' => 'Kenar çubuğunda menüler açıklamasını gizle.',
-        'themes_label' => '"Medanis Tema ..." bağlantısını gizle',
+        'themes_label' => '"Daha fazla tema bul" bağlantısını gizle',
         'themes_comment' => 'Front-end tema sayfasında yer alır.',
         'tab_behavior' => 'Davranış',
         'search_label' => 'Otomatik olarak arama alanına odaklan',
