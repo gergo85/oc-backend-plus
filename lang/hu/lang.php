@@ -16,19 +16,13 @@ return [
         'sidebar_desc_comment' => 'Csak a Beállítások aloldalain működik.',
         'sidebar_search_label' => 'Keresőmező elrejtése az oldalsó menüben',
         'sidebar_search_comment' => 'Csak a Beállítások aloldalain működik.',
-        'themes_label' => 'A "További témák ..." link elrejtése',
-        'themes_comment' => 'A Dizájn oldalon található a hivatkozás.',
         'tab_behavior' => 'Működés',
         'search_label' => 'Keresőmező automatikus aktiválása',
         'search_comment' => 'Elsőként a listáknál, másodsorban az oldalsó menüben.',
         'context_menu_label' => 'Gyorsmenü engedélyezése',
         'context_menu_comment' => 'A jobb egérgomb lenyomásával jelenik meg.',
-        'clearbutton_label' => 'Gyorstörlés gomb megjelenítése (béta)',
-        'clearbutton_comment' => 'Csak az egysoros beviteli mezőknél működik.',
         'keyboard_label' => 'Virtuális billentyűzet megjelenítése (béta)',
-        'keyboard_comment' => 'Csak az egysoros beviteli mezőknél működik.',
-        'enabled_gzip_label' => 'Gzip tömörítés engedélyezése',
-        'enabled_gzip_comment' => 'A teljes weboldalra érvényes a beállítás.'
+        'keyboard_comment' => 'Csak az egysoros beviteli mezőknél működik.'
     ],
     'trash' => [
         'title' => 'Felesleges fájlok',
@@ -166,19 +160,5 @@ return [
         'sports' => 'Sport',
         'technics' => 'Technika',
         'transport' => 'Utazás'
-    ],
-    'component' => [
-        'image' => [
-            'name' => 'Lorem ipsum kép',
-            'description' => ''
-        ],
-        'text' => [
-            'name' => 'Lorem ipsum szöveg',
-            'description' => '',
-            'length' => 'Hossza',
-            'bit' => 'kevés',
-            'some' => 'több',
-            'lots' => 'sok'
-        ]
     ]
 ];

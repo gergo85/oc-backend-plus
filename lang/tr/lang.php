@@ -16,19 +16,13 @@ return [
         'sidebar_desc_comment' => 'Kenar çubuğunda menüler açıklamasını gizle.',
         'sidebar_search_label' => 'Kenar çubuğunda arama alanını gizleyin',
         'sidebar_search_comment' => 'Kenar çubuğunda menüler açıklamasını gizle.',
-        'themes_label' => '"Daha fazla tema bul" bağlantısını gizle',
-        'themes_comment' => 'Front-end tema sayfasında yer alır.',
         'tab_behavior' => 'Davranış',
         'search_label' => 'Otomatik olarak arama alanına odaklan',
         'search_comment' => 'Öncelikle ikinci kenar çubuğundaki listeleri içinde.',
         'context_menu_label' => 'Bağlam menüsünü etkinleştir',
         'context_menu_comment' => 'Hızlı menüyü göstermek için sağ tıklayın.',
-        'clearbutton_label' => 'Giriş alanlarına açık düğme ekleyin (beta)',
-        'clearbutton_comment' => 'Bu basit metin alanları ile çalışır.',
         'keyboard_label' => 'Sanal klavyeyi aktifleştir (beta)',
-        'keyboard_comment' => 'Sadece basit metin alanları ile çalışır.',
-        'enabled_gzip_label' => 'Gzip sıkıştırmasını etkinleştirin',
-        'enabled_gzip_comment' => 'Bu önuç ve arka uç aracı çalışır.'
+        'keyboard_comment' => 'Sadece basit metin alanları ile çalışır.'
     ],
     'trash' => [
         'title' => 'Trash items',
@@ -166,19 +160,5 @@ return [
         'sports' => 'Spor',
         'technics' => 'Teknik',
         'transport' => 'Taşımacılık'
-    ],
-    'component' => [
-        'image' => [
-            'name' => 'Lorem ipsum görüntü',
-            'description' => ''
-        ],
-        'text' => [
-            'name' => 'Lorem ipsum metin',
-            'description' => '',
-            'length' => 'Uzunluk',
-            'bit' => 'biraz',
-            'some' => 'bazı',
-            'lots' => 'çok'
-        ]
     ]
 ];

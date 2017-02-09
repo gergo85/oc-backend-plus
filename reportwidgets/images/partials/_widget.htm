@@ -1,15 +1,14 @@
 <div class="report-widget">
-    <h3 style="margin-bottom:5px;"><?= e(trans($this->property('title'))) ?></h3>
-    <div style="margin-top:20px;">
-        <?php if ($this->property('type') == 'simple'): ?>
-        <img src="http://lorempixel.com/<?= $this->property('width') ?>/<?= $this->property('height') ?>/<?= $this->property('category') ?>" alt="" style="width:100%;">
-        <?php else: ?>
-        <div class="cycle-slideshow">
-            <?php for ($i = 0; $i <$this->property('number'); $i++): ?>
-            <img src="http://lorempixel.com/<?= $this->property('width') ?>/<?= $this->property('height') ?>/<?= $this->property('category') ?>?<?= ($i + 1) ?>" alt="" style="width:100%;">
-            <?php endfor; ?>
-        </div>
-        <script src="<?php echo URL::to('plugins/indikator/backend/assets/js/cycle2.js'); ?>"></script>
-        <?php endif; ?>
+    <h3 style="margin-bottom:25px;"><?= e(trans($this->property('title'))) ?></h3>
+
+<?php if ($this->property('type') == 'simple'): ?>
+    <img src="http://lorempixel.com/<?= $this->property('width') ?>/<?= $this->property('height') ?>/<?= $this->property('category') ?>" alt="" style="width:100%;">
+    <?php else: ?>
+    <div class="cycle-slideshow">
+        <?php for ($i = 0; $i < $this->property('number'); $i++): ?>
+        <img src="http://lorempixel.com/<?= $this->property('width') ?>/<?= $this->property('height') ?>/<?= $this->property('category') ?>?<?= ($i + 1) ?>" alt="" style="width:100%;">
+        <?php endfor; ?>
     </div>
+    <script src="<?php echo URL::to('plugins/indikator/backend/assets/js/cycle2.js'); ?>"></script>
+<?php endif; ?>
 </div>

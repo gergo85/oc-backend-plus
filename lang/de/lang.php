@@ -16,19 +16,13 @@ return [
         'sidebar_desc_comment' => 'Blenden Sie die Beschreibung der Menüs in der Seitenleiste.',
         'sidebar_search_label' => 'Blenden Sie das Suchfeld in der Seitenleiste',
         'sidebar_search_comment' => 'Blenden Sie die Beschreibung der Menüs in der Seitenleiste.',
-        'themes_label' => 'Blenden Sie die "Weitere Themen" Link',
-        'themes_comment' => 'Das Hotel liegt am Frontend-Themenseite.',
         'tab_behavior' => 'Verhalten',
         'search_label' => 'Fokus auf das Suchfeld automatisch',
         'search_comment' => 'Zum einen in Listen, zweitens in der Seitenleiste.',
         'context_menu_label' => 'Aktivieren Sie das Kontextmenü',
         'context_menu_comment' => 'Klicken Sie mit der rechten Maustaste auf das Menü.',
-        'clearbutton_label' => 'Fügen Sie die Löschtaste, um Eingabefelder ein (beta)',
-        'clearbutton_comment' => 'Es funktioniert nur mit einfachen Textfelder.',
         'keyboard_label' => 'Lassen Sie sich die virtuelle Tastatur von Formen (beta)',
-        'keyboard_comment' => 'Es funktioniert nur mit einfachen Textfelder.',
-        'enabled_gzip_label' => 'Aktivieren Sie die gzip-Kompression',
-        'enabled_gzip_comment' => 'Es funktioniert auf dem Frontend und Backend-Tool.'
+        'keyboard_comment' => 'Es funktioniert nur mit einfachen Textfelder.'
     ],
     'trash' => [
         'title' => 'Trash items',
@@ -166,19 +160,5 @@ return [
         'sports' => 'Sport',
         'technics' => 'Technics',
         'transport' => 'Verkehr'
-    ],
-    'component' => [
-        'image' => [
-            'name' => 'Lorem ipsum bild',
-            'description' => ''
-        ],
-        'text' => [
-            'name' => 'Lorem ipsum text',
-            'description' => '',
-            'length' => 'Länge',
-            'bit' => 'ein bisschen',
-            'some' => 'einige',
-            'lots' => 'viele'
-        ]
     ]
 ];

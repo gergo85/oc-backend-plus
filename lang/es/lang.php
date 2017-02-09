@@ -16,19 +16,13 @@ return [
         'sidebar_desc_comment' => 'Ocultar la descripción de los menús en la barra lateral.',
         'sidebar_search_label' => 'Ocultar el campo de búsqueda en la barra lateral',
         'sidebar_search_comment' => 'Ocultar la descripción de los menús en la barra lateral.',
-        'themes_label' => 'Esconder el "Buscar nuevos temas" enlace',
-        'themes_comment' => 'Está en la página del tema Front-end.',
         'tab_behavior' => 'Comportamiento',
         'search_label' => 'Hacer "focus" en el campo de búsqueda automáticamente',
         'search_comment' => 'En primer lugar en las listas, en segundo lugar, en la barra lateral.',
         'context_menu_label' => 'Habilitar el menú contextual',
         'context_menu_comment' => 'Haga clic con el botón derecho del ratón para mostrar el menú.',
-        'clearbutton_label' => 'Agregar el botón de limpieza de campos de entrada (beta)',
-        'clearbutton_comment' => 'Funciona únicamente por los campos de texto simples.',
         'keyboard_label' => 'Mostrar el teclado virtual para introducir datos (beta)',
-        'keyboard_comment' => 'Sólo funciona con campos de texto simples.',
-        'enabled_gzip_label' => 'Habilitar la compresión gzip',
-        'enabled_gzip_comment' => 'Funciona en la herramienta de frontend y backend.'
+        'keyboard_comment' => 'Sólo funciona con campos de texto simples.'
     ],
     'trash' => [
         'title' => 'Trash items',
@@ -166,19 +160,5 @@ return [
         'sports' => 'Deportes',
         'technics' => 'Técnicos',
         'transport' => 'Transporte'
-    ],
-    'component' => [
-        'image' => [
-            'name' => 'Lorem ipsum image',
-            'description' => ''
-        ],
-        'text' => [
-            'name' => 'Lorem ipsum text',
-            'description' => '',
-            'length' => 'Longitud',
-            'bit' => 'un poco',
-            'some' => 'algo',
-            'lots' => 'mucho'
-        ]
     ]
 ];

@@ -1,13 +1,10 @@
 # Backend toolkit plugin
-This plugin extend the back-end to useful features, some new dashboard widgets, form widgets and front-end components.
+This plugin extend the back-end to useful features and some new dashboard widgets.
 
 - [Advantages of plugin](#advantages)
 - [New back-end features](#new_features)
 - [New menu in System panel](#new_menu)
 - [New dashboard widgets](#dashboard_widgets)
-- [New form widgets](#form_widgets)
-- [New front-end components](#frontend_components)
-- [Form widgets documentation](#documentation)
 - [Available languages](#available_languages)
 - [Installation](#installation)
 - [Activate features](#activate_features)
@@ -16,28 +13,32 @@ This plugin extend the back-end to useful features, some new dashboard widgets, 
 
 <a name="advantages"></a>
 ## Advantages of plugin
-* __Increase the speed of your webpage!__ - Enable the gzip compression of server.
 * __Delete the unused files and folders!__ - Scan and find the unnecessary elements.
-* __Let's work effectively and quickly!__ - Extend the operation of input fields.
 * __Be simpler the back-end interface!__ - Hide the unused elements and texts.
 * __Make an informative nice dashboard!__ - Add some new widgets to dashboard.
 
+## More cool features
+* __Increase the speed of your webpage!__ - Enable the gzip compression of server.
+* __Let's work effectively and quickly!__ - Extend the operation of input fields.
+* __Set the back-end features as global!__ - Available the settings for other users.
+* __Modern, re-design dashboard widgets!__ - New look for stable OctoberCMS.
+* __Brand new form widget elements!__ - Datepicker, Timepicker and Colorpicker.
+* __Turn on useful automatic operations!__ - Coming soon...
+If you like this extra features, please see the [Backend Elite](http://octobercms.com/plugin/indikator-backendelite) plugin. This is the extended version of Backend Plus.
+
 <a name="new_features"></a>
 ## New back-end features
-* __Enable the gzip compression.__ [More info &raquo;](https://developers.google.com/speed/docs/insights/EnableCompression)
-* Hide the menu description in sidebar.
 * __Focus the search field automatically.__
-* Hide the search field in sidebar.
+* Hide the menu description in sidebar.
 * __Rounded profile image is optional in top menu.__
+* Hide the search field in sidebar.
+* __Show a right-click menu on Back-end.__
 * Show the virtual keyboard by input fields.
 * __Hide the label in top menu.__
-* Hide the "Find more themes" link in Design.
-* __Show a right-click menu on Back-end.__
-* Add the clear button to input fields.
 
 <a name="new_menu"></a>
 ## New menu in System panel
-__Delete the unused files and folders__ of OctoberCMS such as text files (readme and license), old files, empty folders and unnecessary database settings. You can find this feature on the __Settings > System > Trash items__ page. For compatibility reasons you can __use the latest version__ of OctoberCMS and plugins!
+__Delete the unused files and folders__ of OctoberCMS such as text files (readme and license), old files, empty folders and unnecessary database settings. You can find this feature on the __Settings > System > Trash items__ page. For compatibility reasons you can __use the latest version__ of OctoberCMS and plugins! The automatically operation will be available in the [Backend Elite](http://octobercms.com/plugin/indikator-backendelite) plugin.
 
 <a name="dashboard_widgets"></a>
 ## New dashboard widgets
@@ -51,83 +52,7 @@ __Delete the unused files and folders__ of OctoberCMS such as text files (readme
 * Administrators (users, groups and last login)
 * __PHP settings (upload limit, memory limit and timezone)__
 * Server info (host, IP address and operation system)
-
-<a name="form_widgets"></a>
-## New form widgets
-* __Pickadate__ (datepicker and timepicker)
-* __TimePicki__ (timepicker)
-* __MiniColors__ (colorpicker)
-
-<a name="frontend_components"></a>
-## New front-end components
-* Lorem ipsum image
-* Lorem ipsum text
-
-<a name="documentation"></a>
-## Form widgets documentation
-
-### Pickadate
-`pickadate` - renders a text field used for selecting date and times.
-
-    date:
-        label: Date
-        type: pickadate
-        mode: date
-
-Option | Description
-------------- | -------------
-**mode** | the expected result, either date, datetime or time. Default: datetime.
-**selectYears** | display select menus to pick the year. Default: false.
-**selectMonths** | display select menus to pick the month. Default: false.
-**interval** | choose the minutes interval between each time in the list. Default: 30.
-
-See the demo: [http://amsul.ca/pickadate.js](http://amsul.ca/pickadate.js)
-
-### TimePicki
-`timepicki` - renders a text field used for selecting times.
-
-    time:
-        label: Time
-        type: timepicki
-        stepSizeMinutes: 10
-
-Option | Description
-------------- | -------------
-**increaseDirection** | set increase hour or minute direction. Default: 'down'.
-**customClasses** | add custom class name in timepicki for our own like css purpose. Default: ''.
-**minHourValue** | set minimum hour which means we can set minimum value of hour. Default: 0.
-**maxHourValue** | also can set maximum hour same like minimum hour. Default: 23.
-**showMeridian** | you can choose to hide the AM/PM selector. Default: false.
-**stepSizeHours** | the step size with which hours have to increase or decrease Default: 1.
-**stepSizeMinutes** | the step size with which hours have to increase or decrease Default: 1.
-**overflowMinutes** | that hours will be updated if we go over the maximum/minimum of the minutes counter. Default: false.
-**disableKeyboardMobile** | prevent keyboard to show up on mobile, side effect: you can't type your hour on desktop keyboard anymore either. Altering hours and minutes with arrows is still possible. Default: false.
-**reset** | if want to reset time in input, to enable reset option. Default: false.
-
-See the demo: [http://senthilraj.github.io/TimePicki](http://senthilraj.github.io/TimePicki)
-
-### MiniColors
-`minicolors` - renders controls to select a color value.
-
-    theme:
-        label: Choose color
-        type: minicolors
-        control: wheel
-
-Option | Description
-------------- | -------------
-**animationSpeed** | the animation speed of the sliders when the user taps or clicks a new color. Default: 50.
-**animationEasing** | the easing to use when animating the sliders. Default: 'swing'.
-**changeDelay** | the time, in milliseconds, to defer the change event from firing while the user makes a selection. Default: 0.
-**control** | determines the type of control. Valid options are 'hue', 'brightness', 'saturation', and 'wheel'. Default: 'hue'.
-**format** | the format MiniColors should use. Valid options are 'hex' and 'rgb'. Default: 'hex'.
-**hideSpeed** | the speed at which to hide the color picker. Default: 100.
-**keywords** | a comma-separated list of keywords that the control should accept (e.g. inherit, transparent, initial). Default: ''.
-**letterCase** | determines the letter case of the hex code value. Valid options are 'uppercase' or 'lowercase'. Default: 'lowercase'.
-**position** | sets the position of the dropdown. Valid options are 'bottom left', 'bottom right', 'top left', and 'top right'. Default: 'bottom left'.
-**showSpeed** | the speed at which to show the color picker. Default: 100.
-
-See the demo: [http://labs.abeautifulsite.net/jquery-minicolors](http://labs.abeautifulsite.net/jquery-minicolors)
+The brand new, re-design style is available in the [Backend Elite](http://octobercms.com/plugin/indikator-backendelite) plugin.
 
 <a name="available_languages"></a>
 ## Available languages
@@ -162,6 +87,3 @@ See the demo: [http://labs.abeautifulsite.net/jquery-minicolors](http://labs.abe
 * Virtual keyboard: [MLKeyboard](https://github.com/mBut/jquery.mlkeyboard)
 * Random images: [lorempixel](http://lorempixel.com)
 * Image slideshow: [Cycle2](https://github.com/malsup/cycle2)
-* Datepicker: [Pickadate](http://amsul.ca/pickadate.js)
-* Timepicker: [TimePicki](http://senthilraj.github.io/TimePicki)
-* Colorpicker: [MiniColors](http://labs.abeautifulsite.net/jquery-minicolors)

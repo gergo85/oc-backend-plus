@@ -13,11 +13,9 @@ use Redirect;
 class Trash extends Controller
 {
     public $implement = [
-        'Backend.Behaviors.FormController',
         'Backend.Behaviors.ListController'
     ];
 
-    public $formConfig = 'config_form.yaml';
     public $listConfig = 'config_list.yaml';
 
     public $bodyClass = 'compact-container';
@@ -166,9 +164,18 @@ class Trash extends Controller
             'plugins/anandpatel/wysiwygeditors/formwidgets/editor/partials/_froala.htm' => [1, 9707],
             'plugins/anandpatel/wysiwygeditors/resources' => [2, 1183925],
             'plugins/anandpatel/wysiwygeditors/src' => [2, 11669],
+            'plugins/indikator/backend/assets/gzip.txt' => [1, 1],
             'plugins/indikator/backend/assets/css/media-menu.css' => [1, 57],
             'plugins/indikator/backend/assets/css/media-menu-pages.css' => [1, 57],
+            'plugins/indikator/backend/assets/js/form-clearbutton.js' => [1, 1668],
             'plugins/indikator/backend/assets/js/media-menu.js' => [1, 85],
+            'plugins/indikator/backend/assets/js/setting-theme.js' => [1, 73],
+            'plugins/indikator/backend/components' => [2, 3494],
+            'plugins/indikator/backend/controllers/trash/config_form.yaml' => [1, 467],
+            'plugins/indikator/backend/controllers/trash/create.htm' => [1, 182],
+            'plugins/indikator/backend/controllers/trash/update.htm' => [1, 182],
+            'plugins/indikator/backend/formwidgets' => [2, 188089],
+            'plugins/indikator/backend/models/trash/fields.yaml' => [1, 97],
             'plugins/indikator/backend/partials' => [2, 2740],
             'plugins/indikator/blogstat/controllers/statistics/config_form.yaml' => [1, 166],
             'plugins/indikator/blogstat/controllers/statistics/config_list.yaml' => [1, 264],

@@ -16,19 +16,13 @@ return [
         'sidebar_desc_comment' => 'It works only the pages of Settings menu.',
         'sidebar_search_label' => 'Hide the search field in the sidebar',
         'sidebar_search_comment' => 'It works only the pages of Settings menu.',
-        'themes_label' => 'Hide the "Find more themes" link',
-        'themes_comment' => 'Located on the Front-end theme page.',
         'tab_behavior' => 'Behavior',
         'search_label' => 'Focus the search field automatically',
         'search_comment' => 'Firstly in the lists, secondly in the sidebar.',
         'context_menu_label' => 'Enable the context menu',
         'context_menu_comment' => 'Right-click to show the quick menu.',
-        'clearbutton_label' => 'Add the clear button to fields (beta)',
-        'clearbutton_comment' => 'It works only by simple input fields.',
         'keyboard_label' => 'Show the virtual keyboard by forms (beta)',
-        'keyboard_comment' => 'It works only by simple input fields.',
-        'enabled_gzip_label' => 'Enable the gzip compression',
-        'enabled_gzip_comment' => 'It works on the front-end and back-end too.'
+        'keyboard_comment' => 'It works only by simple input fields.'
     ],
     'trash' => [
         'title' => 'Trash items',
@@ -166,19 +160,5 @@ return [
         'sports' => 'Sports',
         'technics' => 'Technics',
         'transport' => 'Transport'
-    ],
-    'component' => [
-        'image' => [
-            'name' => 'Lorem ipsum image',
-            'description' => ''
-        ],
-        'text' => [
-            'name' => 'Lorem ipsum text',
-            'description' => '',
-            'length' => 'Length',
-            'bit' => 'a bit',
-            'some' => 'some',
-            'lots' => 'lots'
-        ]
     ]
 ];
