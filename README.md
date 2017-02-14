@@ -1,5 +1,5 @@
 # Backend toolkit plugin
-This plugin extend the back-end to useful features and some new dashboard widgets.
+This plugin extend the back-end to useful features and some new dashboard widgets. The Backend Plus will get only minor updates. If you want premium features, please use the [Backend Elite](http://octobercms.com/plugin/indikator-backendelite) plugin.
 
 - [Advantages of plugin](#advantages)
 - [New back-end features](#new_features)
@@ -60,6 +60,7 @@ The brand new, re-design style is available in the [Backend Elite](http://octobe
 ## Available languages
 * en - English
 * de - Deutsch
+* ru - Русский
 * es - Español
 * hu - Magyar
 * tr - Türkçe
@@ -85,7 +86,6 @@ The brand new, re-design style is available in the [Backend Elite](http://octobe
 <a name="credits"></a>
 ## Credits
 * Context menu: [contextMenu](https://github.com/swisnl/jQuery-contextMenu)
-* Clear button: [Add Clear](https://github.com/skorecky/Add-Clear)
 * Virtual keyboard: [MLKeyboard](https://github.com/mBut/jquery.mlkeyboard)
 * Random images: [lorempixel](http://lorempixel.com)
 * Image slideshow: [Cycle2](https://github.com/malsup/cycle2)
