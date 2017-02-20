@@ -1,7 +1,6 @@
 <?php namespace Indikator\Backend;
 
 use System\Classes\PluginBase;
-use System\Classes\PluginManager;
 use System\Classes\SettingsManager;
 use Backend\Classes\Controller as BackendController;
 use Backend;
