@@ -35,7 +35,7 @@ return [
         'folder' => 'Pasta',
         'database' => 'Banco de dados',
         'items' => 'Item|Itens',
-        'hint' => 'Depois que você atualizou o núcleo do OctoberCMS, clique novamente no botão Pesquisar. Se você deseja excluir o cache de sua página, você precisa adicionar o widget "Backend - Cache" ao Dashboard. Por favor <b>avalie este plugin</b> se ele ajudou seu trabalho:'
+        'hint' => 'Depois que você atualizou o núcleo do OctoberCMS, clique novamente no botão Pesquisar. Se você deseja excluir o cache de sua página, você precisa adicionar o widget "Backend - Cache" ao Dashboard. Por favor <b>avalie este plugin</b> se ele ajudou seu trabalho:',
         'search' => 'Pesquisar',
         'success' => 'A verificação foi concluída com êxito',
         'no_items' => 'Parabéns, sem arquivos não utilizados no site!',
