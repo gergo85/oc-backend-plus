@@ -23,9 +23,9 @@ This plugin extend the back-end to useful features and some new dashboard widget
 * __Set the back-end features as global!__ - Available the settings for other users.
 * __Modern, re-design dashboard widgets!__ - New look for stable OctoberCMS.
 * __Brand new form widget elements!__ - Datepicker, Timepicker and Colorpicker.
-* __Turn on useful automatic operations!__ - Coming soon...
+* __Turn on useful automatic operations!__ - Delete cache, October.Demo plugin, etc.
 
-If you like this extra features, please see the [Backend Elite](http://octobercms.com/plugin/indikator-backendelite) plugin. This is the extended version of Backend Plus.
+If you like this extra features, use the [Backend Elite](http://octobercms.com/plugin/indikator-backendelite) plugin. This is the extended version of Backend Plus.
 
 <a name="new_features"></a>
 ## New back-end features
