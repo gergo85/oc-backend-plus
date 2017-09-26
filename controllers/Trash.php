@@ -205,6 +205,8 @@ class Trash extends Controller
             'plugins/indikator/news/models/posts/_statistics.htm' => [1, 84],
             'plugins/indikator/news/models/Statistics.php' => [1, 124],
             'plugins/indikator/news/models/statistics' => [2, 194],
+            'plugins/indikator/paste/models/code/_status.htm' => [1, 267],
+            'plugins/indikator/paste/models/text/_status.htm' => [1, 267],
             'plugins/indikator/plugins/models/frontend/_name.htm' => [1, 354],
             'plugins/martin/adminer/classes/adminer-en.php' => [1, 289371],
             'plugins/martin/adminer/classes/adminer-4.2.4-en.php' => [1, 289386],
