@@ -4,7 +4,7 @@ use Backend\Classes\Controller;
 use BackendMenu;
 use System\Classes\SettingsManager;
 use File;
-use DB;
+use Db;
 use Indikator\Backend\Models\Trash as Items;
 use Flash;
 use Lang;
@@ -31,7 +31,7 @@ class Trash extends Controller
     public function onSearchItems()
     {
         // Unused database settings
-        $sql = DB::table('system_settings')->get();
+        $sql = Db::table('system_settings')->get();
 
         foreach ($sql as $row) {
             $name = explode('_', $row->item);
@@ -314,7 +314,7 @@ class Trash extends Controller
 
                     // Database
                     else if ($item->type == 3) {
-                        DB::table('system_settings')->where('item', $item->path)->delete();
+                        Db::table('system_settings')->where('item', $item->path)->delete();
                     }
 
                     Items::whereId($objectId)->delete();
@@ -344,7 +344,7 @@ class Trash extends Controller
 
             // Database
             else if ($item->type == 3) {
-                DB::table('system_settings')->where('item', $item->path)->delete();
+                Db::table('system_settings')->where('item', $item->path)->delete();
             }
 
             Items::whereId($item->id)->delete();
