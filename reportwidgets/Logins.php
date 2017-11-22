@@ -2,7 +2,7 @@
 
 use Backend\Classes\ReportWidgetBase;
 use Exception;
-use DB;
+use Db;
 
 class Logins extends ReportWidgetBase
 {
@@ -44,6 +44,6 @@ class Logins extends ReportWidgetBase
 
     protected function loadData()
     {
-        $this->vars['users'] = DB::table('backend_access_log')->select('user_id', 'ip_address', 'created_at')->orderBy('created_at', 'desc')->take(10)->get();
+        $this->vars['users'] = Db::table('backend_access_log')->select('user_id', 'ip_address', 'created_at')->orderBy('created_at', 'desc')->take(10)->get()->all();
     }
 }

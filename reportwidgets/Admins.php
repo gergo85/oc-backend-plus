@@ -2,7 +2,7 @@
 
 use Backend\Classes\ReportWidgetBase;
 use Exception;
-use DB;
+use Db;
 
 class Admins extends ReportWidgetBase
 {
@@ -48,16 +48,16 @@ class Admins extends ReportWidgetBase
 
     protected function loadData()
     {
-        $this->vars['users']  = DB::table('backend_users')->count();
-        $this->vars['groups'] = DB::table('backend_user_groups')->count();
+        $this->vars['users']  = Db::table('backend_users')->count();
+        $this->vars['groups'] = Db::table('backend_user_groups')->count();
 
-        if (DB::table('backend_users')->where('last_login', '!=', 'NULL')->count() == 1) {
-            $this->vars['login']  = DB::table('backend_users')->where('id', 1)->pluck('login');
-            $this->vars['userid'] = DB::table('backend_users')->where('id', 1)->pluck('id');
+        if (Db::table('backend_users')->where('last_login', '!=', 'NULL')->count() == 1) {
+            $this->vars['login']  = Db::table('backend_users')->where('id', 1)->value('login');
+            $this->vars['userid'] = Db::table('backend_users')->where('id', 1)->value('id');
         }
         else {
-            $this->vars['login']  = DB::table('backend_users')->where('id', '>', 1)->orderBy('last_login', 'desc')->pluck('login');
-            $this->vars['userid'] = DB::table('backend_users')->where('id', '>', 1)->orderBy('last_login', 'desc')->pluck('id');
+            $this->vars['login']  = Db::table('backend_users')->where('id', '>', 1)->orderBy('last_login', 'desc')->value('login');
+            $this->vars['userid'] = Db::table('backend_users')->where('id', '>', 1)->orderBy('last_login', 'desc')->value('id');
         }
     }
 }

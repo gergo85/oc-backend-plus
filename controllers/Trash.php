@@ -31,7 +31,7 @@ class Trash extends Controller
     public function onSearchItems()
     {
         // Unused database settings
-        $sql = Db::table('system_settings')->get();
+        $sql = Db::table('system_settings')->get()->all();
 
         foreach ($sql as $row) {
             $name = explode('_', $row->item);
@@ -144,6 +144,7 @@ class Trash extends Controller
             'modules/backend/formwidgets/richeditor/assets/vendor/redactor' => [2, 307615],
             // CMS
             'modules/cms/assets/less/css' => [2, 2993],
+            'modules/cms/widgets/mediamanager' => [2, 187801],
             // System
             'modules/system/assets/css/settings.css' => [1, 1655],
             'modules/system/assets/css/updates.css' => [1, 926],
