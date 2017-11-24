@@ -15,7 +15,7 @@
     ?>
     <div class="scoreboard-item title-value pull-left" style="margin:20px 20px 0 0;">
         <h4><?= substr($users[$i]->created_at, 0, -3) ?></h4>
-        <p><a href="<?= Backend::url('backend/users/update/'.$users[$i]->user_id) ?>" style="text-decoration:none;"><?= DB::table('backend_users')->where('id', $users[$i]->user_id)->pluck('login') ?></a></p>
+        <p><a href="<?= Backend::url('backend/users/update/'.$users[$i]->user_id) ?>" style="text-decoration:none;"><?= DB::table('backend_users')->where('id', $users[$i]->user_id)->value('login') ?></a></p>
         <?php if ($this->property('ip')): ?>
         <p class="description"><?= $users[$i]->ip_address ?></p>
         <?php endif ?>
