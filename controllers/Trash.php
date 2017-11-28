@@ -13,7 +13,7 @@ use Redirect;
 class Trash extends Controller
 {
     public $implement = [
-        'Backend.Behaviors.ListController'
+        \Backend\Behaviors\ListController::class
     ];
 
     public $listConfig = 'config_list.yaml';
