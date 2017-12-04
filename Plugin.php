@@ -88,7 +88,8 @@ class Plugin extends PluginBase
         return [
             'indikator.backend.trash' => [
                 'tab'   => 'indikator.backend::lang.plugin.name',
-                'label' => 'indikator.backend::lang.trash.permission'
+                'label' => 'indikator.backend::lang.trash.permission',
+                'roles' => ['developer']
             ]
         ];
     }
