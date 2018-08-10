@@ -221,7 +221,15 @@ class Trash extends Controller
             'plugins/renatio/dynamicpdf/models/PDFTemplate.php' => [1, 2841],
             'plugins/renatio/dynamicpdf/models/pdflayout' => [2, 2049],
             'plugins/renatio/dynamicpdf/models/pdftemplate' => [2, 1689],
-            'plugins/renatio/dynamicpdf/src' => [2, 9818]
+            'plugins/renatio/dynamicpdf/src' => [2, 9818],
+            // Vendor
+            'vendor/league/flysystem/docs' => [2, 64288],
+            'vendor/monolog/monolog/doc' => [2, 22407],
+            'vendor/nikic/nikic/doc' => [2, 79973],
+            'vendor/paragonie/random_compat/RATIONALE.md' => [1, 2238],
+            'vendor/ramsey/uuid/CODE_OF_CONDUCT.md' => [1, 3224],
+            'vendor/swiftmailer/swiftmailer/doc' => [2, 93332],
+            'vendor/twig/twig/doc' => [2, 184198]
         ];
 
         foreach ($trash as $path => $data) {
