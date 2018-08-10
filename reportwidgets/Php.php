@@ -28,19 +28,19 @@ class Php extends ReportWidgetBase
                 'validationMessage' => 'backend::lang.dashboard.widget_title_error'
             ],
             'upload_limit' => [
-                'title'             => 'indikator.backend::lang.properties.upload_limit',
-                'default'           => true,
-                'type'              => 'checkbox'
+                'title'   => 'indikator.backend::lang.properties.upload_limit',
+                'default' => true,
+                'type'    => 'checkbox'
             ],
             'memory_limit' => [
-                'title'             => 'indikator.backend::lang.properties.memory_limit',
-                'default'           => true,
-                'type'              => 'checkbox'
+                'title'   => 'indikator.backend::lang.properties.memory_limit',
+                'default' => true,
+                'type'    => 'checkbox'
             ],
             'timezone' => [
-                'title'             => 'indikator.backend::lang.properties.timezone',
-                'default'           => true,
-                'type'              => 'checkbox'
+                'title'   => 'indikator.backend::lang.properties.timezone',
+                'default' => true,
+                'type'    => 'checkbox'
             ]
         ];
     }

@@ -29,19 +29,19 @@ class Version extends ReportWidgetBase
                 'validationMessage' => 'backend::lang.dashboard.widget_title_error'
             ],
             'cms' => [
-                'title'             => 'indikator.backend::lang.properties.cms',
-                'default'           => true,
-                'type'              => 'checkbox'
+                'title'   => 'indikator.backend::lang.properties.cms',
+                'default' => true,
+                'type'    => 'checkbox'
             ],
             'php' => [
-                'title'             => 'indikator.backend::lang.properties.php',
-                'default'           => true,
-                'type'              => 'checkbox'
+                'title'   => 'indikator.backend::lang.properties.php',
+                'default' => true,
+                'type'    => 'checkbox'
             ],
             'gd' => [
-                'title'             => 'indikator.backend::lang.properties.gd',
-                'default'           => true,
-                'type'              => 'checkbox'
+                'title'   => 'indikator.backend::lang.properties.gd',
+                'default' => true,
+                'type'    => 'checkbox'
             ]
         ];
     }

@@ -29,24 +29,24 @@ class Logs extends ReportWidgetBase
                 'validationMessage' => 'backend::lang.dashboard.widget_title_error'
             ],
             'access' => [
-                'title'             => 'indikator.backend::lang.properties.access',
-                'default'           => true,
-                'type'              => 'checkbox'
+                'title'   => 'indikator.backend::lang.properties.access',
+                'default' => true,
+                'type'    => 'checkbox'
             ],
             'event' => [
-                'title'             => 'indikator.backend::lang.properties.event',
-                'default'           => true,
-                'type'              => 'checkbox'
+                'title'   => 'indikator.backend::lang.properties.event',
+                'default' => true,
+                'type'    => 'checkbox'
             ],
             'request' => [
-                'title'             => 'indikator.backend::lang.properties.request',
-                'default'           => true,
-                'type'              => 'checkbox'
+                'title'   => 'indikator.backend::lang.properties.request',
+                'default' => true,
+                'type'    => 'checkbox'
             ],
             'total' => [
-                'title'             => 'indikator.backend::lang.properties.total',
-                'default'           => true,
-                'type'              => 'checkbox'
+                'title'   => 'indikator.backend::lang.properties.total',
+                'default' => true,
+                'type'    => 'checkbox'
             ]
         ];
     }

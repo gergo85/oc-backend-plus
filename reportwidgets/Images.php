@@ -21,10 +21,10 @@ class Images extends ReportWidgetBase
                 'validationMessage' => 'backend::lang.dashboard.widget_title_error'
             ],
             'category' => [
-                'title'             => 'indikator.backend::lang.properties.category',
-                'default'           => '',
-                'type'              => 'dropdown',
-                'options'           => [
+                'title'   => 'indikator.backend::lang.properties.category',
+                'default' => '',
+                'type'    => 'dropdown',
+                'options' => [
                     ''          => Lang::get('indikator.backend::lang.category.all'),
                     'abstract'  => Lang::get('indikator.backend::lang.category.abstract'),
                     'animals'   => Lang::get('indikator.backend::lang.category.animals'),
@@ -42,10 +42,10 @@ class Images extends ReportWidgetBase
                 ]
             ],
             'type' => [
-                'title'             => 'indikator.backend::lang.properties.type',
-                'default'           => 'simple',
-                'type'              => 'dropdown',
-                'options'           => [
+                'title'   => 'indikator.backend::lang.properties.type',
+                'default' => 'simple',
+                'type'    => 'dropdown',
+                'options' => [
                     'simple'    => Lang::get('indikator.backend::lang.widgets.images.simple'),
                     'slideshow' => Lang::get('indikator.backend::lang.widgets.images.slideshow')
                 ]

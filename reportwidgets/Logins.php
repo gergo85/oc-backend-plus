@@ -29,15 +29,15 @@ class Logins extends ReportWidgetBase
                 'validationMessage' => 'backend::lang.dashboard.widget_title_error'
             ],
             'logins' => [
-                'title'             => 'indikator.backend::lang.properties.logins',
-                'default'           => 5,
-                'type'              => 'dropdown',
-                'options'           => [1 => 1, 2 => 2, 3 => 3, 4 => 4, 5 => 5, 6 => 6, 7 => 7, 8 => 8, 9 => 9, 10 => 10]
+                'title'   => 'indikator.backend::lang.properties.logins',
+                'default' => 5,
+                'type'    => 'dropdown',
+                'options' => [1 => 1, 2 => 2, 3 => 3, 4 => 4, 5 => 5, 6 => 6, 7 => 7, 8 => 8, 9 => 9, 10 => 10]
             ],
             'ip' => [
-                'title'             => 'indikator.backend::lang.properties.ip',
-                'default'           => true,
-                'type'              => 'checkbox'
+                'title'   => 'indikator.backend::lang.properties.ip',
+                'default' => true,
+                'type'    => 'checkbox'
             ]
         ];
     }

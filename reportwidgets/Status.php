@@ -32,24 +32,24 @@ class Status extends ReportWidgetBase
                 'validationMessage' => 'backend::lang.dashboard.widget_title_error'
             ],
             'webpage' => [
-                'title'             => 'indikator.backend::lang.properties.webpage',
-                'default'           => true,
-                'type'              => 'checkbox'
+                'title'   => 'indikator.backend::lang.properties.webpage',
+                'default' => true,
+                'type'    => 'checkbox'
             ],
             'updates' => [
-                'title'             => 'indikator.backend::lang.properties.updates',
-                'default'           => true,
-                'type'              => 'checkbox'
+                'title'   => 'indikator.backend::lang.properties.updates',
+                'default' => true,
+                'type'    => 'checkbox'
             ],
             'plugins' => [
-                'title'             => 'indikator.backend::lang.properties.plugins',
-                'default'           => true,
-                'type'              => 'checkbox'
+                'title'   => 'indikator.backend::lang.properties.plugins',
+                'default' => true,
+                'type'    => 'checkbox'
             ],
             'themes' => [
-                'title'             => 'indikator.backend::lang.properties.themes',
-                'default'           => true,
-                'type'              => 'checkbox'
+                'title'   => 'indikator.backend::lang.properties.themes',
+                'default' => true,
+                'type'    => 'checkbox'
             ]
         ];
     }

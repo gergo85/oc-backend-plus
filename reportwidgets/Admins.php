@@ -29,19 +29,19 @@ class Admins extends ReportWidgetBase
                 'validationMessage' => 'backend::lang.dashboard.widget_title_error'
             ],
             'users' => [
-                'title'             => 'indikator.backend::lang.properties.users',
-                'default'           => true,
-                'type'              => 'checkbox'
+                'title'   => 'indikator.backend::lang.properties.users',
+                'default' => true,
+                'type'    => 'checkbox'
             ],
             'groups' => [
-                'title'             => 'indikator.backend::lang.properties.groups',
-                'default'           => true,
-                'type'              => 'checkbox'
+                'title'   => 'indikator.backend::lang.properties.groups',
+                'default' => true,
+                'type'    => 'checkbox'
             ],
             'login' => [
-                'title'             => 'indikator.backend::lang.properties.login',
-                'default'           => true,
-                'type'              => 'checkbox'
+                'title'   => 'indikator.backend::lang.properties.login',
+                'default' => true,
+                'type'    => 'checkbox'
             ]
         ];
     }
