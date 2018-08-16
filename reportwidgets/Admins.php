@@ -56,8 +56,8 @@ class Admins extends ReportWidgetBase
             $this->vars['userid'] = Db::table('backend_users')->where('id', 1)->value('id');
         }
         else {
-            $this->vars['login']  = Db::table('backend_users')->where('id', '>', 1)->orderBy('last_login', 'desc')->value('login');
-            $this->vars['userid'] = Db::table('backend_users')->where('id', '>', 1)->orderBy('last_login', 'desc')->value('id');
+            $this->vars['login']  = Db::table('backend_users')->orderBy('last_login', 'desc')->value('login');
+            $this->vars['userid'] = Db::table('backend_users')->orderBy('last_login', 'desc')->value('id');
         }
     }
 }
