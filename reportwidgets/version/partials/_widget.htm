@@ -5,7 +5,7 @@
     <?php if ($this->property('cms')): ?>
     <div class="scoreboard-item title-value pull-left" style="margin:20px 20px 0 0;">
         <h4><?= e(trans('indikator.backend::lang.widgets.version.cms')) ?></h4>
-        <p class="text-center"><a href="<?= Backend::url('system/updates') ?>" style="text-decoration:none;"><?= $cms ?></a></p>
+        <p class="text-center"><a href="<?= Backend::url('system/updates') ?>" style="text-decoration:none;">1.0.<?= $cms ?></a></p>
     </div>
     <?php endif ?>
     <?php if ($this->property('php')): ?>

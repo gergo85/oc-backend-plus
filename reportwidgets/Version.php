@@ -52,6 +52,6 @@ class Version extends ReportWidgetBase
         $this->vars['php'] = PHP_MAJOR_VERSION.'.'.PHP_MINOR_VERSION.'.'.PHP_RELEASE_VERSION;
 
         $gd = gd_info();
-        $this->vars['gd'] = substr($gd['GD Version'], 9, 3);
+        $this->vars['gd'] = trim(str_replace(['bundled', 'compatible', '(', ')'], '', $gd['GD Version']));
     }
 }
