@@ -2,6 +2,7 @@
 
 use Backend\Classes\Controller;
 use BackendMenu;
+use System\Classes\PluginManager;
 use System\Classes\SettingsManager;
 use File;
 use Db;
@@ -33,10 +34,39 @@ class Trash extends Controller
         // Unused database settings
         $sql = Db::table('system_settings')->get()->all();
 
+        // Loop
         foreach ($sql as $row) {
+            // Get name
             $name = explode('_', $row->item);
 
-            if ($name[0] != 'backend' && $name[0] != 'system' && isset($name[2]) && !File::exists(base_path().'/plugins/'.$name[0].'/'.$name[1]) && Items::where('path', $row->item)->count() == 0) {
+            // Main settings
+            if ($name[0] == 'backend' || $name[0] == 'system') {
+                continue;
+            }
+
+            // Exception
+            else if ($name[0] == 'slick') {
+                $pluginDetect = PluginManager::instance()->findByIdentifier('PeterHegman.SlickSlider');
+                if ($pluginDetect) {
+                    continue;
+                }
+                else {
+                    $isInserted = true;
+                }
+            }
+
+            // Folder check
+            else if (isset($name[1])) {
+                $isInserted = !File::exists(base_path().'/plugins/'.$name[0].'/'.$name[1]);
+            }
+
+            // Unknown case
+            else {
+                continue;
+            }
+
+            // Insert item
+            if ($isInserted && Items::where('path', $row->item)->count() == 0) {
                 Items::insertGetId([
                     'type' => 3,
                     'path' => $row->item,
