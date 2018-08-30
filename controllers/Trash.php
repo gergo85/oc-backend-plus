@@ -226,6 +226,7 @@ class Trash extends Controller
             'plugins/indikator/content/models/Statistics.php' => [1, 139],
             'plugins/indikator/content/models/statistics' => [2, 194],
             'plugins/indikator/devtools/controllers/editor/_page_toolbar.htm' => [1, 1117],
+            'plugins/indikator/devtools/controllers/editor/config_page_list' => [1, 334],
             'plugins/indikator/news/components/Form.php' => [1, 1164],
             'plugins/indikator/news/components/Form.php' => [1, 1164],
             'plugins/indikator/news/components/form' => [2, 612],
