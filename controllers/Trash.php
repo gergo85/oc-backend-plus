@@ -78,6 +78,7 @@ class Trash extends Controller
         // Trash files and folders
         $trash = [
             // Install
+            '.htaccess.installer' => [1, 119],
             'README.md' => [1, 1029],
             'install.php' => [1, 7908],
             'install_files' => [2, 365436],
