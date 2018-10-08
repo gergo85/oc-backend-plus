@@ -54,6 +54,42 @@ class Trash extends Controller
                     $isInserted = true;
                 }
             }
+            else if ($name[0] == 'redirect' && $name[2] == 'https') {
+                $pluginDetect = PluginManager::instance()->findByIdentifier('PopcornPHP.RedirectToHTTPS');
+                if ($pluginDetect) {
+                    continue;
+                }
+                else {
+                    $isInserted = true;
+                }
+            }
+            else if ($name[1] == 'simple' && $name[2] == 'contact') {
+                $pluginDetect = PluginManager::instance()->findByIdentifier('Zainab.SimpleContact');
+                if ($pluginDetect) {
+                    continue;
+                }
+                else {
+                    $isInserted = true;
+                }
+            }
+            else if ($name[0] == 'user' && $name[1] == 'profile') {
+                $pluginDetect = PluginManager::instance()->findByIdentifier('Esroyo.UserProfile');
+                if ($pluginDetect) {
+                    continue;
+                }
+                else {
+                    $isInserted = true;
+                }
+            }
+            else if ($name[0] == 'shahiemseymor::ckeditor.preferences') {
+                $pluginDetect = PluginManager::instance()->findByIdentifier('ShahiemSeymor.Ckeditor');
+                if ($pluginDetect) {
+                    continue;
+                }
+                else {
+                    $isInserted = true;
+                }
+            }
 
             // Folder check
             else if (isset($name[1])) {
