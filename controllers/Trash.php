@@ -270,6 +270,7 @@ class Trash extends Controller
             'plugins/indikator/news/components/form' => [2, 612],
             'plugins/indikator/news/components/Stat.php' => [1, 458],
             'plugins/indikator/news/components/stat' => [2, 0],
+            'plugins/indikator/news/controllers/logs/_list_toolbar.htm' => [1, 40],
             'plugins/indikator/news/controllers/statistics/config_form.yaml' => [1, 162],
             'plugins/indikator/news/controllers/statistics/config_list.yaml' => [1, 252],
             'plugins/indikator/news/models/Post.php' => [1, 2283],
