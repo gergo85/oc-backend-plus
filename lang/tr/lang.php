@@ -109,7 +109,8 @@ return [
             'title' => 'Backend - Önbellek',
             'label' => 'Önbellek',
             'clear' => 'Önbelleği temizle'
-        ]
+        ],
+        'permission' => "Gösterge Tablosunda widget'ları yönet"
     ],
     'properties' => [
         'webpage' => 'Websayfasını Göster',

@@ -109,7 +109,8 @@ return [
             'title' => 'Backend - Cache',
             'label' => 'Cache usage',
             'clear' => 'Clear cache'
-        ]
+        ],
+        'permission' => 'Manage widgets on Dashboard'
     ],
     'properties' => [
         'webpage' => 'Show webpage',

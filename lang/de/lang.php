@@ -109,7 +109,8 @@ return [
             'title' => 'Backend - Cache',
             'label' => 'Cachegrösse',
             'clear' => 'Cache leeren'
-        ]
+        ],
+        'permission' => 'Widgets im Dashboard verwalten'
     ],
     'properties' => [
         'webpage' => 'Webseite anzeigen',

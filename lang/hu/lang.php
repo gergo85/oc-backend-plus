@@ -109,7 +109,8 @@ return [
             'title' => 'Admin - Gyorsindítótár',
             'label' => 'Gyorsindítótár',
             'clear' => 'Fájlok törlése'
-        ]
+        ],
+        'permission' => 'Widgetek menedzselése a Vezérlőpulton'
     ],
     'properties' => [
         'webpage' => 'Oldal állapot mutatása',

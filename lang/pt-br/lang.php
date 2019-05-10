@@ -109,7 +109,8 @@ return [
             'title' => 'Backend - Cache',
             'label' => 'Uso de cache',
             'clear' => 'Limpar cache'
-        ]
+        ],
+        'permission' => 'Gerenciar widgets no painel'
     ],
     'properties' => [
         'webpage' => 'Exibir webpage',

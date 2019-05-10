@@ -109,7 +109,8 @@ return [
             'title' => 'Backend - Cache',
             'label' => 'Cache',
             'clear' => 'Limpiar cache'
-        ]
+        ],
+        'permission' => 'Administrar widgets en el panel de control'
     ],
     'properties' => [
         'webpage' => 'Mostrar página web',
