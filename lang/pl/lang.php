@@ -1,8 +1,10 @@
-<?php return [
+<?php
+
+return [
     'plugin' => [
         'name' => 'Backend Plus',
         'description' => 'Nowe funkcje i widżety dla backendu.',
-        'author' => 'Gergő Szabó',
+        'author' => 'Gergő Szabó'
     ],
     'settings' => [
         'tab_display' => 'Wyświetlanie',
@@ -20,7 +22,7 @@
         'context_menu_label' => 'Włącz menu kontekstowe',
         'context_menu_comment' => 'Kliknij prawym przyciskiem myszy, aby otworzyć menu szybkich akcji.',
         'keyboard_label' => 'Pokaż wirtualną klawiaturę dla formularzy (beta)',
-        'keyboard_comment' => 'Działa tylko z prostymi polami.',
+        'keyboard_comment' => 'Działa tylko z prostymi polami.'
     ],
     'trash' => [
         'title' => 'Kosz',
@@ -39,7 +41,7 @@
         'no_items' => 'Gratulacje, na stronie nie ma nieużywanych plików!',
         'remove_all' => 'Usuń wszystko',
         'delete' => 'Czy chcesz usunąć wszystkie elementy?',
-        'remove' => 'Pomyślnie usunięto wybrane elementy.',
+        'remove' => 'Pomyślnie usunięto wybrane elementy.'
     ],
     'widgets' => [
         'system' => [
@@ -48,14 +50,14 @@
             'webpage' => 'Strona',
             'updates' => 'Aktualizacje',
             'plugins' => 'Wtyczki',
-            'themes' => 'Motywy',
+            'themes' => 'Motywy'
         ],
         'version' => [
             'title' => 'Backend - Wersje',
             'label' => 'Wersje',
             'cms' => 'CMS',
             'php' => 'PHP',
-            'gd' => 'GD',
+            'gd' => 'GD'
         ],
         'logs' => [
             'title' => 'Backend - Logi',
@@ -63,52 +65,52 @@
             'access' => 'Logowania',
             'event' => 'Zdarzenia',
             'request' => 'Żądania',
-            'total' => 'Wszystkie',
+            'total' => 'Wszystkie'
         ],
         'admins' => [
             'title' => 'Backend - Administratorzy',
             'label' => 'Administratorzy',
             'users' => 'Użytkownicy',
             'groups' => 'Grupy',
-            'login' => 'Ostatnie logowanie',
+            'login' => 'Ostatnie logowanie'
         ],
         'logins' => [
             'title' => 'Backend - Ostatnie logowania',
-            'label' => 'Ostatnie logowania',
+            'label' => 'Ostatnie logowania'
         ],
         'server' => [
             'title' => 'Backend - Informacje o serwerze',
             'label' => 'Informacje o serwerze',
             'host' => 'Host',
             'ip' => 'Adres IP',
-            'os' => 'System Operacyjny',
+            'os' => 'System Operacyjny'
         ],
         'php' => [
             'title' => 'Backend - Ustawienia PHP',
             'label' => 'Ustawienia PHP',
             'upload_limit' => 'Limit przesyłania',
             'memory_limit' => 'Limit pamięci',
-            'timezone' => 'Strefa czasowa',
+            'timezone' => 'Strefa czasowa'
         ],
         'rss' => [
             'title' => 'Backend - Przeglądarka RSS',
             'label' => 'Przeglądarka RSS',
             'error' => 'Adres URL jest nie prawidłowy lub',
-            'refresh' => 'odśwież stronę',
+            'refresh' => 'odśwież stronę'
         ],
         'images' => [
             'title' => 'Backend - Losowe obrazy',
             'label' => 'Losowe obrazy',
             'error' => 'Pole może zawierać tylko liczby.',
             'simple' => 'Prosty',
-            'slideshow' => 'Pokaz slajdów',
+            'slideshow' => 'Pokaz slajdów'
         ],
         'cache' => [
             'title' => 'Backend - Pamięć podręczna',
             'label' => 'Użycie pamięci podręcznej',
-            'clear' => 'Opróżnij pamięć podręczną',
+            'clear' => 'Opróżnij pamięć podręczną'
         ],
-        'permission' => 'Zarządzaj widżetami w kokpicie',
+        'permission' => 'Zarządzaj widżetami w kokpicie'
     ],
     'properties' => [
         'webpage' => 'Pokaż status strony',
@@ -142,7 +144,7 @@
         'number' => 'Obrazy w pokazie slajdów',
         'width' => 'Szerokośc (w pikselach)',
         'height' => 'Wysokość (w pikselach)',
-        'text' => 'Tekst',
+        'text' => 'Tekst'
     ],
     'category' => [
         'all' => 'Wszystkie',
@@ -158,6 +160,6 @@
         'nature' => 'Natura',
         'sports' => 'Sport',
         'technics' => 'Technika',
-        'transport' => 'Transport',
-    ],
+        'transport' => 'Transport'
+    ]
 ];
