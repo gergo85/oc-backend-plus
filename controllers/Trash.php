@@ -296,6 +296,7 @@ class Trash extends Controller
             'plugins/martin/adminer/classes/adminer-4.5.0-en.php' => [1, 273934],
             'plugins/martin/adminer/classes/adminer-4.6.2-en.php' => [1, 279946],
             'plugins/martin/adminer/classes/adminer-4.6.3-en.php' => [1, 281704],
+            'plugins/martin/adminer/classes/adminer-4.7.0-en.php' => [1, 289136],
             'plugins/renatio/dynamicpdf/.gitignore' => [1, 45],
             'plugins/renatio/dynamicpdf/config' => [2, 11074],
             'plugins/renatio/dynamicpdf/controllers/PDFLayouts.php' => [1, 1174],
