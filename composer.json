@@ -1,0 +1,17 @@
+{
+    "name": "indikator/oc-backend-plugin",
+    "type": "october-plugin",
+    "description": "Backend toolkit plugin for OctoberCMS.",
+    "keywords": ["october", "cms", "plugin", "backend"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Szabó Gergő",
+            "role": "Author"
+        }
+    ],
+    "require": {
+        "php": ">=7.2",
+        "composer/installers": "~1.0"
+    }
+}
